@@ -1,0 +1,202 @@
+header {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.top-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 6rem;
+	background-color: rgb(4, 74, 250);
+	color: #fff;
+	font-size: 0.7rem;
+}
+.top-header ul {
+	display: flex;
+	list-style: none;
+}
+.top-header ul li {
+	margin-right: 2rem;
+}
+.top-header .login {
+	background: orangered;
+}
+.login button {
+	border: none;
+	outline: none;
+	background: transparent;
+	padding: 1rem 1.2rem;
+	color: #fff;
+}
+.login i {
+	font-size: 0.7rem;
+	padding-right: 0.8rem;
+}
+
+.navbar-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3rem 6.2rem;
+	background-color: rgb(238, 235, 235);
+	position: relative;
+}
+.nav-logo {
+	position: relative;
+}
+.nav-logo h1 {
+	color: rgb(5, 5, 106);
+	font-weight: 400 bold;
+	font-size: 1.45rem;
+}
+.nav-logo p {
+	font-size: 0.45rem;
+	text-align: end;
+}
+.nav-logo span {
+	color: aqua;
+}
+.nav-logo img {
+	width: 25%;
+	position: absolute;
+	right: -30%;
+	top: -10%;
+	transform: rotate(30deg);
+}
+.nav-menu .nav-links {
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+	gap: 0 2.5rem;
+	list-style: none;
+}
+
+.nav-menu .nav-links a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: #1a1a1a;
+}
+.nav-menu .nav-links .active {
+	color: rgb(67, 114, 233);
+}
+
+.nav-menu .container-banner {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	position: absolute;
+	left: 5%;
+	top: 0;
+	transform: translateY(-100%);
+	padding: 2.3rem;
+	/* background-color: aqua; */
+	z-index: -1;
+	opacity: 0;
+	color: black;
+}
+.nav-links a:hover {
+	color: rgb(67, 114, 233);
+}
+
+.hover-me:hover .container-banner {
+	transform: translateY(12%);
+	z-index: 1;
+	opacity: 1;
+	animation: height 0.2s ease-out forwards;
+}
+.container-banner .text-banner {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(4, 74, 250);
+	padding: 2.5rem;
+	font-weight: 300;
+	color: #fff;
+}
+.text-banner h2 {
+	font-size: 1.5rem;
+	margin-top: 0.2rem;
+	margin-bottom: 3rem;
+	font-weight: 500;
+}
+.container-banner .text-banner button {
+	width: 60%;
+	font-size: 1rem;
+	background-color: rgb(67, 114, 233);
+	padding: 0.5rem 1.5rem;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin-top: 0.3rem;
+}
+.text-banner button:hover {
+	background-color: #fff;
+	color: rgb(67, 114, 233);
+}
+.container-banner .banner {
+	background-color: rgb(67, 114, 233);
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+}
+.banner .des-banner {
+	text-align: center;
+	color: rgb(4, 74, 250);
+	padding-top: 3rem;
+	font-size: 1.1rem;
+}
+.banner .des-banner {
+	background-image: url(./../asset/b1.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 5px solid rgb(50, 105, 243);
+}
+.banner .des-banner h3,
+.des-banner h4 {
+	font-size: 1.5rem;
+}
+.banner .destination-list {
+	text-align: center;
+	color: #fff;
+	padding: 3rem;
+}
+.banner .destination-list h2 {
+	font-size: 1.7rem;
+	font-weight: 400;
+	margin-bottom: 2.5rem;
+}
+.wrapp-list {
+	display: flex;
+	justify-content: flex-start;
+	gap: 5rem;
+	padding: 0 1rem;
+}
+.wrapp-list .a-list {
+	display: flex;
+	gap: 1.7rem;
+}
+.wrapp-list .a-list i {
+	margin-top: -0.3rem;
+	color: #fff;
+	font-size: 1.3rem;
+}
+.destination-list .wrapp-list a {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+@keyframes height {
+	from {
+		height: 0;
+	}
+	to {
+		height: 400px;
+	}
+}
