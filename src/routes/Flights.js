@@ -1,6 +1,6 @@
-import React from 'react'
-import HeroVideo from '../component/HeroVideo'
-import Navbar from '../component/Navbar'
+import React from 'react';
+import HeroVideo from '../component/HeroVideo';
+
 
 
 
@@ -8,8 +8,8 @@ import Navbar from '../component/Navbar'
 function Flights() {
   return (
     <>
-      <Navbar />
       <div>
+        <HeroVideo />
         <h1>flights</h1>
       </div>
 

@@ -1,6 +1,8 @@
-import React from 'react'
-import HeroVideo from '../component/HeroVideo'
-import Navbar from '../component/Navbar'
+import React from 'react';
+import HeroVideo from '../component/HeroVideo';
+import HotelsOffers from '../component/HotelsOffers';
+import BannerSlide from '../component/BannerSlide';
+
 
 
 
@@ -8,14 +10,9 @@ import Navbar from '../component/Navbar'
 function Hotels() {
   return (
     <>
-      <Navbar />
       <HeroVideo />
-      <div>
-        <h1>Hotels</h1>
-      </div>
-
-
-
+      <HotelsOffers />
+      <BannerSlide />
 
 
     </>

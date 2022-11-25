@@ -1,9 +1,11 @@
 import React from 'react';
 import './NavbarStyles.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from './../asset/p1.png';
+import { HiThumbUp } from 'react-icons/hi';
 
 function Navbar() {
+	const navigate = useNavigate();
 	return (
 		<header>
 			<div className='top-header'>
@@ -50,31 +52,61 @@ function Navbar() {
 										<div className='wrapp-list'>
 											<div>
 												<div className='a-list'>
-													<Link to='/'>Singapur</Link>
-													<i className='bi bi-hand-thumbs-up-fill'></i>
+													<div
+														onClick={() =>
+															navigate('/flights')
+														}>
+														Singapur
+													</div>
+													<HiThumbUp className='icon' />
 												</div>
 												<div className='a-list'>
-													<Link to='/'>Hong Kong</Link>
-													<i className='bi bi-hand-thumbs-up-fill'></i>
+													<div
+														onClick={() =>
+															navigate('/flights')
+														}>
+														Hong Kong
+													</div>
+													<HiThumbUp className='icon' />
 												</div>
-												<Link to='/'>Macao</Link>
-												<Link to='/'>Shanghai</Link>
+												<div
+													onClick={() =>
+														navigate('/flights')
+													}>
+													Macao
+												</div>
+												<div
+													onClick={() =>
+														navigate('/flights')
+													}>
+													Shanghai
+												</div>
 												<div className='a-list'>
-													<Link to='/'>Korea</Link>
-													<i className='bi bi-hand-thumbs-up-fill'></i>
+													<div
+														onClick={() =>
+															navigate('/flights')
+														}>
+														Korea
+													</div>
+													<HiThumbUp className='icon' />
 												</div>
-												<Link to='/'>France</Link>
+												<div
+													onClick={() =>
+														navigate('/flights')
+													}>
+													France
+												</div>
 											</div>
 											<div>
-												<Link to='/'>Italy</Link>
-												<Link to='/'>Greece</Link>
-												<Link to='/'>Spain</Link>
+												<div>Italy</div>
+												<div>Greece</div>
+												<div>Spain</div>
 												<div className='a-list'>
-													<Link to='/'>Bali</Link>
-													<i className='bi bi-hand-thumbs-up-fill'></i>
+													<div>Bali</div>
+													<HiThumbUp className='icon' />
 												</div>
-												<Link to='/'>Bangkok</Link>
-												<Link to='/'>Kuala Lumpur</Link>
+												<div>Bangkok</div>
+												<div>Kuala Lumpur</div>
 											</div>
 										</div>
 									</div>
@@ -83,7 +115,6 @@ function Navbar() {
 						</Link>
 						<Link className='hover-me' to='/hotels'>
 							Hotels
-							{/* <div className='container-banner'></div> */}
 						</Link>
 						<Link to='/tourpackages'>Tour Packages</Link>
 						<Link to='/xperiences'>Xperiences</Link>

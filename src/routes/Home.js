@@ -1,8 +1,9 @@
-import React from 'react'
-import HeroVideo from '../component/HeroVideo'
-import Navbar from '../component/Navbar'
-import BannerSlide from '../component/BannerSlide'
-import HotelsPartner from '../component/HotelsPartner'
+import React from 'react';
+import HeroVideo from '../component/HeroVideo';
+import BannerSlide from '../component/BannerSlide';
+import HotelsOffers from '../component/HotelsOffers';
+import FlightsOffers from '../component/FlightsOffers';
+import Xperiences from '../component/Xperiences';
 
 
 
@@ -10,10 +11,11 @@ import HotelsPartner from '../component/HotelsPartner'
 function Home() {
   return (
     <>
-      <Navbar />
       <HeroVideo />
       <BannerSlide />
-      <HotelsPartner />
+      <HotelsOffers />
+      <FlightsOffers />
+      <Xperiences />
 
 
 
