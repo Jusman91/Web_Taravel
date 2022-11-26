@@ -30,6 +30,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 1.636.519'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -41,6 +42,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 1.422.185'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -52,6 +54,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 1.746.985'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -63,6 +66,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 1.746.985'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -74,6 +78,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 54.607'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -85,6 +90,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 54.607'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -96,6 +102,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 136.842'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 				<ContentData
@@ -107,6 +114,7 @@ function Xperiences() {
 					text2='Starting from'
 					currency='IDR'
 					price=' 167.213'
+					btnClass='btn'
 					btn='Check Xperiences'
 				/>
 			</div>

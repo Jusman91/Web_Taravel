@@ -26,6 +26,7 @@ function TrendingTour() {
 			</div>
 			<div className='wrapp-content-tour'>
 				<ContentData
+					containerData='container-data'
 					cNameContainer='wrapp-img-tour'
 					cName='desc-tour'
 					img1={TourImg1}
@@ -36,42 +37,204 @@ function TrendingTour() {
 					currency='Rp'
 					price=' 19.800.000'
 					btnClass='btn-hide'
+					descTourHover='Pengalaman liburan tak terlupakan akan Anda
+					dapatkan dengan mengambil paket ini. Anda akan
+					kami ajak melakukan berbagai pengalaman seru,
+					mulai dari eksplore kota Sydney sampai puas,
+					melihat koala menggemaskan di Featherdale
+					Wildlife Park, mencicipi wine di Audrey
+					Wilkinson Winery, melihat paus dari atas kapal
+					cruise, mencoba naik kereta luncur berpasir di
+					Tangalooma, hingga menyaksikan indahnya
+					pemandangan malam kota Melbourne dari atas
+					Eureka Melbourne Skydeck. Ayo, reservasi paket
+					ini sekarang untuk keberangkatan hingga 25 Juni
+					2022.'
 				/>
 				<ContentData
+					containerData='container-data'
 					cNameContainer='wrapp-img-tour'
 					cName='desc-tour'
 					img1={TourImg2}
 					text='Australia'
-					textHeading='08D Precious East Coast Aussie'
+					textHeading=' 
+					6D Mono Sydney Experience'
 					cNamePrice='price'
 					text2='Start from'
 					currency='Rp'
 					price=' 19.800.000'
 					btnClass='btn-hide'
+					descTourHover=' 
+					Berpetualang di Sydney menjadi mungkin jika Anda mengambil paket ini. Anda akan kami ajak city tour di kota Sydney seharian penuh dengan mengunjungi tempat-tempat wisata yang menarik, sebut saja seperti Sydney Opera House yang merupakan bangunan khas negara Australia, Captain Cook Cruise, dan Sydney Brigde. Selain itu, Anda juga akan mencoba pengalam seru naik unta di Port Stephens, menikmati anggur di Audrey Wilkinson Winery, hingga melihat koala di Featherdale Wildlife Park. Jadi, tunggu apa lagi? Ayo reservasi paket ini sekarang untuk perjalanan hingga Juni 2022.'
 				/>
 				<ContentData
+					containerData='container-data'
 					cNameContainer='wrapp-img-tour'
 					cName='desc-tour'
 					img1={TourImg3}
 					text='Australia'
-					textHeading='08D Precious East Coast Aussie'
+					textHeading='5 Days Dazzle Vivid Sydney + Port Stephens'
 					cNamePrice='price'
 					text2='Start from'
 					currency='Rp'
 					price=' 19.800.000'
 					btnClass='btn-hide'
+					descTourHover='
+					Bingung mau liburan kemana tahun ini? Untuk rekomendasi, kamu bisa ambil paket liburan lima hari ke Sydney dan Port Stephens, Australia. Anda akan merasakan liburan mengasyikkan dengan mengunjungi banyak spot terkenal di Sydney. Lalu, mencoba pengalaman seru naik Vivid Sydney Cruise yang mewah. Tak terlupakan, Anda juga akan merasakan naik unta, melhat lumba-lumba, dan naik 4WD Sandboarding di Port Stephens. Reservasi paket ini sekarang untuk perjalanan hingga Juni 2022.
+					'
 				/>
 				<ContentData
+					containerData='container-data'
 					cNameContainer='wrapp-img-tour'
 					cName='desc-tour'
 					img1={TourImg4}
-					text='Australia'
-					textHeading='08D Precious East Coast Aussie'
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
 					cNamePrice='price'
 					text2='Start from'
 					currency='Rp'
-					price=' 19.800.000'
+					price=' 21.953.000'
 					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg5}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg6}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg7}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg8}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg9}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg10}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg11}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
+				/>
+				<ContentData
+					containerData='container-data'
+					cNameContainer='wrapp-img-tour'
+					cName='desc-tour'
+					img1={TourImg12}
+					text='Family Holidays'
+					textHeading='5D4N Madrid Free & Easy'
+					cNamePrice='price'
+					text2='Start from'
+					currency='Rp'
+					price=' 21.953.000'
+					btnClass='btn-hide'
+					descTourHover='
+					Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.
+					More Details
+					'
 				/>
 			</div>
 		</section>
