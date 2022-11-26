@@ -13,11 +13,46 @@
 	font-size: 0.7rem;
 	padding-bottom: 0.5rem;
 }
-.wrapp-img-hotel {
+.wrapp-img {
 	height: 350px;
 	position: relative;
 }
-.wrapp-img-hotel img {
+
+/* styling trending tour */
+.wrapp-img-tour {
+	height: 270px;
+}
+
+.wrapp-content-tour {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(300px, 1fr)
+	);
+	overflow: hidden;
+	gap: 2rem;
+}
+.desc-tour {
+	padding: 1.3rem 0;
+}
+.desc-tour h6 {
+	font-size: 0.8rem;
+}
+.desc-tour .price {
+	display: flex;
+	gap: 0 5rem;
+	padding-top: 0.3rem;
+}
+.desc-tour .price p {
+	font-size: 0.6rem;
+	margin-top: -1rem;
+}
+.desc-tour .price span {
+	color: orangered;
+	font-size: 1.5rem;
+}
+.wrapp-img img,
+.wrapp-img-tour img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -30,30 +65,31 @@
 	);
 	overflow: hidden;
 }
-.wrapp-img-hotel .desc {
+.wrapp-img .desc {
 	position: absolute;
 	color: #fff;
 	top: 0;
 	padding: 2rem;
 }
-.wrapp-img-hotel .desc h3 {
+
+.wrapp-img .desc h3 {
 	font-size: 1.3rem;
 	margin-bottom: 0;
 }
-.wrapp-img-hotel .desc h5 {
+.wrapp-img .desc h5 {
 	font-size: 0.7rem;
 	margin-bottom: 1.5rem;
 }
-.wrapp-img-hotel .desc h6 {
+.wrapp-img .desc h6 {
 	font-size: 0.6rem;
 	margin-bottom: 0;
 }
-.wrapp-img-hotel .desc p {
+.wrapp-img .desc p {
 	font-size: 0.6rem;
 	margin-top: -0.5rem;
 	color: orangered;
 }
-.wrapp-img-hotel .desc p span {
+.wrapp-img .desc p span {
 	font-size: 1.5rem;
 }
 
@@ -70,7 +106,7 @@
 	bottom: -10%;
 	transition: 0.5s ease height;
 }
-.wrapp-img-hotel:hover .wrapper-btn {
+.wrapp-img:hover .wrapper-btn {
 	height: 100%;
 	bottom: 0;
 }
@@ -84,6 +120,9 @@
 	font-weight: 600;
 	color: #fff;
 	transition: 1s;
+}
+.wrapper-btn .btn-hide {
+	display: none;
 }
 
 .wrapper-btn .btn:hover {

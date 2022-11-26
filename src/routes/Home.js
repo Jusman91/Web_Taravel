@@ -4,6 +4,7 @@ import BannerSlide from '../component/BannerSlide';
 import HotelsOffers from '../component/HotelsOffers';
 import FlightsOffers from '../component/FlightsOffers';
 import Xperiences from '../component/Xperiences';
+import TrendingTour from '../component/TrendingTour';
 
 
 
@@ -16,6 +17,7 @@ function Home() {
       <HotelsOffers />
       <FlightsOffers />
       <Xperiences />
+      <TrendingTour />
 
 
 
