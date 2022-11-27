@@ -1,7 +1,6 @@
-.container {
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-	/* height: 100vh; */
+.container-tour {
+	padding: 4rem 6rem;
+	margin: auto;
 }
 .head {
 	text-align: center;
@@ -29,6 +28,7 @@
 .container-data {
 	height: 470px;
 	border-bottom: 1px solid #999;
+	margin-bottom: 5rem;
 	position: relative;
 	overflow: hidden;
 }
@@ -44,7 +44,7 @@
 		minmax(300px, 1fr)
 	);
 	overflow: hidden;
-	gap: 2rem;
+	gap: 2.5rem 2rem;
 }
 .desc-tour {
 	padding: 1.3rem 0;
@@ -56,7 +56,7 @@
 	display: flex;
 	gap: 0 5rem;
 	padding-top: 0.3rem;
-	padding-bottom: 2rem;
+	padding-bottom: 3.5rem;
 }
 .desc-tour .price p {
 	font-size: 0.6rem;
@@ -139,19 +139,29 @@
 	color: rgb(67, 114, 233);
 }
 
+.details-tour {
+	color: rgb(67, 114, 233);
+	font-size: 0.8rem;
+	/* margin-bottom: 3rem; */
+	margin-top: -4.5rem;
+}
+
 /* hover style tourpackages */
-.desc-tour-hover {
+.desc-tour {
 	padding: 1.3rem 0;
 }
-.desc-tour-hover h3 {
-	font-size: 1.3rem;
-	padding: 0.8rem 0;
+.desc-tour h3 {
+	font-size: 1.7rem;
+	padding: 0.4rem 0;
 }
 
 .desc-packages {
 	width: 100%;
 
 	background-color: #fff;
+}
+.container-data:hover .desc-tour .price {
+	padding-bottom: 1rem;
 }
 .container-data:hover .wrapp-img-tour {
 	height: 30px;
