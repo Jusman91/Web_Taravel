@@ -1,0 +1,36 @@
+.container-footer {
+	padding: 1.5rem 6rem;
+}
+.wrapper-logo {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 100%;
+	top: -60%;
+}
+.wrapper-logo img {
+	width: 100%;
+	height: 100%;
+	transform: rotate(30deg);
+}
+.footer-up {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #999;
+}
+.left {
+	display: flex;
+	position: relative;
+}
+.icons-sosial-media {
+	display: flex;
+	gap: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.2rem;
+	color: #999;
+}
+.wrapper-link-in-footer {
+	display: flex;
+	justify-content: space-between;
+}

@@ -17,7 +17,7 @@ import ContentData from './ContentData';
 function TrendingTour() {
 	return (
 		<>
-			<section className='container-tour'>
+			<section className='container-content'>
 				<div className='head'>
 					<h2>Trending Tour Packages</h2>
 					<p>
