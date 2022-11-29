@@ -4,6 +4,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import Logo from './../asset/p1.png';
+import Logo2 from './../asset/l2.jpg';
 import FooterData from './FooterData';
 
 function Footer() {
@@ -63,6 +64,13 @@ function Footer() {
 					text4='Tiket +62813xxxxxxxx'
 					text5='Cust. Care +62811xxxxxxxx'
 				/>
+			</div>
+			<div>
+				<img src={Logo2} alt='Logo' />
+				<p>
+					Copyright © 2022 NgakakTour. All rights reserved.
+					Privacy Policy
+				</p>
 			</div>
 		</section>
 	);

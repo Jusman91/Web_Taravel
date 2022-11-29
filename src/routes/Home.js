@@ -3,10 +3,8 @@ import HeroVideo from '../component/HeroVideo';
 import BannerSlide from '../component/BannerSlide';
 import HotelsOffers from '../component/HotelsOffers';
 import FlightsOffers from '../component/FlightsOffers';
-import Xperiences from '../component/Xperiences';
+import XperiencesTour from '../component/XperiencesTour';
 import TrendingTour from '../component/TrendingTour';
-import ChooseUs from '../component/ChooseUs';
-import Footer from '../component/Footer';
 
 
 
@@ -18,16 +16,8 @@ function Home() {
       <BannerSlide />
       <HotelsOffers />
       <FlightsOffers />
-      <Xperiences />
+      <XperiencesTour />
       <TrendingTour />
-      <ChooseUs />
-      <Footer />
-
-
-
-
-
-
     </>
   )
 }

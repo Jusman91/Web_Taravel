@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroVideo from '../component/HeroVideo';
+import TrendingTour from '../component/TrendingTour';
 
 
 
@@ -9,14 +10,7 @@ function TourPackages() {
   return (
     <>
       <HeroVideo />
-      <div>
-        <h1>TourPackages</h1>
-      </div>
-
-
-
-
-
+      <TrendingTour />
     </>
   )
 }

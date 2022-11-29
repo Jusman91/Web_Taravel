@@ -1,11 +1,9 @@
-import React from 'react';
 import './NavbarStyles.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from './../asset/p1.png';
 import { HiThumbUp } from 'react-icons/hi';
 
 function Navbar() {
-	const navigate = useNavigate();
 	return (
 		<header>
 			<div className='top-header'>
@@ -30,11 +28,15 @@ function Navbar() {
 				</div>
 				<ul className='nav-menu'>
 					<li className='nav-links'>
-						<Link className='active' to='/'>
-							Home
-						</Link>
-						<Link className='hover-me' to='/flights'>
-							Flights
+						<div>
+							<Link className='active' to='/'>
+								Home
+							</Link>
+						</div>
+						<div className='hover'>
+							<Link className='hover-me' to='/flights'>
+								Flights
+							</Link>
 							<div className='container-banner'>
 								<div className='text-banner'>
 									<p>Save The Dates</p>
@@ -52,50 +54,20 @@ function Navbar() {
 										<div className='wrapp-list'>
 											<div>
 												<div className='a-list'>
-													<div
-														onClick={() =>
-															navigate('/flights')
-														}>
-														Singapur
-													</div>
+													<div>Singapur</div>
 													<HiThumbUp className='icon' />
 												</div>
 												<div className='a-list'>
-													<div
-														onClick={() =>
-															navigate('/flights')
-														}>
-														Hong Kong
-													</div>
+													<div>Hong Kong</div>
 													<HiThumbUp className='icon' />
 												</div>
-												<div
-													onClick={() =>
-														navigate('/flights')
-													}>
-													Macao
-												</div>
-												<div
-													onClick={() =>
-														navigate('/flights')
-													}>
-													Shanghai
-												</div>
+												<div>Macao</div>
+												<div>Shanghai</div>
 												<div className='a-list'>
-													<div
-														onClick={() =>
-															navigate('/flights')
-														}>
-														Korea
-													</div>
+													<div>Korea</div>
 													<HiThumbUp className='icon' />
 												</div>
-												<div
-													onClick={() =>
-														navigate('/flights')
-													}>
-													France
-												</div>
+												<div>France</div>
 											</div>
 											<div>
 												<div>Italy</div>
@@ -112,15 +84,27 @@ function Navbar() {
 									</div>
 								</div>
 							</div>
-						</Link>
-						<Link className='hover-me' to='/hotels'>
-							Hotels
-						</Link>
-						<Link to='/tourpackages'>Tour Packages</Link>
-						<Link to='/xperiences'>Xperiences</Link>
-						<Link to='/attractions'>Attractions</Link>
-						<Link to='/visa'>Visa</Link>
-						<Link to='/insurance'>Insurance</Link>
+						</div>
+						<div>
+							<Link className='hover-me' to='/hotels'>
+								Hotels
+							</Link>
+						</div>
+						<div>
+							<Link to='/tourpackages'>Tour Packages</Link>
+						</div>
+						<div>
+							<Link to='/xperiences'>Xperiences</Link>
+						</div>
+						<div>
+							<Link to='/attractions'>Attractions</Link>
+						</div>
+						<div>
+							<Link to='/visa'>Visa</Link>
+						</div>
+						<div>
+							<Link to='/insurance'>Insurance</Link>
+						</div>
 					</li>
 				</ul>
 			</nav>

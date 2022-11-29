@@ -9,12 +9,14 @@ import Hotels from './routes/Hotels';
 import Home from './routes/Home';
 import Attractions from './routes/Attractions';
 import Navbar from './component/Navbar';
+import Footer from './component/Footer';
+import ChooseUs from './component/ChooseUs';
 
 
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -26,7 +28,9 @@ function App() {
         <Route path='visa' element={<Visa />} />
         <Route path='insurance' element={<Insurance />} />
       </Routes>
-    </div>
+      <ChooseUs />
+      <Footer />
+    </>
   );
 }
 

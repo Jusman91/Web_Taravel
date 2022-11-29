@@ -1,24 +1,28 @@
 .container-content {
-	padding: 4rem 6rem 1rem 6rem;
+	padding: 4rem 3rem 1rem 3rem;
 	box-sizing: border-box;
 }
-.head {
-	text-align: center;
-	margin-bottom: 2rem;
+
+/* flights styl */
+.container-flights {
+	padding: 0 3rem 1rem 3em;
+	box-sizing: border-box;
+	margin-top: -1.5%;
+	position: relative;
 }
-.head h2 {
-	font-size: 1.5rem;
+.container-airlines-partners {
+	padding: 4rem 3rem 1rem 3rem;
 }
-.head p {
-	font-size: 0.7rem;
-	padding-bottom: 0.5rem;
+.container-airlines-partners img {
+	width: 100%;
+	padding: 2rem 0;
 }
+
 .wrapp-img {
 	height: 450px;
 	position: relative;
 }
-.wrapp-img img,
-.wrapp-img-tour img {
+.wrapp-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -27,7 +31,7 @@
 	display: grid;
 	grid-template-columns: repeat(
 		auto-fit,
-		minmax(250px, 1fr)
+		minmax(300px, 1fr)
 	);
 	overflow: hidden;
 }
@@ -90,77 +94,4 @@
 .wrapper-btn .btn:hover {
 	background-color: #fff;
 	color: rgb(67, 114, 233);
-}
-
-/* style tourpackages */
-.wrapp-content-tour {
-	display: grid;
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(300px, 1fr)
-	);
-	overflow: hidden;
-	gap: 2.5rem 2rem;
-}
-.container-data {
-	height: 470px;
-	border-bottom: 1px solid #999;
-	margin-bottom: 5rem;
-	position: relative;
-	overflow: hidden;
-}
-.wrapp-img-tour {
-	height: 270px;
-	transition: 0.3s ease-in;
-}
-.desc-tour {
-	padding: 1.3rem 0;
-}
-.desc-tour h3 {
-	font-size: 1.7rem;
-	padding: 0.4rem 0;
-}
-.desc-tour h6 {
-	font-size: 0.8rem;
-}
-.desc-tour .price {
-	display: flex;
-	gap: 0 5rem;
-	padding-top: 0.3rem;
-	padding-bottom: 3.5rem;
-}
-.desc-tour .price p {
-	font-size: 0.6rem;
-	margin-top: -1rem;
-}
-.desc-tour .price span {
-	color: orangered;
-	font-size: 1.5rem;
-}
-.desc-packages {
-	width: 100%;
-	background-color: #fff;
-}
-.details-tour {
-	color: rgb(67, 114, 233);
-	font-size: 0.8rem;
-	margin-top: -4.5rem;
-}
-
-.container-data:hover .desc-tour .price {
-	padding-bottom: 1rem;
-}
-.container-data:hover .wrapp-img-tour {
-	height: 30px;
-}
-.container-data:hover .desc-tour {
-	padding: 1rem;
-}
-.container-data:hover .desc-tour h3 {
-	margin: 1rem 0;
-	font-size: 1.3rem;
-}
-.container-data:hover .desc-tour-city {
-	font-size: 0.8rem;
-	text-align: start;
 }

@@ -42,7 +42,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.3rem 6.2rem;
+	padding: 0.7rem 6.2rem;
 	background-color: rgb(238, 235, 235);
 	position: relative;
 }
@@ -90,23 +90,23 @@ header {
 	grid-template-columns: 1fr 2fr;
 	position: absolute;
 	left: 5%;
-	top: 0;
-	transform: translateY(-100%);
-	padding: 2.3rem;
+	top: 0%;
+	transform: translateY(-90%);
+	padding: 2.3rem 0;
 	z-index: -1;
-	opacity: 0;
 	color: black;
+	opacity: 1;
+	transition: 0.7s ease-out opacity;
+}
+.hover:hover .container-banner {
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(12%);
 }
 .nav-links a:hover {
 	color: rgb(67, 114, 233);
 }
 
-.hover-me:hover .container-banner {
-	transform: translateY(12%);
-	z-index: 1;
-	opacity: 1;
-	animation: height 0.2s ease-out forwards;
-}
 .container-banner .text-banner {
 	display: flex;
 	flex-direction: column;

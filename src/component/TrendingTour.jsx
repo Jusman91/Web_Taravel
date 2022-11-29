@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContentDataStyles.css';
+import './TrendingTourStyles.css';
 import TourImg1 from './../asset/tour/t1.jpg';
 import TourImg2 from './../asset/tour/t2.jpg';
 import TourImg3 from './../asset/tour/t3.jpg';
@@ -17,7 +17,7 @@ import ContentData from './ContentData';
 function TrendingTour() {
 	return (
 		<>
-			<section className='container-content'>
+			<section className='container-tour-packages'>
 				<div className='head'>
 					<h2>Trending Tour Packages</h2>
 					<p>
@@ -130,7 +130,7 @@ function TrendingTour() {
 						btnClass='btn-hide'
 						descTourHover='
 						Rencanakan liburan Natal Anda dengan berwisata ke Korea Selatan. Anda akan diajak tak hanya menelusuri Kota Seoul yang modern, tetapi juga jalan-jalan ke Pulau Jeju-nya yang cantik. Ayo, segera ambil paket wisata ini dan rasakan pengalaman tak terlupakan menikmati sunset di Jeju, melihat indahnya Seongup Folk Village, jalan-jalan di Gwongsemsong Fortress, berfoto dengan Hanbok di Gyeongbok Palace, hingga berbelanja di Dongdaemun Market. Reservasi paket ini sekarang untuk keberangkatan tanggal 22 Desember 2022.'
-						details='More Details'
+						details='1 Departure Dates'
 					/>
 					<ContentData
 						containerData='container-data'
@@ -146,7 +146,7 @@ function TrendingTour() {
 						btnClass='btn-hide'
 						descTourHover='
 						Habiskan libur Natal dan Tahun Baru Anda dengan mengunjungi Kota Seoul dan Pulau Jeju di Korea Selatan. Pulau Jeju yang indah bisa anda eksplore bersama kami. Nikmati indahnya pemandangan matahari terbit di Sunrise Peak, berfoto di Nami Island yang cantik, bermain sampai puas di Everland Theme Park, mengunjungi objek wisata terkenal N-Seoul Tower, hingga menelusuri jalan Gangnam Street yang terkenal. Reservasi paket ini sekarang untuk keberangkatan tanggal 29 Desember 2022.'
-						details='More Details'
+						details='1 Departure Dates'
 					/>
 					<ContentData
 						containerData='container-data'
@@ -178,7 +178,7 @@ function TrendingTour() {
 						btnClass='btn-hide'
 						descTourHover='
 						Habiskan musim semi kamu dengan berlibur di Korea Selatan. Ayo, jangan lewarkan kesempatan untuk melihat indahnya bunga bermekaran di Nami Island. Lalu, potret momen liburan seru kamu di Soyanggang Skywalk, Gwanghwamun Square, dan di Gyeongbok Palace. Tak lupa, nikmati serunya jalan-jalan di Gwongsemsong Fortress dan Myeongdong yang terkenal. Ayo, reservasi paket ini sekarang untuk keberangkatan hingga 5 April 2023.'
-						details='More Details'
+						details='1 Departure Dates'
 					/>
 					<ContentData
 						containerData='container-data'
@@ -194,7 +194,7 @@ function TrendingTour() {
 						btnClass='btn-hide'
 						descTourHover='
 						Seoul dan Jeju adalah dua kota di Korea Selatan yang memancarkan pesona berbeda. Jika seoul tampil sebagai kota modern, maka Jeju hadir dengan keindahan alamnya yang masih alami. Ayo, rasakan sensasi liburan di dua kota tersebut selama musim semi di Korea. Anda akan diajak ke Teddy Bear Museum di Pulau Jeju, menikmati matahari terbit di Sunrise Peak, melihat bangunan rumah tradisional di Seongup Folk Village, berfoto dengan latar belakang bunga yang bermekaran di Nami Island dan Gyeongbok Palace, hingga berbelanja di Dongdaemun Market yang terkenal. Reservasi paket ini sekarang untuk keberangkatan hingga 5 April 2023.'
-						details='More Details'
+						details='2 Departure Dates'
 					/>
 					<ContentData
 						containerData='container-data'
@@ -210,7 +210,7 @@ function TrendingTour() {
 						btnClass='btn-hide'
 						descTourHover='
 						Yuk, habiskan momen liburan akhir tahun dan awal tahun di Turki. Menawarkan pemandangan musim dingin yang indah, Turki cocok menjadi destinasi liburan Anda kali ini. Anda akan kami ajak melihat Hagia Sophia yang megah, mengunjungi Blue Mosque, jalan-jalan ke Hierapolis, eksplore kota Cappadocia yang indah dengan balon udaranya, menikmati pemandangan laut Istanbul yang indah dari atas Bosphorus Cruise, hingga berbelanja oleh-oleh khas Turki di Grand Bazaar. Reservasi sekarang untuk keberangkatan tanggal 26 Desember 2022.'
-						details='More Details'
+						details='2 Departure Dates'
 					/>
 					<ContentData
 						containerData='container-data'

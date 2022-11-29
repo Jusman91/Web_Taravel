@@ -1,5 +1,7 @@
 import React from 'react';
 import HeroVideo from '../component/HeroVideo';
+import XperiencesTour from '../component/XperiencesTour';
+
 
 
 
@@ -9,14 +11,7 @@ function Xperiences() {
   return (
     <>
       <HeroVideo />
-      <div>
-        <h1>Xperiences</h1>
-      </div>
-
-
-
-
-
+      <XperiencesTour />
     </>
   )
 }
