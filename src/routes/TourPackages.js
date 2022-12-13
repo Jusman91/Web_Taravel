@@ -1,6 +1,7 @@
 import React from 'react';
-import HeroVideo from '../component/HeroVideo';
-import TrendingTour from '../component/TrendingTour';
+import Hero from '../components/hero/Hero';
+import SearchingPackages from '../components/SearchingPackages';
+import TrendingTour from '../components/main/tour_packages/TrendingTour';
 
 
 
@@ -9,7 +10,8 @@ import TrendingTour from '../component/TrendingTour';
 function TourPackages() {
   return (
     <>
-      <HeroVideo />
+      <Hero />
+      <SearchingPackages />
       <TrendingTour />
     </>
   )

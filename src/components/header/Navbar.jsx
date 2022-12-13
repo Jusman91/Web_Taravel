@@ -1,9 +1,15 @@
-import './NavbarStyles.css';
+import '../header/NavbarStyles.css';
 import { Link } from 'react-router-dom';
-import Logo from './../asset/p1.png';
+import Logo from '../../asset/logo/p1.png';
 import { HiThumbUp } from 'react-icons/hi';
+import { useState } from 'react';
 
 function Navbar() {
+	const [activeLink, setActiveLink] = useState('/');
+
+	const onUpdateActiveLink = (value) => {
+		setActiveLink(value);
+	};
 	return (
 		<header>
 			<div className='top-header'>
@@ -29,12 +35,24 @@ function Navbar() {
 				<ul className='nav-menu'>
 					<li className='nav-links'>
 						<div>
-							<Link className='active' to='/'>
+							<Link
+								to='/'
+								className={
+									activeLink === '/' ? 'active' : ''
+								}
+								onClick={() => onUpdateActiveLink('/')}>
 								Home
 							</Link>
 						</div>
 						<div className='hover'>
-							<Link className='hover-me' to='/flights'>
+							<Link
+								to='/flights'
+								className={
+									activeLink === 'flights' ? 'active' : ''
+								}
+								onClick={() =>
+									onUpdateActiveLink('flights')
+								}>
 								Flights
 							</Link>
 							<div className='container-banner'>
@@ -86,15 +104,44 @@ function Navbar() {
 							</div>
 						</div>
 						<div>
-							<Link className='hover-me' to='/hotels'>
+							<Link
+								to='/hotels'
+								className={
+									activeLink === 'hotels' ? 'active' : ''
+								}
+								onClick={() =>
+									onUpdateActiveLink('hotels')
+								}>
 								Hotels
 							</Link>
 						</div>
 						<div>
-							<Link to='/tourpackages'>Tour Packages</Link>
+							<Link
+								to='/tourpackages'
+								className={
+									activeLink === 'tourpackages'
+										? 'active'
+										: ''
+								}
+								onClick={() =>
+									onUpdateActiveLink('tourpackages')
+								}>
+								Tour Packages
+							</Link>
 						</div>
 						<div>
-							<Link to='/xperiences'>Xperiences</Link>
+							<Link
+								to='/xperiences'
+								className={
+									activeLink === 'xperiences'
+										? 'active'
+										: ''
+								}
+								onClick={() =>
+									onUpdateActiveLink('xperiences')
+								}>
+								Xperiences
+							</Link>
 						</div>
 						<div>
 							<Link to='/attractions'>Attractions</Link>

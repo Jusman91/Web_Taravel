@@ -1,11 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './SlideStyles.css';
-import Banner1 from './../asset/b2.jpg';
-import Banner2 from './../asset/b3.jpg';
-import Banner3 from './../asset/b4.jpg';
-import Banner4 from './../asset/b5.jpg';
-import Banner5 from './../asset/b1.jpg';
+import '../banners/SlideStyles.css';
+import Banner1 from '../../asset/banner/b2.jpg';
+import Banner2 from '../../asset/banner/b3.jpg';
+import Banner3 from '../../asset/banner/b4.jpg';
+import Banner4 from '../../asset/banner/b5.jpg';
+import Banner5 from '../../asset/banner/b1.jpg';
 
 function Slide() {
 	return (

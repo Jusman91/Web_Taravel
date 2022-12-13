@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroVideo from '../component/HeroVideo';
-import HotelsOffers from '../component/HotelsOffers';
-import BannerSlide from '../component/BannerSlide';
+import HeroVideo from '../components/hero/HeroVideo';
+import HotelsOffers from '../components/main/hotels/HotelsOffers';
+import BannerSlide from '../components/banners/BannerSlide';
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroVideo from '../component/HeroVideo';
-import XperiencesTour from '../component/XperiencesTour';
+import HeroVideo from '../components/hero/HeroVideo';
+import XperiencesTour from '../components/main/tour_xperiences/XperiencesTour';
 
 
 

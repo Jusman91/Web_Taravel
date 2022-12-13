@@ -1,10 +1,10 @@
 import React from 'react';
-import HeroVideo from '../component/HeroVideo';
-import BannerSlide from '../component/BannerSlide';
-import HotelsOffers from '../component/HotelsOffers';
-import FlightsOffers from '../component/FlightsOffers';
-import XperiencesTour from '../component/XperiencesTour';
-import TrendingTour from '../component/TrendingTour';
+import HeroVideo from '../components/hero/HeroVideo';
+import BannerSlide from '../components/banners/BannerSlide';
+import HotelsOffers from '../components/main/hotels/HotelsOffers';
+import FlightsOffers from '../components/main/flights/FlightsOffers';
+import XperiencesTour from '../components/main/tour_xperiences/XperiencesTour';
+import TrendingTour from '../components/main/tour_packages/TrendingTour';
 
 
 

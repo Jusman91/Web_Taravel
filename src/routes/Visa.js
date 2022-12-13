@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroVideo from '../component/HeroVideo';
+import HeroVideo from '../components/hero/HeroVideo';
 
 
 

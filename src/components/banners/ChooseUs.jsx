@@ -1,6 +1,6 @@
 import React from 'react';
-import ChooseUsData from './ChooseUsData';
-import './ChooseUsStyles.css';
+import ChooseUsData from '../banners/ChooseUsData';
+import '../banners/ChooseUsStyles.css';
 
 function ChooseUs() {
 	return (

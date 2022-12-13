@@ -3,9 +3,9 @@ import './FooterStyles.css';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import Logo from './../asset/p1.png';
-import Logo2 from './../asset/l2.jpg';
-import FooterData from './FooterData';
+import Logo from '../../asset/logo/p1.png';
+import Logo2 from '../../asset/logo/l2.jpg';
+import FooterData from '../footer/FooterData';
 
 function Footer() {
 	return (

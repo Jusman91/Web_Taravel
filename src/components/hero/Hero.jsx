@@ -1,8 +1,8 @@
 import React from 'react';
-import './HeroStyles.css';
+import '../hero/HeroStyles.css';
 import Carousel from 'react-bootstrap/Carousel';
-import HeroImg1 from './../asset/hero/h1.jpg';
-import HeroImg2 from './../asset/hero/h2.jpg';
+import HeroImg1 from '../../asset/hero/h1.jpg';
+import HeroImg2 from '../../asset/hero/h2.jpg';
 
 function Hero() {
 	return (

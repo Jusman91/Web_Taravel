@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContentDataStyles.css';
+import '../data/ContentDataStyles.css';
 
 function ContentData(props) {
 	return (

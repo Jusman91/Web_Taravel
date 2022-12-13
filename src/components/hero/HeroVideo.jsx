@@ -1,7 +1,7 @@
 import React from 'react';
-import './HeroVideoStyles.css';
+import '../hero/HeroVideoStyles.css';
 import { Link } from 'react-router-dom';
-import heroVideo from './../asset/v1.mp4';
+import heroVideo from '../../asset/hero/v1.mp4';
 
 function HeroVideo() {
 	return (
