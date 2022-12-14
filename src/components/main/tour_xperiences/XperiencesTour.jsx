@@ -3,8 +3,8 @@ import '../data/ContentDataStyles.css';
 import XperiencesData from './XperiencesData';
 import ContentData from '../data/ContentData';
 
-function Xperiences() {
-	const data = XperiencesData();
+function XperiencesTour({ xp }) {
+	const data = XperiencesData(xp);
 	return (
 		<>
 			<section className='container-content'>
@@ -37,4 +37,4 @@ function Xperiences() {
 	);
 }
 
-export default Xperiences;
+export default XperiencesTour;

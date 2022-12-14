@@ -6,8 +6,12 @@ import XperiencesImg5 from '../../../asset/xperiences/x5.jpg';
 import XperiencesImg6 from '../../../asset/xperiences/x6.jpg';
 import XperiencesImg7 from '../../../asset/xperiences/x7.jpg';
 import XperiencesImg8 from '../../../asset/xperiences/x8.jpg';
+import XperiencesImg9 from '../../../asset/xperiences/x9.jpg';
+import XperiencesImg10 from '../../../asset/xperiences/x10.jpg';
+import XperiencesImg11 from '../../../asset/xperiences/x11.jpg';
+import XperiencesImg12 from '../../../asset/xperiences/x12.jpg';
 
-export const XperiencesData = () => {
+export const XperiencesData = (xperiences) => {
   const data = [
     {
       cNameContainer: 'wrapp-img',
@@ -105,8 +109,61 @@ export const XperiencesData = () => {
       btnClass: 'btn',
       btn: 'Check Xperiences',
     }
-  ]
-  return data
-}
+  ];
+  const otherData = [
+    {
+      cNameContainer: 'wrapp-img',
+      cName: 'desc',
+      img1: XperiencesImg9,
+      textHeading: 'Peak Tram Sky Pas: Tram Ticket',
+      text1: 'Hong Kong',
+      text2: 'Starting from',
+      currency: 'IDR',
+      price: ' 188.370',
+      btnClass: 'btn',
+      btn: 'Check Xperiences',
+    },
+    {
+      cNameContainer: 'wrapp-img',
+      cName: 'desc',
+      img1: XperiencesImg10,
+      textHeading: 'Traditional Batik Fabric Drawing Class',
+      text1: 'Yogyakarta',
+      text2: 'Starting from',
+      currency: 'IDR',
+      price: ' 99.987',
+      btnClass: 'btn',
+      btn: 'Check Xperiences',
+    },
+    {
+      cNameContainer: 'wrapp-img',
+      cName: 'desc',
+      img1: XperiencesImg11,
+      textHeading: 'Slow and Easy Hiking in Hida-Osaka',
+      text1: 'Osaka',
+      text2: 'Starting from',
+      currency: 'IDR',
+      price: ' 151.345',
+      btnClass: 'btn',
+      btn: 'Check Xperiences',
+    },
+    {
+      cNameContainer: 'wrapp-img',
+      cName: 'desc',
+      img1: XperiencesImg12,
+      textHeading: 'Remarkables Ski Area Round-Trip',
+      text1: 'Queenstown',
+      text2: 'Starting from',
+      currency: 'IDR',
+      price: ' 342.957',
+      btnClass: 'btn',
+      btn: 'Check Xperiences',
+    }
+  ];
+  if (xperiences) {
+    return [...data, ...otherData]
+  };
+  return data;
+};
 
 export default XperiencesData

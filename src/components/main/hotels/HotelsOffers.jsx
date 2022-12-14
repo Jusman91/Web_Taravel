@@ -3,8 +3,8 @@ import '../data/ContentDataStyles.css';
 import HotelsData from './HotelsData';
 import ContentData from '../data/ContentData';
 
-function HotelsOffers() {
-	const data = HotelsData();
+function HotelsOffers({ hotels }) {
+	const data = HotelsData(hotels);
 	return (
 		<>
 			<section className='container-content'>

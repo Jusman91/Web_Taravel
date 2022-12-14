@@ -11,7 +11,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 6rem;
+	padding: 0 1.8rem;
 	background-color: rgb(4, 74, 250);
 	color: #fff;
 	font-size: 0.7rem;
@@ -25,6 +25,7 @@ header {
 }
 .top-header .login {
 	background: orangered;
+	margin-right: 2rem;
 }
 .login button {
 	border: none;
@@ -42,7 +43,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.7rem 6.2rem;
+	padding: 0.7rem 4rem;
 	background-color: rgb(238, 235, 235);
 	position: relative;
 }

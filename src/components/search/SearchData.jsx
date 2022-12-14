@@ -1,29 +1,21 @@
-import React, { useState } from 'react';
 import './SearchingFlightsStyles.css';
 import { FiMapPin } from 'react-icons/fi';
 import { CgCalendarDates } from 'react-icons/cg';
 import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 import { BsArrowRight } from 'react-icons/bs';
-import { addDays } from 'date-fns/esm';
 
-function SearchingPackages() {
-	const [startDate, setStartDate] = useState(new Date());
-	const [endDate, setEndDate] = useState(
-		addDays(new Date(), 1),
-	);
-
+export const SearchData = (props) => {
 	return (
-		<>
+		<div>
 			<section className='container-search'>
 				<div className='input-destination'>
 					<div className='icon'>
 						<FiMapPin />
 					</div>
-					<label htmlFor='destination'>Where to go:</label>
+					<label htmlFor='destination'>{props.label}</label>
 					<input
 						type='text'
-						placeholder='Select Destinations'
+						placeholder={props.placeholder}
 					/>
 				</div>
 				<div className='date'>
@@ -33,8 +25,10 @@ function SearchingPackages() {
 						</div>
 						<div>
 							<DatePicker
-								selected={startDate}
-								onChange={(date) => setStartDate(date)}
+								selected={props.startDate}
+								onChange={(date) =>
+									props.setStartDate(date)
+								}
 							/>
 						</div>
 					</div>
@@ -47,16 +41,16 @@ function SearchingPackages() {
 						</div>
 						<div>
 							<DatePicker
-								selected={endDate}
-								onChange={(date) => setEndDate(date)}
+								selected={props.endDate}
+								onChange={(date) => props.setEndDate(date)}
 							/>
 						</div>
 					</div>
 				</div>
 				<button className='btn-src'>Find</button>
 			</section>
-		</>
+		</div>
 	);
-}
+};
 
-export default SearchingPackages;
+export default SearchData;

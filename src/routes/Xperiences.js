@@ -1,6 +1,7 @@
 import React from 'react';
-import HeroVideo from '../components/hero/HeroVideo';
+import HeroXperiences from '../components/hero/HeroXperiences';
 import XperiencesTour from '../components/main/tour_xperiences/XperiencesTour';
+import SearchingXperiences from '../components/search/SearchingXperiences';
 
 
 
@@ -10,8 +11,9 @@ import XperiencesTour from '../components/main/tour_xperiences/XperiencesTour';
 function Xperiences() {
   return (
     <>
-      <HeroVideo />
-      <XperiencesTour />
+      <HeroXperiences />
+      <SearchingXperiences />
+      <XperiencesTour xp />
     </>
   )
 }

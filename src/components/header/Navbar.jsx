@@ -144,13 +144,24 @@ function Navbar() {
 							</Link>
 						</div>
 						<div>
-							<Link to='/attractions'>Attractions</Link>
+							<Link
+								to='/attractions'
+								className={
+									activeLink === 'attractions'
+										? 'active'
+										: ''
+								}
+								onClick={() =>
+									onUpdateActiveLink('attractions')
+								}>
+								Attractions
+							</Link>
 						</div>
 						<div>
-							<Link to='/visa'>Visa</Link>
+							<Link>Visa</Link>
 						</div>
 						<div>
-							<Link to='/insurance'>Insurance</Link>
+							<Link>Insurance</Link>
 						</div>
 					</li>
 				</ul>

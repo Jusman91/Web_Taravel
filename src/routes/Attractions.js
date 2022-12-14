@@ -1,5 +1,8 @@
 import React from 'react';
-import HeroVideo from '../components/hero/HeroVideo';
+import HeroAttractions from '../components/hero/HeroAttractions';
+import BannerSlide from '../components/banners/BannerSlide';
+import SearchingAttractions from '../components/search/SearchingAttractions';
+
 
 
 
@@ -8,14 +11,9 @@ import HeroVideo from '../components/hero/HeroVideo';
 function Attractions() {
   return (
     <>
-      <HeroVideo />
-      <div>
-        <h1>Attractions</h1>
-      </div>
-
-
-
-
+      <HeroAttractions />
+      <SearchingAttractions />
+      <BannerSlide />
 
     </>
   )

@@ -1,7 +1,8 @@
 import React from 'react';
-import HeroVideo from '../components/hero/HeroVideo';
 import HotelsOffers from '../components/main/hotels/HotelsOffers';
 import BannerSlide from '../components/banners/BannerSlide';
+import HeroHotels from '../components/hero/HeroHotels';
+import SearchingHotels from '../components/search/SearchingHotels';
 
 
 
@@ -10,8 +11,9 @@ import BannerSlide from '../components/banners/BannerSlide';
 function Hotels() {
   return (
     <>
-      <HeroVideo />
-      <HotelsOffers />
+      <HeroHotels />
+      <SearchingHotels />
+      <HotelsOffers hotels />
       <BannerSlide />
 
 
