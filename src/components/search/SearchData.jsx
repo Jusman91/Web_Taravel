@@ -1,4 +1,4 @@
-import './SearchingFlightsStyles.css';
+import './SearchingDataStyles.css';
 import { FiMapPin } from 'react-icons/fi';
 import { CgCalendarDates } from 'react-icons/cg';
 import DatePicker from 'react-datepicker';
