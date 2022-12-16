@@ -3,10 +3,13 @@ import SearchData from './SearchData';
 export const SearchingAttractions = () => {
 	return (
 		<>
-			<SearchData
-				label='Country:'
-				placeholder='Select To Go...'
-			/>
+			<div className='container-grid'>
+				<SearchData
+					label='Country:'
+					placeholder='City, Country'
+				/>
+				<button className='btn-src'>Search</button>
+			</div>
 		</>
 	);
 };

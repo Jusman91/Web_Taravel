@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './SearchingDataStyles.css';
+import { useState } from 'react';
+import './SearchingFlights.css';
 import { FiMapPin } from 'react-icons/fi';
 import { CgCalendarDates } from 'react-icons/cg';
 import { BsArrowRight } from 'react-icons/bs';
@@ -8,6 +8,7 @@ import { TbArmchair } from 'react-icons/tb';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { addDays } from 'date-fns/esm';
+import RangeDate from './RangeDate';
 
 function SearchingFlights() {
 	const [startDate, setStartDate] = useState(new Date());
@@ -89,12 +90,27 @@ function SearchingFlights() {
 						<FiMapPin />
 					</div>
 					<select name='destination' id=''>
-						<option value=''>Select Departure...</option>
+						<option value=''>Select Destination...</option>
 						<option value=''>Select 1</option>
 						<option value=''>Select 2</option>
 					</select>
 				</div>
-				<div className='date'>
+				<RangeDate
+					icon1={CgCalendarDates}
+					DatePicker1={DatePicker}
+					startDate={startDate}
+					setStartDate={setStartDate}
+					enddate={
+						show === 'round-trip'
+							? 'end-date'
+							: 'hidden-date'
+					}
+					DatePicker2={DatePicker}
+					icon2={BsArrowRight}
+					endDate={endDate}
+					setEndDate={setEndDate}
+				/>
+				{/* <div className='date'>
 					<div className='start-date'>
 						<CgCalendarDates className='icon' />
 						<DatePicker
@@ -102,6 +118,7 @@ function SearchingFlights() {
 							onChange={(date) => setStartDate(date)}
 						/>
 					</div>
+
 					<div
 						className={
 							show === 'round-trip'
@@ -114,7 +131,7 @@ function SearchingFlights() {
 							onChange={(date) => setEndDate(date)}
 						/>
 					</div>
-				</div>
+				</div> */}
 				<div
 					onClick={handleCategory}
 					className='age-category'>

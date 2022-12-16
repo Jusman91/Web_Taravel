@@ -6,9 +6,9 @@ import { BsArrowRight } from 'react-icons/bs';
 
 export const SearchData = (props) => {
 	return (
-		<div>
-			<section className='container-search'>
-				<div className='input-destination'>
+		<>
+			<section className='wrapper-input'>
+				<div className='input-destination-data'>
 					<div className='icon'>
 						<FiMapPin />
 					</div>
@@ -18,38 +18,8 @@ export const SearchData = (props) => {
 						placeholder={props.placeholder}
 					/>
 				</div>
-				<div className='date'>
-					<div className='start-date'>
-						<div className='icon'>
-							<CgCalendarDates />
-						</div>
-						<div>
-							<DatePicker
-								selected={props.startDate}
-								onChange={(date) =>
-									props.setStartDate(date)
-								}
-							/>
-						</div>
-					</div>
-					<div className='end-date'>
-						<div className='icon-to'>
-							<BsArrowRight />
-						</div>
-						<div className='icon'>
-							<CgCalendarDates />
-						</div>
-						<div>
-							<DatePicker
-								selected={props.endDate}
-								onChange={(date) => props.setEndDate(date)}
-							/>
-						</div>
-					</div>
-				</div>
-				<button className='btn-src'>Find</button>
 			</section>
-		</div>
+		</>
 	);
 };
 
