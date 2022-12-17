@@ -1,0 +1,103 @@
+.nav-menu .container-banner {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	position: absolute;
+	left: 5%;
+	top: 0%;
+	transform: translateY(-90%);
+	padding: 2.3rem 0;
+	z-index: -1;
+	color: black;
+	opacity: 1;
+	transition: 0.7s ease-out opacity;
+}
+.hover:hover .container-banner {
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(12%);
+}
+
+.container-banner .text-banner {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(4, 74, 250);
+	padding: 2.5rem;
+	font-weight: 300;
+	color: #fff;
+	cursor: initial;
+}
+.text-banner h2 {
+	font-size: 1.5rem;
+	margin-top: 0.2rem;
+	margin-bottom: 3rem;
+	font-weight: 500;
+}
+.container-banner .text-banner button {
+	width: 60%;
+	font-size: 1rem;
+	background-color: rgb(67, 114, 233);
+	padding: 0.5rem 1.5rem;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin-top: 0.3rem;
+}
+.text-banner button:hover {
+	background-color: #fff;
+	color: rgb(67, 114, 233);
+}
+.container-banner .banner {
+	background-color: rgb(67, 114, 233);
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+}
+.banner .des-banner {
+	text-align: center;
+	color: rgb(4, 74, 250);
+	padding-top: 3rem;
+	font-size: 1.1rem;
+}
+.banner .des-banner {
+	background-image: url(../../asset/banner/b1.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 5px solid rgb(50, 105, 243);
+	cursor: initial;
+}
+.banner .des-banner h3,
+.des-banner h4 {
+	font-size: 1.5rem;
+}
+.banner .destination-list {
+	text-align: center;
+	color: #fff;
+	padding: 3rem;
+	cursor: initial;
+}
+.banner .destination-list h2 {
+	font-size: 1.7rem;
+	font-weight: 400;
+	margin-bottom: 2.5rem;
+}
+.wrapp-list {
+	display: flex;
+	text-align: start;
+	gap: 4rem;
+	padding: 0 1rem;
+}
+.wrapp-list div {
+	font-size: 1rem;
+	cursor: pointer;
+}
+.wrapp-list .a-list {
+	display: flex;
+	gap: 0 1rem;
+	font-size: 1rem;
+}
+.wrapp-list .a-list .icon {
+	margin-top: -0.3rem;
+	color: #fff;
+	font-size: 1.5rem;
+}

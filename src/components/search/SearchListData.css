@@ -1,0 +1,58 @@
+.container-section {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(100px, auto)
+	);
+	width: 94%;
+	height: 130px;
+	font-size: 0.9rem;
+	position: absolute;
+	left: 3%;
+	top: 65%;
+	z-index: 100;
+}
+.container-list {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	width: 94%;
+	height: 90px;
+	gap: 3rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -94%);
+	background-color: rgba(67, 114, 233, 0.9);
+	z-index: 100;
+	border-bottom: 1px solid rgb(202, 198, 198);
+}
+
+.wrapper-list .label {
+	color: rgb(161, 158, 158);
+	font-size: 1rem;
+	padding-bottom: 0.4rem;
+	cursor: pointer;
+}
+.wrapper-list .icons {
+	font-size: 2rem;
+	color: rgb(161, 158, 158);
+	cursor: pointer;
+}
+.wrapper-list-active {
+	transform: scale(1.1);
+	color: #fff;
+	border-bottom: 5px solid #fff;
+}
+.wrapper-list-active .label {
+	color: #fff;
+	font-size: 1.1rem;
+	padding-bottom: 0.3rem;
+	cursor: pointer;
+}
+.wrapper-list-active .icons {
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+}
