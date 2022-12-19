@@ -4,7 +4,6 @@
 		auto-fit,
 		minmax(100px, auto)
 	);
-	/* gap: 0 1rem; */
 	background-color: rgba(67, 114, 233, 0.9);
 	width: 94%;
 	height: 130px;
@@ -66,7 +65,7 @@
 	align-items: center;
 	border-left: 1px solid rgb(202, 198, 198);
 }
-.text {
+.date .text {
 	color: #fff;
 	padding-left: 1rem;
 }

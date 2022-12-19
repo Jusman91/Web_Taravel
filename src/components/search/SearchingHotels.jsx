@@ -65,28 +65,6 @@ export const SearchingHotels = () => {
 					endDate={endDate}
 					setEndDate={setEndDate}
 				/>
-				{/* <div className='date'>
-					<div className='start-date'>
-						<CgCalendarDates className='icon' />
-						<DatePicker
-							selected={startDate}
-							onChange={(date) => setStartDate(date)}
-						/>
-					</div>
-
-					<div
-						className={
-							show === 'round-trip'
-								? 'end-date'
-								: 'hidden-date'
-						}>
-						<BsArrowRight className='icon-to' />
-						<DatePicker
-							selected={endDate}
-							onChange={(date) => setEndDate(date)}
-						/>
-					</div>
-				</div> */}
 				<div
 					onClick={handleCategory}
 					className='booking-room'>

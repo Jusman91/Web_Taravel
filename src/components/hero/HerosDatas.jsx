@@ -11,11 +11,7 @@ export const HerosDatas = (props) => {
 				<Carousel.Item
 					className='wrapper-img'
 					interval-={300}>
-					<img
-						className='heros'
-						src={props.img1}
-						alt='Herop First slide'
-					/>
+					<img src={props.img1} alt='Herop First slide' />
 				</Carousel.Item>
 				<Carousel.Item
 					className='wrapper-img'

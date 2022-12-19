@@ -27,14 +27,14 @@ header {
 	background: orangered;
 	margin-right: 2rem;
 }
-.login button {
+.top-header .login button {
 	border: none;
 	outline: none;
 	background: transparent;
 	padding: 1rem 1.2rem;
 	color: #fff;
 }
-.login i {
+.top-header .login i {
 	font-size: 0.7rem;
 	padding-right: 0.8rem;
 }
@@ -47,30 +47,30 @@ header {
 	background-color: #fff;
 	position: relative;
 }
-.nav-logo {
+.navbar-items .nav-logo {
 	position: relative;
 }
-.nav-logo h1 {
+.navbar-items .nav-logo h1 {
 	color: rgb(5, 5, 106);
 	font-weight: 400 bold;
 	font-size: 1.6rem;
 }
-.nav-logo p {
+.navbar-items .nav-logo p {
 	font-size: 0.55rem;
 	color: rgb(5, 5, 106);
 	text-align: end;
 }
-.nav-logo span {
+.navbar-items .nav-logo span {
 	color: aqua;
 }
-.nav-logo img {
+.navbar-items .nav-logo img {
 	width: 25%;
 	position: absolute;
 	right: -30%;
 	top: -10%;
 	transform: rotate(30deg);
 }
-.nav-menu .nav-links {
+.navbar-items .nav-menu .nav-links {
 	display: grid;
 	grid-template-columns: repeat(8, auto);
 	gap: 2.5rem;
@@ -78,14 +78,14 @@ header {
 	margin-bottom: 1rem;
 }
 
-.nav-menu .nav-links a {
+.navbar-items .nav-menu .nav-links a {
 	text-decoration: none;
 	font-size: 1rem;
 	color: #1a1a1a;
 }
-.nav-menu .nav-links .active {
+.navbar-items .nav-menu .nav-links .active {
 	color: rgb(67, 114, 233);
 }
-.nav-links a:hover {
+.navbar-items .nav-links a:hover {
 	color: rgb(67, 114, 233);
 }

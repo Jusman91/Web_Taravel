@@ -4,7 +4,7 @@ import SearchingFlights from './SearchingFlights';
 import SearchingHotels from './SearchingHotels';
 import SearchingPackages from './SearchingPackages';
 import SearchingXperiences from './SearchingXperiences';
-import SearchingAttractions from './SearchingHotels';
+import SearchingAttractions from './SearchingAttractions';
 import { BsShieldCheck } from 'react-icons/bs';
 import { FaPassport } from 'react-icons/fa';
 import { MdOutlineAttractions } from 'react-icons/md';
@@ -13,6 +13,7 @@ import { RiSuitcase3Line } from 'react-icons/ri';
 import { FaHotel } from 'react-icons/fa';
 import { IoMdPaperPlane } from 'react-icons/io';
 import SearchListData from './SearchListData';
+import SearchingInsurance from './SearchingInsurance';
 
 function SearchingHome() {
 	const [componentSearch, setComponentSearch] =
@@ -98,15 +99,18 @@ function SearchingHome() {
 							label='Visa'
 						/>
 					</div>
-					<SearchListData
-						cName={
-							componentSearch === 'insurance'
-								? 'wrapper-list-active'
-								: 'wrapper-list'
-						}
-						icon={BsShieldCheck}
-						label='Insurance'
-					/>
+					<div
+						onClick={() => setComponentSearch('insurance')}>
+						<SearchListData
+							cName={
+								componentSearch === 'insurance'
+									? 'wrapper-list-active'
+									: 'wrapper-list'
+							}
+							icon={BsShieldCheck}
+							label='Insurance'
+						/>
+					</div>
 				</div>
 
 				{componentSearch === 'flights' && (
@@ -124,26 +128,10 @@ function SearchingHome() {
 				{componentSearch === 'attractions' && (
 					<SearchingAttractions />
 				)}
-				{componentSearch === 'vis' && <SearchingHotels />}
 				{componentSearch === 'insurance' && (
-					<SearchingHotels />
+					<SearchingInsurance />
 				)}
 			</div>
-			{/* <div className='z-index-min'>
-					<SearchingFlights />
-				</div>
-				<div className='z-index-min'>
-					<SearchingHotels />
-				</div>
-				<div className='z-index-min'>
-					<SearchingPackages />
-				</div>
-				<div className='z-index-min'>
-					<SearchingXperiences />
-				</div>
-				<div className='z-index-min'>
-					<SearchingAttractions />
-				</div> */}
 		</>
 	);
 }

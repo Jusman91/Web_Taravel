@@ -6,56 +6,57 @@
 	display: grid;
 	grid-template-columns: repeat(
 		auto-fit,
-		minmax(300px, 1fr)
+		minmax(350px, 1fr)
 	);
 	overflow: hidden;
 	gap: 2.5rem 2rem;
 }
-.container-data {
+
+.wrapp-content-tour .container-data {
 	height: 470px;
 	border-bottom: 1px solid #999;
 	margin-bottom: 5rem;
 	position: relative;
 	overflow: hidden;
 }
-.wrapp-img-tour {
+.wrapp-content-tour .wrapp-img-tour {
 	height: 270px;
 	transition: 0.3s ease-in;
 }
-.wrapp-img-tour img {
+.wrapp-content-tour .wrapp-img-tour img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-.desc-tour {
+.wrapp-content-tour .desc-tour {
 	padding: 1.3rem 0;
 }
-.desc-tour h3 {
+.wrapp-content-tour .desc-tour h3 {
 	font-size: 1.7rem;
 	padding: 0.4rem 0;
 }
-.desc-tour h6 {
+.wrapp-content-tour .desc-tour h6 {
 	font-size: 0.8rem;
 }
-.desc-tour .price {
+.wrapp-content-tour .desc-tour .price {
 	display: flex;
 	gap: 0 5rem;
 	padding-top: 0.3rem;
 	padding-bottom: 3.5rem;
 }
-.desc-tour .price p {
+.wrapp-content-tour .desc-tour .price p {
 	font-size: 0.6rem;
 	margin-top: -1rem;
 }
-.desc-tour .price span {
+.wrapp-content-tour .desc-tour .price span {
 	color: orangered;
 	font-size: 1.5rem;
 }
-.desc-packages {
+.wrapp-content-tour .desc-packages {
 	width: 100%;
 	background-color: #fff;
 }
-.details-tour {
+.wrapp-content-tour .details-tour {
 	color: rgb(67, 114, 233);
 	font-size: 0.8rem;
 	margin-top: -4.5rem;
@@ -75,6 +76,6 @@
 	font-size: 1.3rem;
 }
 .container-data:hover .desc-tour-city {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	text-align: start;
 }

@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import Logo from '../../asset/logo/p1.png';
 import { useState } from 'react';
 import HoverData from './HoverData';
+import HoverHotels from './HoverHotels';
+import HoverXperiences from './HoverXperiences';
+import HoverTourPackages from './HoverTourPackages';
+import HoverInsurance from './HoverInsurance';
 
 function Navbar() {
 	const [activeLink, setActiveLink] = useState('/');
@@ -57,7 +61,7 @@ function Navbar() {
 							</Link>
 							<HoverData />
 						</div>
-						<div>
+						<div className='hover'>
 							<Link
 								to='/hotels'
 								className={
@@ -68,8 +72,9 @@ function Navbar() {
 								}>
 								Hotels
 							</Link>
+							<HoverHotels />
 						</div>
-						<div>
+						<div className='hover'>
 							<Link
 								to='/tourpackages'
 								className={
@@ -82,8 +87,9 @@ function Navbar() {
 								}>
 								Tour Packages
 							</Link>
+							<HoverTourPackages />
 						</div>
-						<div>
+						<div className='hover'>
 							<Link
 								to='/xperiences'
 								className={
@@ -96,6 +102,7 @@ function Navbar() {
 								}>
 								Xperiences
 							</Link>
+							<HoverXperiences />
 						</div>
 						<div>
 							<Link
@@ -114,8 +121,9 @@ function Navbar() {
 						<div>
 							<Link>Visa</Link>
 						</div>
-						<div>
+						<div className='hover'>
 							<Link>Insurance</Link>
+							<HoverInsurance />
 						</div>
 					</li>
 				</ul>
