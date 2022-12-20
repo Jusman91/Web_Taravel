@@ -1,0 +1,144 @@
+.container-login {
+	position: absolute;
+	background-color: rgb(67, 114, 233);
+	width: 600px;
+	padding: 1rem 0;
+	right: 4%;
+	top: 7.2%;
+	z-index: 999;
+}
+.container-login .login {
+	width: 1005;
+	background-color: #fff;
+	color: #1a1a1a;
+}
+.container-login .login h2 {
+	font-size: 2rem;
+	padding: 1.2rem;
+	z-index: 9999;
+}
+.container-login .input {
+	width: 100%;
+	display: flex;
+}
+.container-login .input input {
+	padding: 2rem 2rem;
+	width: 50%;
+	outline: none;
+	border: 1px solid rgb(202, 198, 198);
+	font-size: 1rem;
+}
+.container-login .text-login {
+	display: flex;
+	align-items: center;
+	padding: 1.3rem 2rem 0.5rem 2rem;
+	gap: 8rem;
+}
+.container-login .text-login span {
+	color: rgb(67, 114, 233);
+	cursor: pointer;
+}
+.container-login .text-login .forgetpassword h6 {
+	color: rgb(67, 114, 233);
+	cursor: pointer;
+}
+.container-login .btn-login {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+	color: #fff;
+	padding-top: 1rem;
+}
+.container-login .btn-login:hover {
+	animation: login 0.4s ease-in-out reverse;
+	color: #fff;
+}
+
+.modal-content {
+	background-image: url(../../asset/login/bg-login.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 60vw;
+	height: 35vw;
+	margin-left: -10%;
+	margin-top: 10%;
+	position: relative;
+}
+.modal-header {
+	border: none;
+}
+.description {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	text-align: end;
+	line-height: 2.4rem;
+}
+.description h1,
+.description span {
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+.description p {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.description .voucher {
+	text-align: start;
+	background-color: #1a1a1a;
+	color: #fff;
+	line-height: 0.2rem;
+	padding: 0.3rem;
+}
+.description .voucher h3 {
+	font-size: 2rem;
+}
+.description .voucher p {
+	font-size: 1.2rem;
+}
+.register {
+	width: 330px;
+	height: 529px;
+	background-color: rgba(67, 114, 233, 0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 2rem;
+	padding: 0 3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.register input {
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid rgb(202, 198, 198);
+	outline: none;
+	width: 100%;
+	padding: 1rem;
+	color: #fff;
+	font-size: 1.2rem;
+}
+.register ::placeholder {
+	color: #fff;
+}
+.register .btn-register {
+	background-color: #fff;
+	color: rgb(67, 114, 233);
+}
+.register .btn-register:hover {
+	background-color: rgb(238, 83, 27);
+	color: #fff;
+}
+
+@keyframes login {
+	from {
+	}
+
+	to {
+		transform: scale(1.2);
+	}
+}

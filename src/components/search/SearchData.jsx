@@ -1,8 +1,5 @@
 import './SearchingDataStyles.css';
 import { FiMapPin } from 'react-icons/fi';
-import { CgCalendarDates } from 'react-icons/cg';
-import DatePicker from 'react-datepicker';
-import { BsArrowRight } from 'react-icons/bs';
 
 export const SearchData = (props) => {
 	return (

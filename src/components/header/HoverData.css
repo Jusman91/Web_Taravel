@@ -1,10 +1,10 @@
 .container-banner {
-	width: 88.5%;
+	width: 92%;
 	height: 410px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	position: absolute;
-	left: 5.75%;
+	left: 4%;
 	top: 0%;
 	transform: translateY(-90%);
 	padding-top: 3.2rem;
@@ -12,6 +12,39 @@
 	color: black;
 	opacity: 1;
 	transition: 0.7s ease-out opacity;
+}
+.icons-hover,
+.icons-hover-insurance {
+	display: none;
+}
+.hover:hover .icons-hover-insurance {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	color: rgb(67, 114, 233);
+	border-bottom: 5px solid rgb(67, 114, 233);
+	width: 78px;
+	padding-bottom: 5px;
+	text-align: center;
+	bottom: -5%;
+}
+.hover:hover .icons-hover {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	color: rgb(67, 114, 233);
+	border-bottom: 5px solid rgb(67, 114, 233);
+	width: 130px;
+	padding-bottom: 5px;
+	text-align: center;
+	bottom: -5%;
+}
+.hover {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .hover:hover .container-banner {
 	opacity: 1;
@@ -108,14 +141,14 @@
 	display: grid;
 	grid-template-columns: repeat(
 		auto-fit,
-		minmax(300px, auto)
+		minmax(320px, auto)
 	);
 }
 .container-img {
 	position: relative;
 }
 .container-data-hover .wrapper-img {
-	width: 300px;
+	width: 320px;
 	height: 360px;
 }
 .container-data-hover .wrapper-img img {

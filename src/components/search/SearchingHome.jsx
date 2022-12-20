@@ -18,7 +18,6 @@ import SearchingInsurance from './SearchingInsurance';
 function SearchingHome() {
 	const [componentSearch, setComponentSearch] =
 		useState('flights');
-	console.log(componentSearch);
 	return (
 		<>
 			<div className='container-section'>
@@ -112,7 +111,8 @@ function SearchingHome() {
 						/>
 					</div>
 				</div>
-
+			</div>
+			<div className='container-all-search'>
 				{componentSearch === 'flights' && (
 					<SearchingFlights />
 				)}

@@ -5,11 +5,11 @@
 		minmax(100px, auto)
 	);
 	background-color: rgba(67, 114, 233, 0.9);
-	width: 94%;
+	width: 92%;
 	height: 130px;
 	font-size: 0.9rem;
 	position: absolute;
-	left: 3%;
+	left: 4%;
 	top: 55%;
 	z-index: 100;
 }

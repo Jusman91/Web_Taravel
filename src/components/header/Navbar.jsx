@@ -2,13 +2,17 @@ import '../header/NavbarStyles.css';
 import { Link } from 'react-router-dom';
 import Logo from '../../asset/logo/p1.png';
 import { useState } from 'react';
+import {
+	IoIosArrowDown,
+	IoIosArrowUp,
+} from 'react-icons/io';
 import HoverData from './HoverData';
 import HoverHotels from './HoverHotels';
 import HoverXperiences from './HoverXperiences';
 import HoverTourPackages from './HoverTourPackages';
 import HoverInsurance from './HoverInsurance';
 
-function Navbar() {
+function Navbar(props) {
 	const [activeLink, setActiveLink] = useState('/');
 
 	const onUpdateActiveLink = (value) => {
@@ -23,8 +27,10 @@ function Navbar() {
 					<li>Smailing Platinum</li>
 				</ul>
 				<div className='login'>
-					<button>Login</button>
-					<i className='bi bi-caret-down'></i>
+					<button onClick={() => props.setShowFormLogin()}>
+						Login
+					</button>
+					<IoIosArrowDown />
 				</div>
 			</div>
 
@@ -59,6 +65,9 @@ function Navbar() {
 								}>
 								Flights
 							</Link>
+							<div className='icons-hover'>
+								<IoIosArrowUp />
+							</div>
 							<HoverData />
 						</div>
 						<div className='hover'>
@@ -72,6 +81,9 @@ function Navbar() {
 								}>
 								Hotels
 							</Link>
+							<div className='icons-hover'>
+								<IoIosArrowUp />
+							</div>
 							<HoverHotels />
 						</div>
 						<div className='hover'>
@@ -87,6 +99,9 @@ function Navbar() {
 								}>
 								Tour Packages
 							</Link>
+							<div className='icons-hover'>
+								<IoIosArrowUp />
+							</div>
 							<HoverTourPackages />
 						</div>
 						<div className='hover'>
@@ -102,6 +117,9 @@ function Navbar() {
 								}>
 								Xperiences
 							</Link>
+							<div className='icons-hover'>
+								<IoIosArrowUp />
+							</div>
 							<HoverXperiences />
 						</div>
 						<div>
@@ -123,6 +141,9 @@ function Navbar() {
 						</div>
 						<div className='hover'>
 							<Link>Insurance</Link>
+							<div className='icons-hover-insurance'>
+								<IoIosArrowUp />
+							</div>
 							<HoverInsurance />
 						</div>
 					</li>

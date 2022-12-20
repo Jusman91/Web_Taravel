@@ -1,10 +1,10 @@
 .container-hover-tourpackages {
-	width: 88.5%;
+	width: 92%;
 	height: 410px;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	left: 5.75%;
+	left: 4%;
 	top: 0%;
 	transform: translateY(-90%);
 	padding-top: 3.2rem;
@@ -35,7 +35,6 @@
 	color: #fff;
 	border-bottom: 5px solid #fff;
 	padding-bottom: 1.7rem;
-
 	cursor: pointer;
 }
 .wrapper-content {
@@ -59,7 +58,7 @@
 }
 .grid-data .wrapper-img {
 	width: 220px;
-	height: 250px;
+	height: 240px;
 }
 .grid-data .wrapper-img img {
 	width: 100%;

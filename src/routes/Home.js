@@ -11,6 +11,7 @@ import SearchingHome from '../components/search/SearchingHome';
 
 
 function Home() {
+
   return (
     <>
       <HeroVideo />

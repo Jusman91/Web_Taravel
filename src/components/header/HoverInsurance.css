@@ -1,10 +1,10 @@
 .container-hover-insurance {
-	width: 88.5%;
+	width: 92%;
 	height: 410px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	position: absolute;
-	left: 5.75%;
+	left: 4%;
 	top: 0%;
 	transform: translateY(-90%);
 	padding-top: 3.2rem;

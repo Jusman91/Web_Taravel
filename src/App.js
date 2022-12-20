@@ -11,13 +11,25 @@ import Attractions from './routes/Attractions';
 import Navbar from './components/header/Navbar';
 import Footer from './components/footer/Footer';
 import ChooseUs from './components/banners/ChooseUs';
+import Login from './components/login/Login';
+import { useState } from 'react';
+
+
+
 
 
 
 function App() {
+  const [showFormLogin, setShowFormLogin] = useState('false')
+
+  const handleShow = () => {
+    setShowFormLogin(!showFormLogin)
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar setShowFormLogin={handleShow} />
+      {showFormLogin === !handleShow && (<Login />)}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='flights' element={<Flights />} />

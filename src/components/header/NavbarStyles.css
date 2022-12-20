@@ -26,6 +26,11 @@ header {
 .top-header .login {
 	background: orangered;
 	margin-right: 2rem;
+	padding-right: 1rem;
+	cursor: pointer;
+}
+.top-header .login:hover {
+	animation: rotatelogin 1.5s ease-in-out;
 }
 .top-header .login button {
 	border: none;
@@ -88,4 +93,15 @@ header {
 }
 .navbar-items .nav-links a:hover {
 	color: rgb(67, 114, 233);
+}
+
+@keyframes rotatelogin {
+	from {
+		transform: rotate(0deg);
+		background-color: #fff;
+	}
+	to {
+		transform: rotate(720deg);
+		background-color: red;
+	}
 }
