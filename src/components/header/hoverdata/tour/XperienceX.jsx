@@ -1,9 +1,9 @@
 import Slider from 'react-slick';
-import GroupXData from './GroupXData';
-import ContainerHover from './ContainerHover';
+import XperienceXData from '../tour/XperienceXData';
+import HoverData from '../component_data/HoverData';
 
-function OpenTripX() {
-	const data = GroupXData();
+function XperienceX() {
+	const data = XperienceXData();
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -19,7 +19,7 @@ function OpenTripX() {
 			<div className='grid-data'>
 				<Slider {...settings}>
 					{data.map((item, idx) => (
-						<ContainerHover
+						<HoverData
 							key={idx}
 							image={item.image}
 							text={item.text}
@@ -31,4 +31,4 @@ function OpenTripX() {
 	);
 }
 
-export default OpenTripX;
+export default XperienceX;

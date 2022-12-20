@@ -1,9 +1,9 @@
-import HoverImgXperiences1 from '../../asset/xperiences/xp1.jpg'
-import HoverImgXperiences2 from '../../asset/xperiences/xp2.jpg'
-import HoverImgXperiences3 from '../../asset/xperiences/xp3.jpg'
-import HoverImgXperiences4 from '../../asset/xperiences/xp4.jpg'
-import HoverImgXperiences5 from '../../asset/xperiences/xp5.jpg'
-import HoverImgXperiences6 from '../../asset/xperiences/xp6.jpg'
+import HoverImgXperiences1 from '../../../../asset/xperiences/xp1.jpg'
+import HoverImgXperiences2 from '../../../../asset/xperiences/xp2.jpg'
+import HoverImgXperiences3 from '../../../../asset/xperiences/xp3.jpg'
+import HoverImgXperiences4 from '../../../../asset/xperiences/xp4.jpg'
+import HoverImgXperiences5 from '../../../../asset/xperiences/xp5.jpg'
+import HoverImgXperiences6 from '../../../../asset/xperiences/xp6.jpg'
 
 export const HoverXperiencesData = () => {
   const data = [

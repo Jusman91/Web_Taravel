@@ -1,7 +1,7 @@
-import '../header/HoverData.css';
+import '../component_data/HoverData.css';
 import Slider from 'react-slick';
-import HoverHotelsData from './HoverHotelsData';
-import ContainerHover from './ContainerHover';
+import HoverHotelsData from '../hotels/HoverHotelsData';
+import HoverData from '../component_data/HoverData';
 
 const HoverHotels = () => {
 	const data = HoverHotelsData();
@@ -27,7 +27,7 @@ const HoverHotels = () => {
 				<div className='container-data-hover'>
 					<Slider {...settings}>
 						{data.map((item, idx) => (
-							<ContainerHover
+							<HoverData
 								key={idx}
 								image={item.image}
 								text={item.text}

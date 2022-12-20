@@ -1,13 +1,13 @@
-import XperienceX1 from '../../asset/xperiences/xpt1.jpg'
-import XperienceX2 from '../../asset/xperiences/xpt2.jpg'
-import XperienceX3 from '../../asset/xperiences/xpt3.jpg'
-import XperienceX4 from '../../asset/xperiences/xpt4.jpg'
-import XperienceX5 from '../../asset/xperiences/xpt5.jpg'
-import XperienceX6 from '../../asset/xperiences/xpt6.jpg'
-import XperienceX7 from '../../asset/xperiences/xpt7.jpg'
-import XperienceX8 from '../../asset/xperiences/xpt8.jpg'
-import XperienceX9 from '../../asset/xperiences/xpt9.jpg'
-import XperienceX10 from '../../asset/xperiences/xpt10.jpg'
+import XperienceX1 from '../../../../asset/xperiences/xpt1.jpg'
+import XperienceX2 from '../../../../asset/xperiences/xpt2.jpg'
+import XperienceX3 from '../../../../asset/xperiences/xpt3.jpg'
+import XperienceX4 from '../../../../asset/xperiences/xpt4.jpg'
+import XperienceX5 from '../../../../asset/xperiences/xpt5.jpg'
+import XperienceX6 from '../../../../asset/xperiences/xpt6.jpg'
+import XperienceX7 from '../../../../asset/xperiences/xpt7.jpg'
+import XperienceX8 from '../../../../asset/xperiences/xpt8.jpg'
+import XperienceX9 from '../../../../asset/xperiences/xpt9.jpg'
+import XperienceX10 from '../../../../asset/xperiences/xpt10.jpg'
 
 
 export const XperienceXData = () => {

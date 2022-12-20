@@ -1,18 +1,18 @@
-import '../header/NavbarStyles.css';
+import '../navbar/NavbarStyles.css';
 import { Link } from 'react-router-dom';
-import Logo from '../../asset/logo/p1.png';
+import Logo from '../../../asset/logo/p1.png';
 import { useState } from 'react';
 import {
 	IoIosArrowDown,
 	IoIosArrowUp,
 } from 'react-icons/io';
-import HoverData from './HoverData';
-import HoverHotels from './HoverHotels';
-import HoverXperiences from './HoverXperiences';
-import HoverTourPackages from './HoverTourPackages';
-import HoverInsurance from './HoverInsurance';
+import HoverFlights from '../hoverdata/flights/HoverFlights';
+import HoverHotels from '../hoverdata/hotels/HoverHotels';
+import HoverXperiences from '../hoverdata/xperiences/HoverXperiences';
+import HoverTourPackages from '../hoverdata/tour/HoverTourPackages';
+import HoverInsurance from '../hoverdata/insurance/HoverInsurance';
 
-function Navbar(props) {
+export const Navbar = (props) => {
 	const [activeLink, setActiveLink] = useState('/');
 
 	const onUpdateActiveLink = (value) => {
@@ -33,7 +33,6 @@ function Navbar(props) {
 					<IoIosArrowDown />
 				</div>
 			</div>
-
 			<nav className='navbar-items pb-0'>
 				<div className='nav-logo'>
 					<h1>
@@ -68,7 +67,7 @@ function Navbar(props) {
 							<div className='icons-hover'>
 								<IoIosArrowUp />
 							</div>
-							<HoverData />
+							<HoverFlights />
 						</div>
 						<div className='hover'>
 							<Link
@@ -151,6 +150,6 @@ function Navbar(props) {
 			</nav>
 		</header>
 	);
-}
+};
 
 export default Navbar;

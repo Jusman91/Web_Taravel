@@ -1,7 +1,7 @@
-import '../header/HoverData.css';
+import '../component_data/HoverData.css';
 import Slider from 'react-slick';
-import HoverXperiencesData from './HoverXperiencesData';
-import ContainerHover from './ContainerHover';
+import HoverXperiencesData from '../xperiences/HoverXperiencesData';
+import HoverData from '../component_data/HoverData';
 
 const HoverXperiences = () => {
 	const data = HoverXperiencesData();
@@ -27,7 +27,7 @@ const HoverXperiences = () => {
 				<div className='container-data-hover'>
 					<Slider {...settings}>
 						{data.map((item, idx) => (
-							<ContainerHover
+							<HoverData
 								key={idx}
 								image={item.image}
 								text={item.text}

@@ -1,9 +1,9 @@
 import Slider from 'react-slick';
-import XperienceXData from './XperienceXData';
-import ContainerHover from './ContainerHover';
+import GroupXData from '../tour/GroupXData';
+import HoverData from '../component_data/HoverData';
 
-function XperienceX() {
-	const data = XperienceXData();
+function GroupX() {
+	const data = GroupXData();
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -19,7 +19,7 @@ function XperienceX() {
 			<div className='grid-data'>
 				<Slider {...settings}>
 					{data.map((item, idx) => (
-						<ContainerHover
+						<HoverData
 							key={idx}
 							image={item.image}
 							text={item.text}
@@ -31,4 +31,4 @@ function XperienceX() {
 	);
 }
 
-export default XperienceX;
+export default GroupX;

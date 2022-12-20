@@ -1,8 +1,8 @@
 import Slider from 'react-slick';
-import GroupXData from './GroupXData';
-import ContainerHover from './ContainerHover';
+import GroupXData from '../tour/GroupXData';
+import HoverData from '../component_data/HoverData';
 
-function GroupX() {
+function OpenTripX() {
 	const data = GroupXData();
 	const settings = {
 		dots: true,
@@ -19,7 +19,7 @@ function GroupX() {
 			<div className='grid-data'>
 				<Slider {...settings}>
 					{data.map((item, idx) => (
-						<ContainerHover
+						<HoverData
 							key={idx}
 							image={item.image}
 							text={item.text}
@@ -31,4 +31,4 @@ function GroupX() {
 	);
 }
 
-export default GroupX;
+export default OpenTripX;

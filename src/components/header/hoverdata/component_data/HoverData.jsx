@@ -1,6 +1,6 @@
-import '../header/HoverData.css';
+import '../component_data/HoverData.css';
 
-function ContainerHover(props) {
+export const HoverData = (props) => {
 	return (
 		<>
 			<div className='container-img'>
@@ -13,6 +13,6 @@ function ContainerHover(props) {
 			</div>
 		</>
 	);
-}
+};
 
-export default ContainerHover;
+export default HoverData;

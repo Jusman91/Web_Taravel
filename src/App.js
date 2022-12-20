@@ -8,7 +8,7 @@ import Flights from './routes/Flights';
 import Hotels from './routes/Hotels';
 import Home from './routes/Home';
 import Attractions from './routes/Attractions';
-import Navbar from './components/header/Navbar';
+import Navbar from './components/header/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import ChooseUs from './components/banners/ChooseUs';
 import Login from './components/login/Login';

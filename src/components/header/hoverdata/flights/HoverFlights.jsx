@@ -1,7 +1,7 @@
 import { HiThumbUp } from 'react-icons/hi';
-import '../header/HoverData.css';
+import '../component_data/HoverData.css';
 
-export const HoverData = () => {
+export const HoverFlights = () => {
 	return (
 		<>
 			<div className='container-banner'>
@@ -55,4 +55,4 @@ export const HoverData = () => {
 	);
 };
 
-export default HoverData;
+export default HoverFlights;

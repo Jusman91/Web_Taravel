@@ -95,7 +95,7 @@
 	font-size: 1.1rem;
 }
 .banner .des-banner {
-	background-image: url(../../asset/banner/b1.jpg);
+	background-image: url(../../../../asset/banner/b1.jpg);
 	background-size: cover;
 	background-position: center;
 	border: 5px solid rgb(50, 105, 243);

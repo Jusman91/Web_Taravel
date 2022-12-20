@@ -1,7 +1,7 @@
-import './HoverTourPackages.css';
-import GroupX from './GroupX';
-import OpenTripX from './OpenTripX';
-import XperienceX from './XperienceX';
+import '../tour/HoverTourPackages.css';
+import GroupX from '../tour/GroupX';
+import OpenTripX from '../tour/OpenTripX';
+import XperienceX from '../tour/XperienceX';
 import { useState } from 'react';
 
 function HoverTourPackages() {

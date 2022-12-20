@@ -1,7 +1,7 @@
-import './HoverInsurance.css';
-import HoverInsuranceData from './HoverInsuranceData';
-import LogoInsurance1 from '../../asset/logo/l3.jpg';
-import LogoInsurance2 from '../../asset/logo/l4.jpg';
+import '../insurance/HoverInsurance.css';
+import HoverInsuranceData from '../insurance/HoverInsuranceData';
+import LogoInsurance1 from '../../../../asset/logo/l3.jpg';
+import LogoInsurance2 from '../../../../asset/logo/l4.jpg';
 
 function HoverInsurance() {
 	return (

@@ -1,9 +1,9 @@
-import HoverImgHotels1 from '../../asset/hotels/hv1.jpg'
-import HoverImgHotels2 from '../../asset/hotels/hv2.jpg'
-import HoverImgHotels3 from '../../asset/hotels/hv3.jpg'
-import HoverImgHotels4 from '../../asset/hotels/hv4.jpg'
-import HoverImgHotels5 from '../../asset/hotels/hv5.jpg'
-import HoverImgHotels6 from '../../asset/hotels/hv6.jpg'
+import HoverImgHotels1 from '../../../../asset/hotels/hv1.jpg'
+import HoverImgHotels2 from '../../../../asset/hotels/hv2.jpg'
+import HoverImgHotels3 from '../../../../asset/hotels/hv3.jpg'
+import HoverImgHotels4 from '../../../../asset/hotels/hv4.jpg'
+import HoverImgHotels5 from '../../../../asset/hotels/hv5.jpg'
+import HoverImgHotels6 from '../../../../asset/hotels/hv6.jpg'
 
 export const HoverHotelsData = () => {
   const data = [

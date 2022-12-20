@@ -1,12 +1,12 @@
-import GroupX1 from '../../asset/tour/tp1.jpg'
-import GroupX2 from '../../asset/tour/tp2.jpg'
-import GroupX3 from '../../asset/tour/tp3.jpg'
-import GroupX4 from '../../asset/tour/tp4.jpg'
-import GroupX5 from '../../asset/tour/tp5.jpg'
-import GroupX6 from '../../asset/tour/tp6.jpg'
-import GroupX7 from '../../asset/tour/tp7.jpg'
-import GroupX8 from '../../asset/tour/tp8.jpg'
-import GroupX9 from '../../asset/tour/tp9.jpg'
+import GroupX1 from '../../../../asset/tour/tp1.jpg'
+import GroupX2 from '../../../../asset/tour/tp2.jpg'
+import GroupX3 from '../../../../asset/tour/tp3.jpg'
+import GroupX4 from '../../../../asset/tour/tp4.jpg'
+import GroupX5 from '../../../../asset/tour/tp5.jpg'
+import GroupX6 from '../../../../asset/tour/tp6.jpg'
+import GroupX7 from '../../../../asset/tour/tp7.jpg'
+import GroupX8 from '../../../../asset/tour/tp8.jpg'
+import GroupX9 from '../../../../asset/tour/tp9.jpg'
 
 
 export const GroupXData = () => {
