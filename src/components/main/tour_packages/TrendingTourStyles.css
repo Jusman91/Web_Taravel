@@ -2,6 +2,7 @@
 	padding: 4rem 3rem 1rem 3rem;
 	box-sizing: border-box;
 }
+
 .wrapp-content-tour {
 	display: grid;
 	grid-template-columns: repeat(

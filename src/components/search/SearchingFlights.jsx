@@ -115,18 +115,14 @@ function SearchingFlights() {
 					className='age-category'>
 					<div className='adult'>
 						<BsPerson className='icon' />
-						<div>
-							{adult}
-							<span> Adult</span>
-						</div>
+						{adult}
+						<span> Adult</span>
 					</div>
 					<div className='child'>
 						<BsPerson className='icon' />
-						<div>
-							{child}
-							<span> Child,</span> {infant}
-							<span> Infant</span>
-						</div>
+						{child}
+						<span> Child,</span> {infant}
+						<span> Infant</span>
 					</div>
 					<form
 						onSubmit={handleSubmit}

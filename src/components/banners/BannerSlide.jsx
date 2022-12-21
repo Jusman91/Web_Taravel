@@ -1,13 +1,46 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import '../banners/SlideStyles.css';
-import Banner1 from '../../asset/banner/b2.jpg';
-import Banner2 from '../../asset/banner/b3.jpg';
-import Banner3 from '../../asset/banner/b4.jpg';
-import Banner4 from '../../asset/banner/b5.jpg';
+import '../banners/BannerSlide.css';
+
 import Banner5 from '../../asset/banner/b1.jpg';
+import Slider from 'react-slick';
+import BannerSlideData from './BannerSlideData';
+import BannerSlideContainer from './BannerSlideContainer';
+import {
+	IoIosArrowUp,
+	IoIosArrowDown,
+} from 'react-icons/io';
+
+function SamplePrevArrow(props) {
+	const { onClick } = props;
+	return (
+		<div className='icon-arrow-left' onClick={onClick}>
+			<IoIosArrowDown className='iconarrowleft' />
+		</div>
+	);
+}
+function SampleNextArrow(props) {
+	const { onClick } = props;
+	return (
+		<div className='icon-arrow-right' onClick={onClick}>
+			<IoIosArrowUp className='iconarrowright' />
+		</div>
+	);
+}
 
 function Slide() {
+	const data = BannerSlideData();
+	const settings = {
+		dots: false,
+		infinite: true,
+		arrows: true,
+		nextArrow: <SampleNextArrow />,
+		prevArrow: <SamplePrevArrow />,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		speed: 1000,
+		autoplaySpeed: 5000,
+		cssEase: 'linear',
+	};
 	return (
 		<section className='container-banners'>
 			<div className='head'>
@@ -17,45 +50,19 @@ function Slide() {
 					more Crazy deals!
 				</p>
 			</div>
-			<div className='banner-slide'>
-				<Carousel slide={true} variant='dark'>
-					<Carousel.Item interval-={300}>
-						<div>
-							<img
-								className='d-block w-100'
-								src={Banner1}
-								alt='First slide'
+			<div className='wrapper-banners'>
+				<div>
+					<Slider {...settings}>
+						{data.map((item, idx) => (
+							<BannerSlideContainer
+								key={idx}
+								image={item.image}
+								text1={item.text1}
+								text2={item.text2}
 							/>
-						</div>
-					</Carousel.Item>
-					<Carousel.Item interval-={300}>
-						<div>
-							<img
-								className='d-block w-100'
-								src={Banner2}
-								alt='Second slide'
-							/>
-						</div>
-					</Carousel.Item>
-					<Carousel.Item interval-={300}>
-						<div>
-							<img
-								className='d-block w-100'
-								src={Banner3}
-								alt='Third slide'
-							/>
-						</div>
-					</Carousel.Item>
-					<Carousel.Item interval-={300}>
-						<div>
-							<img
-								className='d-block w-100'
-								src={Banner4}
-								alt='Third slide'
-							/>
-						</div>
-					</Carousel.Item>
-				</Carousel>
+						))}
+					</Slider>
+				</div>
 				<div className='banner-img'>
 					<div className='text-banner'>
 						<h3>Join Ngakak Private Journey</h3>

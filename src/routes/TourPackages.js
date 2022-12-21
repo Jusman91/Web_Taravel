@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchingPackages from '../components/search/SearchingPackages';
-import TrendingTour from '../components/main/tour_packages/TrendingTour';
 import HeroTours from '../components/hero/HeroTours';
+import AllDestinations from '../components/main/tour_packages/all_destination/AllDestinations';
 
 
 
@@ -12,7 +12,7 @@ function TourPackages() {
     <>
       <HeroTours />
       <SearchingPackages />
-      <TrendingTour />
+      <AllDestinations />
     </>
   )
 }

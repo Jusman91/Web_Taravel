@@ -119,13 +119,14 @@
 .room {
 	display: flex;
 	justify-content: flex-start;
+	gap: 0.5rem;
 }
 .adult .icon {
 	margin-right: 0.6rem;
 }
 .child .icon {
 	font-size: 1rem;
-	margin-right: -3rem;
+	/* margin-right: 0.6rem; */
 }
 .form-category {
 	position: absolute;
