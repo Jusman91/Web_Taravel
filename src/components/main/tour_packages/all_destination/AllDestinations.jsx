@@ -1,7 +1,7 @@
 import '../all_destination/AllDestinations.css';
 import TrendingTour from '../../tour_packages/TrendingTour';
-import HotelsOffers from '../../hotels/HotelsOffers';
 import { useState } from 'react';
+import FilterPackages from '../filter_packages/FilterPackages';
 
 function AllDestinations() {
 	const [activeList, setActiveList] = useState('trending');
@@ -9,7 +9,7 @@ function AllDestinations() {
 		<>
 			<div className='container-all-destinations'>
 				<div className='filter-packages'>
-					<h2>Filter Packages</h2>
+					<FilterPackages />
 				</div>
 				<div>
 					<ul className='list-destinations'>
@@ -33,7 +33,9 @@ function AllDestinations() {
 						</li>
 					</ul>
 					{activeList === 'trending' && <TrendingTour />}
-					{activeList === 'all' && <HotelsOffers />}
+					{activeList === 'all' && (
+						<TrendingTour tourpackages />
+					)}
 				</div>
 			</div>
 		</>

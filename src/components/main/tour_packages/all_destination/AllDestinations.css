@@ -1,7 +1,7 @@
 .container-all-destinations {
 	padding: 4rem 3rem 1rem 3rem;
 	display: grid;
-	grid-template-columns: 350px auto;
+	grid-template-columns: 370px auto;
 }
 .container-all-destinations .filter-packages {
 	border-right: 3px solid #ccc;

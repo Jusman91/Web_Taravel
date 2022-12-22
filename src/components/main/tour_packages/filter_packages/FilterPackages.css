@@ -1,0 +1,103 @@
+.container-filter {
+	padding-left: 1rem;
+}
+.container-filter .result-filter {
+	display: flex;
+	gap: 1rem;
+	padding-bottom: 1rem;
+}
+.container-filter .icon-search {
+	font-size: 1.4rem;
+	padding-bottom: 0.3rem;
+}
+.container-filter .icon-filter {
+	font-size: 1.4rem;
+	padding-bottom: 0.3rem;
+	cursor: pointer;
+}
+.container-filter .icon-filter-rotate {
+	transform: rotate(180deg);
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+.container-filter .filter-price,
+.travel-style,
+.tour-type,
+.duration {
+	padding-bottom: 3rem;
+	border-bottom: 3px solid #ccc;
+	margin-bottom: 2rem;
+}
+.container-filter .filter-price .title {
+	display: flex;
+	gap: 1rem;
+}
+.container-filter .filter-price .price-list {
+	display: flex;
+	gap: 1rem;
+	border-top: 3px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	margin-bottom: 2rem;
+}
+.container-filter .filter-price .price-list .popularity,
+.highest {
+	border-left: 3px solid #ccc;
+	padding: 2rem 0 2rem 0.6rem;
+}
+.container-filter .filter-price .price-list .lowest {
+	padding: 2rem 0 2rem 0.6rem;
+}
+.container-filter .title {
+	position: relative;
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.container-filter .icon-loader {
+	position: absolute;
+	right: 5%;
+	top: -30%;
+	font-size: 2rem;
+	color: rgb(67, 114, 233);
+}
+.container-filter .filter-price .price-range input,
+.duration input {
+	width: 85%;
+}
+.container-filter .filter-price .price-range .range-value {
+	display: flex;
+	gap: 8rem;
+}
+
+.container-filter .travel-style .list-style,
+.container-filter .tour-type .list-style {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	background-color: rgb(67, 114, 233);
+	border-radius: 20px;
+	padding: 0.5rem 0.6rem 0 0.6rem;
+	color: #fff;
+	margin-bottom: 1rem;
+}
+.container-filter .duration .range-value {
+	display: flex;
+	gap: 76%;
+}
+.container-filter .btn-destinatios {
+	width: 95%;
+	background-color: rgb(67, 114, 233);
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 1.3rem;
+	transition: 1s;
+}
+.container-filter .btn-destinatios:hover {
+	background-color: #fff;
+	color: rgb(67, 114, 233);
+}

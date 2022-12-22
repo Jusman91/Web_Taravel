@@ -3,8 +3,8 @@ import './TrendingTourStyles.css';
 import TourData from './TourData';
 import ContentData from '../data/ContentData';
 
-function TrendingTour() {
-	const data = TourData();
+function TrendingTour({ tourpackages }) {
+	const data = TourData(tourpackages);
 	return (
 		<>
 			<section className='container-tour-packages'>
