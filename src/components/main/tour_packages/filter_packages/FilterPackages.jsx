@@ -7,23 +7,22 @@ import { RiLoader3Fill } from 'react-icons/ri';
 import { BsCheck2 } from 'react-icons/bs';
 import { useState } from 'react';
 
-function FilterPackages() {
+function FilterPackages(props) {
 	const [activeShow, setActiveShow] = useState({
 		list: false,
 		range: false,
+		style: false,
+		type: false,
+		duration: false,
 	});
-	// const [activeRange, setActiveRange] = useState('');
 
-	// const handleRange = () => {
-	// 	setActiveRange(!activeRange);
-	// };
-	const handleActiveShow = (key) => {
+	const handleActiveShow = (active) => {
 		setActiveShow({
 			...activeShow,
-			key: !activeShow[key],
+			[active]: !activeShow[active],
 		});
 	};
-	console.log(activeShow);
+
 	return (
 		<>
 			<section className='container-filter'>
@@ -37,31 +36,36 @@ function FilterPackages() {
 				<div className='filter-price'>
 					<div className='title'>
 						<IoIosArrowDown
-							id='ada'
 							onClick={() => handleActiveShow('list')}
 							className={
-								activeShow === handleActiveShow
+								activeShow.list
 									? 'icon-filter-rotate'
 									: 'icon-filter'
 							}
-							name='price-list'
 						/>
 						<h6>SORT RESULTS</h6>
 					</div>
-					{!activeShow ? null : (
+					{activeShow.list ? null : (
 						<div className='price-list'>
 							<div className='lowest'>Lowest Price</div>
-							<div className='highest'>Highest Price</div>
-							<div className='popularity'>Popularity</div>
+							<div
+								onClick={() => props.handleFilter()}
+								className='highest'>
+								Highest Price
+							</div>
+							<div
+								onClick={() => props.handleFilter()}
+								className='popularity'>
+								Popularity
+							</div>
 						</div>
 					)}
 					<div className='price-range'>
 						<div className='title'>
 							<IoIosArrowDown
-								id='abc'
 								onClick={() => handleActiveShow('range')}
 								className={
-									activeShow === handleActiveShow
+									activeShow.range
 										? 'icon-filter-rotate'
 										: 'icon-filter'
 								}
@@ -69,7 +73,7 @@ function FilterPackages() {
 							<h6>PRICE RANGE</h6>
 							<RiLoader3Fill className='icon-loader' />
 						</div>
-						{activeShow.range === 'range' ? null : (
+						{activeShow.range ? null : (
 							<>
 								<div>
 									<input
@@ -91,109 +95,142 @@ function FilterPackages() {
 				</div>
 				<div className='travel-style'>
 					<div className='title'>
-						<IoIosArrowDown className='icon-filter' />
+						<IoIosArrowDown
+							onClick={() => handleActiveShow('style')}
+							className={
+								activeShow.style
+									? 'icon-filter-rotate'
+									: 'icon-filter'
+							}
+						/>
 						<h6>TRAVEL STYLE</h6>
 						<RiLoader3Fill className='icon-loader' />
 					</div>
-					<div className='list-style'>
-						<h6>Private Journeys</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Family Holidays</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Luxury</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Adventure</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Just the Two of Us</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Cost Saver</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>FoodieX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>FamilyX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>AdventureX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>RomanticX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>CultureX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>SportX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>PhotographyX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>ExoticX</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Open Trip X</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Fashion X</h6>
-						<BsCheck2 />
-					</div>
+					{activeShow.style ? null : (
+						<>
+							<div className='list-style'>
+								<h6>Private Journeys</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Family Holidays</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Luxury</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Adventure</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Just the Two of Us</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Cost Saver</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>FoodieX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>FamilyX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>AdventureX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>RomanticX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>CultureX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>SportX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>PhotographyX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>ExoticX</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Open Trip X</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Fashion X</h6>
+								<BsCheck2 />
+							</div>
+						</>
+					)}
 				</div>
 				<div className='tour-type'>
 					<div className='title'>
-						<IoIosArrowDown className='icon-filter' />
+						<IoIosArrowDown
+							onClick={() => handleActiveShow('type')}
+							className={
+								activeShow.type
+									? 'icon-filter-rotate'
+									: 'icon-filter'
+							}
+						/>
 						<h6>TOUR TYPE</h6>
 						<RiLoader3Fill className='icon-loader' />
 					</div>
-					<div className='list-style'>
-						<h6>Group Series</h6>
-						<BsCheck2 />
-					</div>
-					<div className='list-style'>
-						<h6>Fly, Stay, Play</h6>
-						<BsCheck2 />
-					</div>
+					{activeShow.type ? null : (
+						<>
+							<div className='list-style'>
+								<h6>Group Series</h6>
+								<BsCheck2 />
+							</div>
+							<div className='list-style'>
+								<h6>Fly, Stay, Play</h6>
+								<BsCheck2 />
+							</div>
+						</>
+					)}
 				</div>
 				<div className='duration'>
 					<div className='title'>
-						<IoIosArrowDown className='icon-filter' />
+						<IoIosArrowDown
+							onClick={() => handleActiveShow('duration')}
+							className={
+								activeShow.duration
+									? 'icon-filter-rotate'
+									: 'icon-filter'
+							}
+						/>
 						<h6>DURATION</h6>
 						<RiLoader3Fill className='icon-loader' />
 					</div>
-					<div>
-						<input
-							type='range'
-							name='slider'
-							id='slider'
-							min='1'
-							max='20'
-						/>
-					</div>
-					<div className='range-value'>
-						<span className='from'>1</span>
-						<span className='to'>20</span>
-					</div>
+					{activeShow.duration ? null : (
+						<>
+							<div>
+								<input
+									type='range'
+									name='slider'
+									id='slider'
+									min='1'
+									max='20'
+								/>
+							</div>
+							<div className='range-value'>
+								<span className='from'>1</span>
+								<span className='to'>20</span>
+							</div>
+						</>
+					)}
 				</div>
 				<button className='btn-destinatios'>
 					Explore Other Destinations

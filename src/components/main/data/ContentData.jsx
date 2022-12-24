@@ -15,7 +15,7 @@ function ContentData(props) {
 							<h6>{props.text2}</h6>
 							<p>
 								{props.currency}
-								<span>{props.price}</span>
+								<span> {props.price}</span>
 							</p>
 						</div>
 						<p className='desc-tour-city'>

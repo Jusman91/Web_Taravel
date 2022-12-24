@@ -59,6 +59,10 @@
 	top: -30%;
 	font-size: 2rem;
 	color: rgb(67, 114, 233);
+	cursor: pointer;
+}
+.container-filter .icon-loader:hover {
+	animation: loader 1s ease-in-out infinite alternate;
 }
 .container-filter .filter-price .price-range input,
 .duration input {
@@ -100,4 +104,15 @@
 .container-filter .btn-destinatios:hover {
 	background-color: #fff;
 	color: rgb(67, 114, 233);
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+		color: rgb(255, 151, 122);
+	}
+	100% {
+		transform: rotate(360deg);
+		color: rgb(237, 68, 21);
+	}
 }

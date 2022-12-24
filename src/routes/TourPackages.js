@@ -12,7 +12,7 @@ function TourPackages() {
     <>
       <HeroTours />
       <SearchingPackages />
-      <AllDestinations />
+      <AllDestinations tourpackages />
     </>
   )
 }
