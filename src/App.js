@@ -16,9 +16,6 @@ import { useState } from 'react';
 
 
 
-
-
-
 function App() {
   const [showFormLogin, setShowFormLogin] = useState('false')
 
@@ -34,7 +31,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='flights' element={<Flights />} />
         <Route path='hotels' element={<Hotels />} />
-        <Route path='tourpackages' element={<TourPackages />} />
+        <Route path='tourpackages/*' element={<TourPackages />} />
         <Route path='xperiences' element={<Xperiences />} />
         <Route path='attractions' element={<Attractions />} />
         <Route path='visa' element={<Visa />} />

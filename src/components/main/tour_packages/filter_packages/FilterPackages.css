@@ -28,24 +28,41 @@
 	border-bottom: 3px solid #ccc;
 	margin-bottom: 2rem;
 }
-.container-filter .filter-price .title {
-	display: flex;
-	gap: 1rem;
-}
+
 .container-filter .filter-price .price-list {
 	display: flex;
-	gap: 1rem;
 	border-top: 3px solid #ccc;
 	border-bottom: 3px solid #ccc;
 	margin-bottom: 2rem;
+	height: 100px;
+	width: 100%;
 }
 .container-filter .filter-price .price-list .popularity,
 .highest {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-left: 3px solid #ccc;
-	padding: 2rem 0 2rem 0.6rem;
+	width: 33%;
+	height: 100%;
 }
 .container-filter .filter-price .price-list .lowest {
-	padding: 2rem 0 2rem 0.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 33%;
+}
+.container-filter
+	.filter-price
+	.price-list
+	.active-category {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 33%;
+	background-color: rgb(67, 114, 233);
 }
 .container-filter .title {
 	position: relative;

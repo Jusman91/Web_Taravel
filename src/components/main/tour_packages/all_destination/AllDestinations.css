@@ -8,20 +8,29 @@
 	border-right: 3px solid #ccc;
 }
 
-.container-all-destinations .list-destinations {
+.list-destinations {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 4rem;
 	font-size: 2rem;
+	padding-top: 6rem;
 }
-.container-all-destinations .list-destinations li {
+.list-destinations li {
 	list-style: none;
 	cursor: pointer;
 }
-.container-all-destinations .active-list-destinations {
-	list-style: none;
-	cursor: pointer;
+.list-destinations .trending {
+	color: rgb(67, 114, 233);
+	border-bottom: 5px solid rgb(67, 114, 233);
+}
+.hidden {
+	display: none;
+}
+.container-all-destinations .all-destinations h2 {
+	font-size: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
 	color: rgb(67, 114, 233);
 	border-bottom: 5px solid rgb(67, 114, 233);
 }

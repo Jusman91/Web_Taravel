@@ -1,7 +1,7 @@
 import { HiThumbUp } from 'react-icons/hi';
 import '../component_data/HoverData.css';
 
-export const HoverFlights = () => {
+export const HoverFlights = (props) => {
 	return (
 		<>
 			<div className='container-banner'>
@@ -18,7 +18,9 @@ export const HoverFlights = () => {
 					</div>
 					<div className='destination-list'>
 						<h2>Other populer destination</h2>
-						<div className='wrapp-list'>
+						<div
+							className='wrapp-list'
+							onClick={props.goFlightsPage}>
 							<div>
 								<div className='a-list'>
 									<div>Singapur</div>

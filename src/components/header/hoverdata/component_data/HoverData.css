@@ -118,13 +118,14 @@
 }
 .destination-list .wrapp-list {
 	display: flex;
+	justify-content: space-between;
 	text-align: start;
-	gap: 4rem;
 	padding: 0 1rem;
 }
 .destination-list .wrapp-list div {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	cursor: pointer;
+	color: #fff;
 }
 .destination-list .wrapp-list .a-list {
 	display: flex;

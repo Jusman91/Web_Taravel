@@ -3,75 +3,72 @@ import ContentData from '../../data/ContentData';
 import TourData from '../TourData';
 import FilterPackages from '../../tour_packages/filter_packages/FilterPackages';
 import { useState } from 'react';
-import { useEffect } from 'react';
 
 function AllDestinations({ tourpackages }) {
+	const [activeCategory, setActiveCategory] = useState('');
 	const [data, setData] = useState(TourData(tourpackages));
-	const filterResult = (e) => {
-		// const result = TourData().filter((curData) => {
-		// 	return curData.category;
-		// });
-		const result = data.sort((a, b) =>
-			a.price.localeCompare(b.price, undefined, {
-				numeric: true,
-			}),
-		);
-		console.log(result);
-		setData(result);
-	};
+	const filterResult = (params) => {
+		if (params === 'popularity') {
+			const result = TourData(tourpackages).filter(
+				(curData) => {
+					return curData.category === params;
+				},
+			);
+			setData(result);
+			setActiveCategory('popularity');
+		}
 
+		if (params === 'lowest') {
+			const lowestdata = TourData(tourpackages).sort(
+				(a, b) => parseFloat(a.price) - parseFloat(b.price),
+			);
+			setData(lowestdata);
+			setActiveCategory('lowest');
+		}
+		if (params === 'highest') {
+			const highestdata = TourData(tourpackages).sort(
+				(a, b) =>
+					b.price.localeCompare(a.price, undefined, {
+						numeric: true,
+					}),
+			);
+			setData(highestdata);
+			setActiveCategory('highest');
+		}
+	};
+	console.log('data', data);
 	return (
 		<>
 			<div className='container-all-destinations'>
 				<div className='filter-packages'>
-					<FilterPackages handleFilter={filterResult} />
+					<FilterPackages
+						handleFilter={filterResult}
+						activeCategory={activeCategory}
+					/>
 				</div>
-				<div className='wrapp-content-tour'>
-					{data.map((item, idx) => (
-						<ContentData
-							key={idx}
-							containerData={item.containerData}
-							cNameContainer={item.cNameContainer}
-							cName={item.cName}
-							img1={item.img1}
-							text={item.text}
-							textHeading={item.textHeading}
-							cNamePrice={item.cNamePrice}
-							text2={item.text2}
-							currency={item.currency}
-							price={item.price}
-							btnClass={item.btnClass}
-							descTourHover={item.descTourHover}
-							details={item.details}
-						/>
-					))}
+				<div className='all-destinations'>
+					<h2>All Destinations</h2>
+					<div className='wrapp-content-tour'>
+						{data.map((item, idx) => (
+							<ContentData
+								key={idx}
+								containerData={item.containerData}
+								cNameContainer={item.cNameContainer}
+								cName={item.cName}
+								img1={item.img1}
+								text={item.text}
+								textHeading={item.textHeading}
+								cNamePrice={item.cNamePrice}
+								text2={item.text2}
+								currency={item.currency}
+								price={item.price}
+								btnClass={item.btnClass}
+								descTourHover={item.descTourHover}
+								details={item.details}
+							/>
+						))}
+					</div>
 				</div>
-				{/* <div>
-					<ul className='list-destinations'>
-						<li
-							className={
-								activeList === 'all'
-									? 'active-list-destinations'
-									: ''
-							}
-							onClick={() => setActiveList('all')}>
-							All Destinations
-						</li>
-						<li
-							className={
-								activeList === 'trending'
-									? 'active-list-destinations'
-									: ''
-							}
-							onClick={() => setActiveList('trending')}>
-							Trending Tour Packages
-						</li>
-					</ul>
-					{activeList === 'all' && (
-						<TrendingTour tourpackages />
-					)}
-					{activeList === 'trending' && <TrendingTour />}
-				</div> */}
 			</div>
 		</>
 	);

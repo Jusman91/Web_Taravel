@@ -1,5 +1,5 @@
 import '../navbar/NavbarStyles.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../../asset/logo/p1.png';
 import { useState } from 'react';
 import {
@@ -13,6 +13,14 @@ import HoverTourPackages from '../hoverdata/tour/HoverTourPackages';
 import HoverInsurance from '../hoverdata/insurance/HoverInsurance';
 
 export const Navbar = (props) => {
+	// <==== navigate untuk hover component flights
+	const navigate = useNavigate();
+	const handleClick = () => {
+		navigate('/flights');
+		setActiveLink('flights');
+	};
+	// ====>
+
 	const [activeLink, setActiveLink] = useState('/');
 
 	const onUpdateActiveLink = (value) => {
@@ -67,7 +75,7 @@ export const Navbar = (props) => {
 							<div className='icons-hover'>
 								<IoIosArrowUp />
 							</div>
-							<HoverFlights />
+							<HoverFlights goFlightsPage={handleClick} />
 						</div>
 						<div className='hover'>
 							<Link

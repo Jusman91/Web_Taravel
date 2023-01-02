@@ -47,15 +47,35 @@ function FilterPackages(props) {
 					</div>
 					{activeShow.list ? null : (
 						<div className='price-list'>
-							<div className='lowest'>Lowest Price</div>
 							<div
-								onClick={() => props.handleFilter()}
-								className='highest'>
+								onClick={() => props.handleFilter('lowest')}
+								className={
+									props.activeCategory === 'lowest'
+										? 'active-category'
+										: 'lowest'
+								}>
+								Lowest Price
+							</div>
+							<div
+								onClick={() =>
+									props.handleFilter('highest')
+								}
+								className={
+									props.activeCategory === 'highest'
+										? 'active-category'
+										: 'highest'
+								}>
 								Highest Price
 							</div>
 							<div
-								onClick={() => props.handleFilter()}
-								className='popularity'>
+								onClick={() =>
+									props.handleFilter('popularity')
+								}
+								className={
+									props.activeCategory === 'popularity'
+										? 'active-category'
+										: 'popularity'
+								}>
 								Popularity
 							</div>
 						</div>
