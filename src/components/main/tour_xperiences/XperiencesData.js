@@ -23,6 +23,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 1.636.519',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -35,6 +36,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 1.422.185',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -47,6 +49,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 1.746.985',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -59,6 +62,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 1.746.985',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -71,6 +75,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 54.607',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -83,6 +88,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 54.607',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -95,6 +101,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 136.842',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -107,6 +114,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 167.213',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     }
   ];
@@ -121,6 +129,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 188.370',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -133,6 +142,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 99.987',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -145,6 +155,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 151.345',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     },
     {
@@ -157,6 +168,7 @@ export const XperiencesData = (xperiences) => {
       currency: 'IDR',
       price: ' 342.957',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Xperiences',
     }
   ];

@@ -1,12 +1,34 @@
-import HerosDatas from "./HerosDatas";
-import HeroImg3 from '../../asset/hero/h3.jpg';
-import HeroImg4 from '../../asset/hero/h4.jpg';
-
+import { HeroHotelData } from './HeroHotelData';
+import HerosContainer from './HerosContainer';
+import Slider from 'react-slick';
+import '../main/tour_packages/tour_details/TourDetails.css';
+import PrevArrow from './arrow/PrevArrow';
+import NextArrow from './arrow/NextArrow';
 
 export const HeroHotels = () => {
-  return (
-    <HerosDatas img1={HeroImg3} img2={HeroImg4} />
-  )
+	const data = HeroHotelData();
+	const settings = {
+		dots: false,
+		infinite: true,
+		arrows: true,
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// autoplay: true,
+		speed: 1000,
+		// autoplaySpeed: 2000,
+		cssEase: 'linear',
+	};
+	return (
+		<>
+			<Slider {...settings}>
+				{data.map((item, idx) => (
+					<HerosContainer key={idx} img={item.img} />
+				))}
+			</Slider>
+		</>
+	);
 };
 
-export default HeroHotels
+export default HeroHotels;

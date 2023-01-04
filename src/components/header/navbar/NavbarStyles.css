@@ -14,10 +14,12 @@ header {
 	padding: 0 1.8rem;
 	background-color: rgb(4, 74, 250);
 	color: #fff;
-	font-size: 0.85rem;
+	font-size: 0.75rem;
 }
 .top-header ul {
+	margin-top: 0.6rem;
 	display: flex;
+	align-items: center;
 	list-style: none;
 }
 .top-header ul li {
@@ -36,7 +38,7 @@ header {
 	border: none;
 	outline: none;
 	background: transparent;
-	padding: 1rem 1.2rem;
+	padding: 0.8rem 1.2rem;
 	color: #fff;
 }
 .top-header .login i {
@@ -64,6 +66,7 @@ header {
 	font-size: 0.55rem;
 	color: rgb(5, 5, 106);
 	text-align: end;
+	margin-top: -0.5rem;
 }
 .navbar-items .nav-logo span {
 	color: aqua;
@@ -81,11 +84,11 @@ header {
 	gap: 2.5rem;
 	list-style: none;
 	margin-bottom: 1rem;
+	font-size: 0.9rem;
 }
 
 .navbar-items .nav-menu .nav-links a {
 	text-decoration: none;
-	font-size: 1rem;
 	color: #1a1a1a;
 }
 .navbar-items .nav-menu .nav-links .active {

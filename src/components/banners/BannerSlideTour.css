@@ -1,0 +1,43 @@
+.container-slide-tour {
+	padding: 4rem 0;
+}
+.wrapp-img-slide {
+	display: flex;
+	justify-content: center;
+	height: 550px;
+	position: relative;
+}
+.wrapp-img-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.wrapper-btn-slide {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: -12%;
+	transition: 0.5s ease height;
+	color: #fff;
+	padding: 2rem;
+	text-align: start;
+	font-weight: 700;
+}
+.wrapp-img-slide:hover .wrapper-btn-slide {
+	height: 100%;
+	bottom: 0;
+}
+.btn-slide {
+	position: absolute;
+	bottom: 10%;
+	background-color: transparent;
+	border: 3px solid rgb(67, 114, 233);
+	border-radius: 4px;
+	padding: 0.6rem 2rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	transition: 1s;
+}

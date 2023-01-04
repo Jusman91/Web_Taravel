@@ -1,0 +1,60 @@
+.container-heros {
+	width: 100%;
+	padding-bottom: 3rem;
+}
+
+.container-heros .slick-list {
+	width: 100%;
+	/* height: 300px; */
+}
+
+.container-heros .wrapper-img-tour-details img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.icon-arrow-left-hero {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-top: 0.5rem;
+	padding-right: 0.5rem;
+	position: absolute;
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	left: -2%;
+	top: 45%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+	z-index: 888;
+	cursor: pointer;
+	transform: rotate(45deg);
+}
+.icon-arrow-left-hero .iconarrowleft {
+	transform: rotate(45deg);
+}
+.icon-arrow-right-hero {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	position: absolute;
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	right: -2%;
+	top: 45%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.icon-arrow-right-hero .iconarrowright {
+	transform: rotate(45deg);
+}
+.icon-arrow-left-hero:hover,
+.icon-arrow-right-hero:hover {
+	color: rgb(238, 83, 27);
+}

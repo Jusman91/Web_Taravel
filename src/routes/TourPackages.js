@@ -6,6 +6,8 @@ import '../components/main/tour_packages/all_destination/AllDestinations.css'
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import TrendingTour from '../components/main/tour_packages/TrendingTour';
+import BannerSlideTour from '../components/banners/BannerSlideTour';
+import BannerSlide from '../components/banners/BannerSlide'
 
 
 function TourPackages() {
@@ -31,6 +33,8 @@ function TourPackages() {
       </div>
       <div className={hidden ? 'hidden' : ''}>
         <TrendingTour />
+        <BannerSlideTour />
+        <BannerSlide />
       </div>
       <Routes>
         <Route path='/alldestinations' element={<AllDestinations tourpackages />}

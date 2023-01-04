@@ -29,7 +29,6 @@ function TrendingTour({ tourpackages }) {
 							text2={item.text2}
 							currency={item.currency}
 							price={item.price}
-							btnClass={item.btnClass}
 							descTourHover={item.descTourHover}
 							details={item.details}
 						/>

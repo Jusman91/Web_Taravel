@@ -13,6 +13,7 @@ import Footer from './components/footer/Footer';
 import ChooseUs from './components/banners/ChooseUs';
 import Login from './components/login/Login';
 import { useState } from 'react';
+import TourDetails from './components/main/tour_packages/tour_details/TourDetails';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='attractions' element={<Attractions />} />
         <Route path='visa' element={<Visa />} />
         <Route path='insurance' element={<Insurance />} />
+        <Route path='details' element={<TourDetails />} />
       </Routes>
       <ChooseUs />
       <Footer />

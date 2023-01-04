@@ -60,11 +60,10 @@
 	background-image: url(../../asset/login/bg-login.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 60vw;
-	height: 35vw;
-	margin-left: -10%;
-	margin-top: 10%;
-	position: relative;
+	width: 80vw;
+	height: 40vw;
+	left: -20%;
+	position: absolute;
 }
 .modal-header {
 	border: none;
@@ -100,8 +99,9 @@
 }
 .register {
 	width: 330px;
-	height: 529px;
+	height: 544px;
 	background-color: rgba(67, 114, 233, 0.6);
+	border-radius: 3px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

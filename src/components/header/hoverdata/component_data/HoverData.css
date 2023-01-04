@@ -7,7 +7,7 @@
 	left: 4%;
 	top: 0%;
 	transform: translateY(-90%);
-	padding-top: 3.2rem;
+	padding-top: 3rem;
 	z-index: -1;
 	color: black;
 	opacity: 1;
@@ -25,9 +25,9 @@
 	color: rgb(67, 114, 233);
 	border-bottom: 5px solid rgb(67, 114, 233);
 	width: 78px;
-	padding-bottom: 5px;
+	padding-bottom: 1.3rem;
 	text-align: center;
-	bottom: -5%;
+	bottom: -12%;
 }
 .hover:hover .icons-hover {
 	display: flex;
@@ -37,9 +37,9 @@
 	color: rgb(67, 114, 233);
 	border-bottom: 5px solid rgb(67, 114, 233);
 	width: 130px;
-	padding-bottom: 5px;
+	padding-bottom: 1.3rem;
 	text-align: center;
-	bottom: -5%;
+	bottom: -12%;
 }
 .hover {
 	display: flex;
@@ -55,7 +55,7 @@
 .container-banner .text-banner {
 	display: flex;
 	flex-direction: column;
-	height: 360px;
+	height: 330px;
 	background-color: rgb(4, 74, 250);
 	padding: 2.5rem;
 	font-weight: 300;
@@ -87,14 +87,13 @@
 	background-color: rgb(67, 114, 233);
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;
+	height: 330px;
 }
 .banner .des-banner {
 	text-align: center;
 	color: rgb(4, 74, 250);
 	padding-top: 3rem;
 	font-size: 1.1rem;
-}
-.banner .des-banner {
 	background-image: url(../../../../asset/banner/b1.jpg);
 	background-size: cover;
 	background-position: center;
@@ -123,7 +122,7 @@
 	padding: 0 1rem;
 }
 .destination-list .wrapp-list div {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	cursor: pointer;
 	color: #fff;
 }
@@ -150,7 +149,7 @@
 }
 .container-data-hover .wrapper-img {
 	width: 320px;
-	height: 360px;
+	height: 330px;
 }
 .container-data-hover .wrapper-img img {
 	width: 100%;

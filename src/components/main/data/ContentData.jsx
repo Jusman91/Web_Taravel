@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../data/ContentDataStyles.css';
 
 function ContentData(props) {
@@ -22,14 +23,23 @@ function ContentData(props) {
 							{props.descTourHover}
 						</p>
 					</div>
-					<div className='wrapper-btn'>
-						<button className={props.btnClass}>
+					<div className={props.wrapperbtn}>
+						<div className={props.btnClass}>
 							{props.btn}
-						</button>
+						</div>
+						<div>
+							<p>{props.desc}</p>
+							<h3>{props.title}</h3>
+						</div>
+					</div>
+					<div className={props.classbtnslide}>
+						{props.btnslide}
 					</div>
 				</div>
 			</div>
-			<div className='details-tour'>{props.details}</div>
+			<div className='details-tour'>
+				<Link to='/details'>{props.details}</Link>
+			</div>
 		</div>
 	);
 }

@@ -27,6 +27,7 @@ function HotelsOffers({ hotels }) {
 							text2={item.text2}
 							currency={item.currency}
 							price={item.price}
+							wrapperbtn={item.wrapperbtn}
 							btnClass={item.btnClass}
 							btn={item.btn}
 						/>

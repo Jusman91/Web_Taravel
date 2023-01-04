@@ -7,7 +7,7 @@
 	left: 4%;
 	top: 0%;
 	transform: translateY(-90%);
-	padding-top: 3.2rem;
+	padding-top: 3rem;
 	z-index: -1;
 	color: black;
 	opacity: 1;
@@ -20,7 +20,7 @@
 }
 .container-hover-insurance .wrapper-content {
 	background-color: rgb(67, 114, 233);
-	height: 360px;
+	height: 330px;
 	padding: 3.5rem;
 	color: #fff;
 }
@@ -30,7 +30,7 @@
 .container-hover-insurance .wrapper-content .image {
 	width: 500px;
 	height: 100px;
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 .container-hover-insurance .wrapper-content .image img {
 	width: 100%;

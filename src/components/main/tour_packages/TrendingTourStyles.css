@@ -58,9 +58,12 @@
 	background-color: #fff;
 }
 .wrapp-content-tour .details-tour {
+	margin-top: -4.5rem;
+}
+.wrapp-content-tour .details-tour a {
 	color: rgb(67, 114, 233);
 	font-size: 0.8rem;
-	margin-top: -4.5rem;
+	text-decoration: none;
 }
 
 .container-data:hover .desc-tour .price {
@@ -77,6 +80,6 @@
 	font-size: 1.3rem;
 }
 .container-data:hover .desc-tour-city {
-	font-size: 0.9rem;
+	font-size: 0.85rem;
 	text-align: start;
 }

@@ -23,6 +23,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 872.747',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -35,6 +36,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 872.747',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -47,6 +49,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 872.539',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -59,6 +62,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 948.187',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -71,6 +75,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 864.767',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -83,6 +88,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 4.550.363',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -95,6 +101,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 4.714.302',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -107,6 +114,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 3.183.420',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
   ];
@@ -121,6 +129,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 2.341.970',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -133,6 +142,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 603.731',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -145,6 +155,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 6.484.353',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
     {
@@ -157,6 +168,7 @@ export const useField = (flights) => {
       currency: 'IDR',
       price: ' 8.141.141',
       btnClass: 'btn',
+      wrapperbtn: 'wrapper-btn',
       btn: 'Check Flights',
     },
   ];

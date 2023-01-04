@@ -1,12 +1,34 @@
-import HerosDatas from "./HerosDatas";
-import HeroImg5 from '../../asset/hero/h5.jpg';
-import HeroImg6 from '../../asset/hero/h6.jpg';
+import HerosContainer from './HerosContainer';
+import Slider from 'react-slick';
+import '../main/tour_packages/tour_details/TourDetails.css';
+import PrevArrow from './arrow/PrevArrow';
+import NextArrow from './arrow/NextArrow';
+import { HeroTourData } from './HeroTourData';
 
-
-export const HeroTours = () => {
-  return (
-    <HerosDatas img1={HeroImg5} img2={HeroImg6} />
-  )
+export const HeroTour = () => {
+	const data = HeroTourData();
+	const settings = {
+		dots: false,
+		infinite: true,
+		arrows: true,
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// autoplay: true,
+		speed: 1000,
+		// autoplaySpeed: 2000,
+		cssEase: 'linear',
+	};
+	return (
+		<>
+			<Slider {...settings}>
+				{data.map((item, idx) => (
+					<HerosContainer key={idx} img={item.img} />
+				))}
+			</Slider>
+		</>
+	);
 };
 
-export default HeroTours
+export default HeroTour;

@@ -29,7 +29,7 @@ export const Navbar = (props) => {
 	return (
 		<header>
 			<div className='top-header'>
-				<ul className='pt-3'>
+				<ul className=''>
 					<li>Corparate Trapel</li>
 					<li>MICE</li>
 					<li>Smailing Platinum</li>
