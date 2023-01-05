@@ -47,6 +47,20 @@ export const TourData = (tourpackages) => {
       currency: 'Rp',
       price: '19,800,000',
       descTourHover: 'Pengalaman liburan tak terlupakan akan Anda dapatkan dengan mengambil paket ini. Anda akan kami ajak melakukan berbagai pengalaman seru, mulai dari eksplore kota Sydney sampai puas, melihat koala menggemaskan di Featherdale Wildlife Park, mencicipi wine di Audrey Wilkinson Winery, melihat paus dari atas kapal cruise, mencoba naik kereta luncur berpasir di Tangalooma, hingga menyaksikan indahnya pemandangan malam kota Melbourne dari atas Eureka Melbourne Skydeck. Ayo, reservasi paket ini sekarang untuk keberangkatan hingga 25 Juni 2022.',
+      details: {
+        'heroImg': [
+          {
+            heroImg: TourImg6,
+          },
+          {
+            heroImg: TourImg7,
+          },
+          {
+            heroImg: TourImg8,
+          }
+        ],
+        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+      }
     },
     {
       containerData: 'container-data',
@@ -61,6 +75,22 @@ export const TourData = (tourpackages) => {
       currency: 'Rp',
       price: '19,800,000',
       descTourHover: 'Berpetualang di Sydney menjadi mungkin jika Anda mengambil paket ini. Anda akan kami ajak city tour di kota Sydney seharian penuh dengan mengunjungi tempat-tempat wisata yang menarik, sebut saja seperti Sydney Opera House yang merupakan bangunan khas negara Australia, Captain Cook Cruise, dan Sydney Brigde. Selain itu, Anda juga akan mencoba pengalam seru naik unta di Port Stephens, menikmati anggur di Audrey Wilkinson Winery, hingga melihat koala di Featherdale Wildlife Park. Jadi, tunggu apa lagi? Ayo reservasi paket ini sekarang untuk perjalanan hingga Juni 2022.',
+      details: {
+        'heroImg': [
+          {
+            heroImg: TourImg3,
+          },
+          {
+            heroImg: TourImg4,
+          },
+          {
+            heroImg: TourImg5,
+          }
+        ],
+        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+      }
+
+
     },
     {
       containerData: 'container-data',
