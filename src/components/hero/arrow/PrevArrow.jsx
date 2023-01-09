@@ -1,12 +1,12 @@
 import { IoIosArrowDown } from 'react-icons/io';
-import '../../main/tour_packages/tour_details/TourDetails.css';
+import '../container/HerosContainer.css';
 
 const PrevArrow = (props) => {
 	const { onClick } = props;
 	return (
 		<div>
 			<div
-				className='icon-arrow-left-hero'
+				className='icon-arrow left-hero'
 				onClick={onClick}>
 				<IoIosArrowDown className='iconarrowleft' />
 			</div>

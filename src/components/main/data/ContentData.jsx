@@ -38,7 +38,9 @@ function ContentData(props) {
 				</div>
 			</div>
 			<div className='details-tour'>
-				<Link to='/details'>{props.details}</Link>
+				<Link to={`/details/${props.textHeading}`}>
+					{props.details}
+				</Link>
 			</div>
 		</div>
 	);

@@ -49,9 +49,10 @@ function AllDestinations({ tourpackages }) {
 				<div className='all-destinations'>
 					<h2>All Destinations</h2>
 					<div className='wrapp-content-tour'>
-						{data.map((item, idx) => (
+						{data.map((item) => (
 							<ContentData
-								key={idx}
+								key={item.id}
+								id={item.id}
 								containerData={item.containerData}
 								cNameContainer={item.cNameContainer}
 								cName={item.cName}

@@ -1,5 +1,4 @@
-import React from 'react';
-import HeroXperiences from '../components/hero/HeroXperiences';
+import HeroXperiences from '../components/hero/xperience/HeroXperiences';
 import XperiencesTour from '../components/main/tour_xperiences/XperiencesTour';
 import SearchingXperiences from '../components/search/SearchingXperiences';
 

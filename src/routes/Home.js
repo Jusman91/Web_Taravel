@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroVideo from '../components/hero/HeroVideo';
+import HeroVideo from '../components/hero/home/HeroVideo';
 import BannerSlide from '../components/banners/BannerSlide';
 import HotelsOffers from '../components/main/hotels/HotelsOffers';
 import FlightsOffers from '../components/main/flights/FlightsOffers';

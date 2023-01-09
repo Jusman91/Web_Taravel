@@ -37,7 +37,7 @@ function App() {
         <Route path='attractions' element={<Attractions />} />
         <Route path='visa' element={<Visa />} />
         <Route path='insurance' element={<Insurance />} />
-        <Route path='details' element={<TourDetails />} />
+        <Route path='/details/:id' element={<TourDetails />} />
       </Routes>
       <ChooseUs />
       <Footer />

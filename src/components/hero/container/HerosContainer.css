@@ -1,0 +1,56 @@
+.container-heros {
+	width: 100%;
+	padding-bottom: 3rem;
+}
+
+.container-heros .slick-list {
+	width: 100%;
+}
+
+.container-heros .wrapper-img-hero-tour img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.container-heros .wrapper-img-hero-tour-details img {
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+}
+.icon-arrow {
+	display: flex;
+	position: absolute;
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	top: 35%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+	z-index: 888;
+	cursor: pointer;
+	transform: rotate(45deg);
+}
+.icon-arrow.left-hero {
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-top: 0.5rem;
+	padding-right: 0.5rem;
+	left: -2%;
+}
+.iconarrowleft {
+	transform: rotate(45deg);
+}
+.icon-arrow.right-hero {
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	right: -2%;
+}
+.iconarrowright {
+	transform: rotate(45deg);
+}
+.left-hero:hover,
+.right-hero:hover {
+	color: rgb(238, 83, 27);
+}

@@ -16,9 +16,10 @@ function TrendingTour({ tourpackages }) {
 					</p>
 				</div>
 				<div className='wrapp-content-tour'>
-					{data.map((item, idx) => (
+					{data.map((item) => (
 						<ContentData
-							key={idx}
+							key={item.id}
+							id={item.id}
 							containerData={item.containerData}
 							cNameContainer={item.cNameContainer}
 							cName={item.cName}
