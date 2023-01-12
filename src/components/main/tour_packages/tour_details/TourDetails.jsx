@@ -14,6 +14,8 @@ import NextArrow from '../../../hero/arrow/NextArrow';
 import Slider from 'react-slick';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import DaysContainer from './itinerary_container/DaysContainer';
+import TermsConditionsContainer from './itinerary_container/TermsConditionsContainer';
 
 export const TourDetails = () => {
 	const { id } = useParams();
@@ -22,6 +24,7 @@ export const TourDetails = () => {
 	const [days, setDays] = useState('day1');
 
 	const details = data.find((p) => p.textHeading === id);
+
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -38,24 +41,17 @@ export const TourDetails = () => {
 			<div className='container-details'>
 				<div className='wrapper-heros'>
 					<Slider {...settings}>
-						<div className='wrapper-img-hero-tour-details'>
-							<img
-								src={details.detailsTour.heroImg.heroImg1}
-								alt=''
-							/>
-						</div>
-						<div className='wrapper-img-hero-tour-details'>
-							<img
-								src={details.detailsTour.heroImg.heroImg2}
-								alt=''
-							/>
-						</div>
-						<div className='wrapper-img-hero-tour-details'>
-							<img
-								src={details.detailsTour.heroImg.heroImg3}
-								alt=''
-							/>
-						</div>
+						{details.detailsTour.heroImg.map(
+							(item, idx) => (
+								<div className='wrapper-img-hero-tour-details'>
+									<img
+										key={idx}
+										src={item}
+										alt='hero_destinations'
+									/>
+								</div>
+							),
+						)}
 					</Slider>
 				</div>
 				<div className='list-container-details'>
@@ -68,24 +64,13 @@ export const TourDetails = () => {
 						</ul>
 					</div>
 					<div className='wrapper-photos'>
-						<div className='photos'>
-							<img
-								src={details.detailsTour.heroImg.heroImg1}
-								alt=''
-							/>
-						</div>
-						<div className='photos'>
-							<img
-								src={details.detailsTour.heroImg.heroImg2}
-								alt=''
-							/>
-						</div>
-						<div className='photos'>
-							<img
-								src={details.detailsTour.heroImg.heroImg3}
-								alt=''
-							/>
-						</div>
+						{details.detailsTour.heroImg.map(
+							(item, idx) => (
+								<div className='photos'>
+									<img key={idx} src={item} alt='' />
+								</div>
+							),
+						)}
 						<button>More Photos</button>
 					</div>
 				</div>
@@ -96,7 +81,7 @@ export const TourDetails = () => {
 						<BsFillHeartFill className='icons-details' />
 
 						<h3>{details.textHeading}</h3>
-						<p>{details.text}</p>
+						<p>{details.detailsTour.country}</p>
 					</div>
 					<div className='right_desc'>
 						<p>{details.detailsTour.desc}</p>
@@ -140,13 +125,20 @@ export const TourDetails = () => {
 							</div>
 							<h5>Flight Included</h5>
 						</li>
+						{}
+						<li className='td-i_list'>
+							<div>
+								<IoMdPaperPlane className='td-i' />
+							</div>
+							<h5>FfafAG fgawfa</h5>
+						</li>
 					</ul>
 				</div>
 				<div className='container-includ-item'>
 					<div className='wrapper-includ-item'>
 						<div className='includ-item-img'>
 							<img
-								src={details.detailsTour.heroImg.heroImg3}
+								src={details.detailsTour.heroImg[2]}
 								alt='destination'
 							/>
 						</div>
@@ -165,7 +157,7 @@ export const TourDetails = () => {
 					<div className='wrapper-includ-item-reverse'>
 						<div className='includ-item-img'>
 							<img
-								src={details.detailsTour.heroImg.heroImg1}
+								src={details.detailsTour.heroImg[1]}
 								alt='destination'
 							/>
 						</div>
@@ -223,189 +215,62 @@ export const TourDetails = () => {
 						</ul>
 					</div>
 					{days === 'day1' && (
-						<div className='days'>
-							<h3>Mengunjungi Force Face Buddha</h3>
-							<figure>
-								<img
-									src={details.detailsTour.heroImg.heroImg2}
-									alt='Destiantions'
-								/>
-								<figcaption>
-									Anda akan dijemput di Bandara Bangkok
-									untuk diantar langsung menuju tempat
-									wisata <b>Wat Arun </b>melewati{' '}
-									<b>Chao Praya</b>. Dilanjutkan perjalanan
-									mengunjungi <b>Four Face Buddha</b>
-									&nbsp;dan berbelanja di <b>MBK Mall. </b>
-									Kemudian, diantar menuju hotel untuk
-									beristirahat.
-								</figcaption>
-							</figure>
-						</div>
+						<>
+							{details.detailsTour.itinerary.day1.map(
+								(item, idx) => (
+									<DaysContainer key={idx} days={item} />
+								),
+							)}
+						</>
 					)}
 					{days === 'day2' && (
-						<div className='days'>
-							<h3>Jalan-jalan ke Nongnooch village</h3>
-							<figure>
-								<img
-									src={details.detailsTour.heroImg.heroImg2}
-									alt='Destiantions'
-								/>
-								<figcaption>
-									Setelah sarapan pagi, Anda langsung
-									diantar menuju{' '}
-									<b>Honey Bee Farm, Laser Budha, </b>
-									dan<b> Nongnooch Village. </b>Setelah
-									makan makan, Anda diantar ke hotel untuk
-									beristirahat.
-								</figcaption>
-							</figure>
-						</div>
+						<>
+							{details.detailsTour.itinerary.day2.map(
+								(item, idx) => (
+									<DaysContainer key={idx} days={item} />
+								),
+							)}
+						</>
 					)}
 					{days === 'day3' && (
-						<div className='days'>
-							<h3>Mengunjungi Pattaya Floating Market</h3>
-							<figure>
-								<img
-									src={details.detailsTour.heroImg.heroImg2}
-									alt='Destiantions'
-								/>
-								<figcaption>
-									Setelah sarapan, kita akan mengantar Anda
-									menuju <b>Erawadee Herb. </b>Lalu, makan
-									siang (biaya sendiri). Setelah itu, Anda
-									akan mengunjungi{' '}
-									<b>Pattaya Floating Market</b>. Makan
-									malam di <b>Pattaya City Point</b> dan
-									diantar kembali ke hotel untuk
-									beristirahat.
-								</figcaption>
-							</figure>
-						</div>
+						<>
+							{details.detailsTour.itinerary.day3.map(
+								(item, idx) => (
+									<DaysContainer key={idx} days={item} />
+								),
+							)}
+						</>
 					)}
 					{days === 'day4' && (
-						<div className='days'>
-							<h3>
-								Jalan-jalan ke Asiatique The River Front
-							</h3>
-							<figure>
-								<img
-									src={details.detailsTour.heroImg.heroImg2}
-									alt='Destiantions'
-								/>
-								<figcaption>
-									Sarapan di hotel, lalu langsung diajak
-									untuk mengunjungi{' '}
-									<b>Art in Paradise Pattaya</b>
-									Setelah makan siang, perjalanan
-									dilanjutkan menuju Kota Bangkok. Di tengah
-									perjalanan, Anda akan mengunjungi{' '}
-									<b>Dried Food Snack Shop </b>dan{' '}
-									<b>Asiatique The River Front</b>. Makan
-									malam (biaya sendiri). Setelah makan
-									malam, diantar kembali menuju hotel.
-								</figcaption>
-							</figure>
-						</div>
+						<>
+							{details.detailsTour.itinerary.day4.map(
+								(item, idx) => (
+									<DaysContainer key={idx} days={item} />
+								),
+							)}
+						</>
 					)}
 					{days === 'day5' && (
-						<div className='days'>
-							<h3>Pulang ke Indonesia</h3>
-							<figure>
-								<img
-									src={details.detailsTour.heroImg.heroImg2}
-									alt='Destiantions'
-								/>
-								<figcaption>
-									Sarapan di hotel, langsung menuju{' '}
-									<b>Damnuen Saduak Floating Market.</b>
-									Setelah makan siang, Anda memiliki program{' '}
-									<i>free</i>di <b>Platinum </b>sampai
-									waktunya diantar ke <i>airport</i>untuk
-									kembali ke kota asal.
-								</figcaption>
-							</figure>
-						</div>
+						<>
+							{details.detailsTour.itinerary.day5.map(
+								(item, idx) => (
+									<DaysContainer key={idx} days={item} />
+								),
+							)}
+						</>
 					)}
+
 					{days === 'terms&conditions' && (
-						<div className='terms_conditions'>
-							<h5>
-								<b>Harga Minimum 6 Pax / Twin Share:</b>
-							</h5>
-							<div>
-								<div className='minPrice'>
-									<h5>
-										<b>Hotel</b>
-										<p>
-											BKK : Zayn Hotel Bangkok or Similiar
-										</p>
-										<p>
-											PTY : So Boutique Jomtien Beach
-											Pattaya or Similiar
-										</p>
-									</h5>
-									<h5>
-										<b>Pax</b>
-										<p>IDR 8.800.000</p>
-										<p>IDR 8.800.000</p>
-									</h5>
-								</div>
-								<div className='conditions'>
-									<h5>
-										<b>
-											*Harga dapat berubah sewaktu-waktu
-											tanpa pemberitahuan sebelumnya
-										</b>
-									</h5>
-									<h5>
-										<b>
-											*Kami belum melakukan pembookingan
-											apapun
-										</b>
-									</h5>
-								</div>
-								<div>
-									<h5>
-										<b>Biaya Tour Belum Termasuk:</b>
-									</h5>
-									<ul>
-										<li>Biaya keperluan pribadi</li>
-										<li>
-											Tips guide & driver USD 5/Pax/Day
-										</li>
-										<li>Optional tour</li>
-										<li>Extra makanan dan minuman</li>
-									</ul>
-								</div>
-								<div>
-									<h5>
-										<b>Catatan:</b>
-									</h5>
-									<ul>
-										<li>
-											Untuk melihat keindahan <i>sunrise</i>
-											tergantung pada cuaca.
-										</li>
-										<li>
-											Valid hanya untuk tamu domestik.
-										</li>
-										<li>
-											Tidak berlaku pada waktu{' '}
-											<i>
-												high season/peak season/long weekend
-											</i>
-											.
-										</li>
-										<li>
-											Harga dapat berubah sewaktu-waktu
-											mengikuti ketersediaan <i>seat </i>
-											yang ada.
-										</li>
-										<li>Berlkau sampai Maret 2023.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+						<>
+							{details?.detailsTour.itinerary.termsConditions.map(
+								(item, idx) => (
+									<TermsConditionsContainer
+										key={idx}
+										TesCons={item}
+									/>
+								),
+							)}
+						</>
 					)}
 				</div>
 			</div>

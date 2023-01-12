@@ -12,6 +12,7 @@
 	color: black;
 	opacity: 1;
 	transition: 0.7s ease-out opacity;
+	overflow-x: hidden;
 }
 .hover:hover .container-hover-insurance {
 	opacity: 1;

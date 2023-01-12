@@ -39,3 +39,9 @@
 	background-color: #fff;
 	color: rgb(67, 114, 233);
 }
+
+@media screen and (max-width: 1150px) {
+	.hero-container {
+		display: none;
+	}
+}

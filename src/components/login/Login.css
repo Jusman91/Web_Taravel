@@ -4,7 +4,7 @@
 	width: 600px;
 	padding: 1rem 0;
 	right: 4%;
-	top: 7.2%;
+	top: 6.9%;
 	z-index: 999;
 }
 .container-login .login {
@@ -42,6 +42,7 @@
 	color: rgb(67, 114, 233);
 	cursor: pointer;
 }
+
 .container-login .btn-login {
 	width: 100%;
 	background: transparent;
@@ -60,10 +61,10 @@
 	background-image: url(../../asset/login/bg-login.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 80vw;
-	height: 40vw;
-	left: -20%;
-	position: absolute;
+	width: 80vmax;
+	height: 545px;
+	left: 50%;
+	transform: translate(-50%, 5%);
 }
 .modal-header {
 	border: none;
@@ -97,7 +98,8 @@
 .description .voucher p {
 	font-size: 1.2rem;
 }
-.register {
+.register,
+.login-modal {
 	width: 330px;
 	height: 544px;
 	background-color: rgba(67, 114, 233, 0.6);
@@ -112,7 +114,8 @@
 	top: 0;
 	left: 0;
 }
-.register input {
+.register input,
+.login-modal input {
 	background: transparent;
 	border: none;
 	border-bottom: 3px solid rgb(202, 198, 198);
@@ -122,14 +125,17 @@
 	color: #fff;
 	font-size: 1.2rem;
 }
-.register ::placeholder {
+.register ::placeholder,
+.login-modal ::placeholder {
 	color: #fff;
 }
-.register .btn-register {
+.register .btn-register,
+.login-modal .btn-login-modal {
 	background-color: #fff;
 	color: rgb(67, 114, 233);
 }
-.register .btn-register:hover {
+.register .btn-register:hover,
+.login-modal .btn-login-modal:hover {
 	background-color: rgb(238, 83, 27);
 	color: #fff;
 }

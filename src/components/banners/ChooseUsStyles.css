@@ -1,15 +1,22 @@
 .container-why-choose-us {
-	padding: 4rem 6rem 1rem 6rem;
+	width: 100%;
+	padding: 4rem 4rem 1rem 4rem;
 	margin-top: 4rem;
 	background-color: rgb(67, 114, 233);
 	color: #fff;
+	overflow-x: hidden;
 }
 .why-choose-us {
 	display: flex;
-	gap: 4rem;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .wrapper-text {
 	display: flex;
+}
+.wrapper-text .small-text {
+	line-height: 2px;
+	padding-top: 0.6rem;
 }
 .wrapper-text h3 {
 	font-size: 5.5rem;
@@ -30,4 +37,13 @@
 	padding-bottom: 3rem;
 	padding-right: 6rem;
 	text-align: end;
+}
+
+@media screen and (max-width: 1150px) {
+	.wrapper-text {
+		gap: 2rem;
+	}
+	.sosial-media {
+		display: none;
+	}
 }

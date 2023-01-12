@@ -22,20 +22,20 @@ function ChooseUs() {
 					<ChooseUsData
 						text1='5'
 						text2='steps'
-						text3='Easy & simple
-					Booking process'
+						text3='Easy & simple'
+						text4='Booking process'
 					/>
 					<ChooseUsData
 						text1='>10'
 						text2='more'
-						text3='of best deals
-					and giveaways'
+						text3='of best deals'
+						text4='and giveaways'
 					/>
 					<ChooseUsData
 						text1='24'
 						text2='hours'
-						text3='Customer support with
-					unique experiences'
+						text3='Customer support with'
+						text4='unique experiences'
 					/>
 				</div>
 			</div>

@@ -8,7 +8,10 @@ function ChooseUsData(props) {
 				<h3>{props.text1}</h3>
 				<div>
 					<h4>{props.text2}</h4>
-					<p>{props.text3}</p>
+					<div className='small-text'>
+						<p>{props.text3}</p>
+						<p>{props.text4}</p>
+					</div>
 				</div>
 			</div>
 		</div>

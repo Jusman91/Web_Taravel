@@ -82,6 +82,11 @@ import TourDImg48 from '../../../asset/hero/dt48.jpg';
 import TourDImg49 from '../../../asset/hero/dt49.jpg';
 import TourDImg50 from '../../../asset/hero/dt50.jpg';
 import TourDImg51 from '../../../asset/hero/dt51.jpg';
+import DetailsImg1 from '../../../asset/tour/details/it1.jpg'
+import DetailsImg2 from '../../../asset/tour/details/it2.jpg'
+import DetailsImg3 from '../../../asset/tour/details/it3.jpg'
+import DetailsImg4 from '../../../asset/tour/details/it4.jpg'
+import DetailsImg5 from '../../../asset/tour/details/it5.jpg'
 
 export const TourData = (tourpackages) => {
   const data = [
@@ -100,18 +105,73 @@ export const TourData = (tourpackages) => {
       price: '19,800,000',
       descTourHover: 'Pengalaman liburan tak terlupakan akan Anda dapatkan dengan mengambil paket ini. Anda akan kami ajak melakukan berbagai pengalaman seru, mulai dari eksplore kota Sydney sampai puas, melihat koala menggemaskan di Featherdale Wildlife Park, mencicipi wine di Audrey Wilkinson Winery, melihat paus dari atas kapal cruise, mencoba naik kereta luncur berpasir di Tangalooma, hingga menyaksikan indahnya pemandangan malam kota Melbourne dari atas Eureka Melbourne Skydeck. Ayo, reservasi paket ini sekarang untuk keberangkatan hingga 25 Juni 2022.',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg31,
-
-
-          heroImg2: TourDImg32,
-
-
-          heroImg3: TourDImg33,
+        heroImg:
+          [TourDImg31, TourDImg32, TourDImg33],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
 
       }
     },
@@ -130,18 +190,73 @@ export const TourData = (tourpackages) => {
       price: '19,800,000',
       descTourHover: 'Berpetualang di Sydney menjadi mungkin jika Anda mengambil paket ini. Anda akan kami ajak city tour di kota Sydney seharian penuh dengan mengunjungi tempat-tempat wisata yang menarik, sebut saja seperti Sydney Opera House yang merupakan bangunan khas negara Australia, Captain Cook Cruise, dan Sydney Brigde. Selain itu, Anda juga akan mencoba pengalam seru naik unta di Port Stephens, menikmati anggur di Audrey Wilkinson Winery, hingga melihat koala di Featherdale Wildlife Park. Jadi, tunggu apa lagi? Ayo reservasi paket ini sekarang untuk perjalanan hingga Juni 2022.',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg31,
-
-
-          heroImg2: TourDImg32,
-
-
-          heroImg3: TourDImg33,
+        heroImg:
+          [TourDImg31, TourDImg32, TourDImg33],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -159,18 +274,73 @@ export const TourData = (tourpackages) => {
       price: '19,800,000',
       descTourHover: 'Bingung mau liburan kemana tahun ini? Untuk rekomendasi, kamu bisa ambil paket liburan lima hari ke Sydney dan Port Stephens, Australia. Anda akan merasakan liburan mengasyikkan dengan mengunjungi banyak spot terkenal di Sydney. Lalu, mencoba pengalaman seru naik Vivid Sydney Cruise yang mewah. Tak terlupakan, Anda juga akan merasakan naik unta, melhat lumba-lumba, dan naik 4WD Sandboarding di Port Stephens. Reservasi paket ini sekarang untuk perjalanan hingga Juni 2022.',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg31,
-
-
-          heroImg2: TourDImg32,
-
-
-          heroImg3: TourDImg33,
+        heroImg:
+          [TourDImg31, TourDImg32, TourDImg33],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -189,18 +359,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ayo, rasakan kembali liburan ke Madrid, Spanyol. Anda akan diberikan waktu lima hari untuk menjelajahi indahknya Kota Madrid secara bebas. Anda bisa mengunjungi tempat-tempat liburan di Madrid sesuka Anda. Kapan lagi bisa merasakan liburan semenyenangkan ini? Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg49,
-
-
-          heroImg2: TourDImg50,
-
-
-          heroImg3: TourDImg51,
+        heroImg:
+          [TourDImg49, TourDImg50, TourDImg51],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -220,18 +445,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Sebagai kota yang menyimpan banyak sejarah, Banda Aceh patut Anda kunjungi di liburan kali ini. Anda akan diajak berziarah ke Tugu Tsunami di Siron, tugu yang menyimpan memori tak terlupakan saat Aceh dilanda Tsunami. Lalu, Anda akan diajak jalan-jalan mengunjungi objek wisata terkenal di Banda Aceh sebelum menyebrang ke Sabang. Di Sabang, Anda akan diajak ke Tugu Kilometer Nol Indonesia, bersantai di Pantai Iboih, snorkeling di Taman Bawah Laut Rubiah, hingga menikmati sunset di Sabang Fair. Reservasi paket ini sekarang untuk keberangkatan hingga akhir 2022.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg34,
-
-
-          heroImg2: TourDImg35,
-
-
-          heroImg3: TourDImg36,
+        heroImg:
+          [TourDImg34, TourDImg35, TourDImg36],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -250,18 +530,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Rencanakan liburan Natal Anda dengan berwisata ke Korea Selatan. Anda akan diajak tak hanya menelusuri Kota Seoul yang modern, tetapi juga jalan-jalan ke Pulau Jeju-nya yang cantik. Ayo, segera ambil paket wisata ini dan rasakan pengalaman tak terlupakan menikmati sunset di Jeju, melihat indahnya Seongup Folk Village, jalan-jalan di Gwongsemsong Fortress, berfoto dengan Hanbok di Gyeongbok Palace, hingga berbelanja di Dongdaemun Market. Reservasi paket ini sekarang untuk keberangkatan tanggal 22 Desember 2022.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg16,
-
-
-          heroImg2: TourDImg17,
-
-
-          heroImg3: TourDImg18,
+        heroImg:
+          [TourDImg16, TourDImg17, TourDImg18],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -280,18 +615,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Habiskan libur Natal dan Tahun Baru Anda dengan mengunjungi Kota Seoul dan Pulau Jeju di Korea Selatan. Pulau Jeju yang indah bisa anda eksplore bersama kami. Nikmati indahnya pemandangan matahari terbit di Sunrise Peak, berfoto di Nami Island yang cantik, bermain sampai puas di Everland Theme Park, mengunjungi objek wisata terkenal N-Seoul Tower, hingga menelusuri jalan Gangnam Street yang terkenal. Reservasi paket ini sekarang untuk keberangkatan tanggal 29 Desember 2022.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg16,
-
-
-          heroImg2: TourDImg17,
-
-
-          heroImg3: TourDImg18,
+        heroImg:
+          [TourDImg16, TourDImg17, TourDImg18],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -310,18 +700,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Kota London memiliki pesonanya yang mampu menyihir siapa pun untuk datang kembali. Sebagai kota modern yang indah, London mengajak Anda untuk liburan kembali ke sana tahun ini. Ambil paket ini dan Anda akan menikmati liburan selama lima hari di London secara bebas. Anda dapat mengeksplor, keliling-keliling, jalan-jalan, dan menikmati London secara puas selama seharian penuh. Reservasi paket ini sekarang untuk keberangkatan hingga Desember 2022.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg37,
-
-
-          heroImg2: TourDImg38,
-
-
-          heroImg3: TourDImg39,
+        heroImg:
+          [TourDImg37, TourDImg38, TourDImg39],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -340,18 +785,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Habiskan musim semi kamu dengan berlibur di Korea Selatan. Ayo, jangan lewarkan kesempatan untuk melihat indahnya bunga bermekaran di Nami Island. Lalu, potret momen liburan seru kamu di Soyanggang Skywalk, Gwanghwamun Square, dan di Gyeongbok Palace. Tak lupa, nikmati serunya jalan-jalan di Gwongsemsong Fortress dan Myeongdong yang terkenal. Ayo, reservasi paket ini sekarang untuk keberangkatan hingga 5 April 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg16,
-
-
-          heroImg2: TourDImg17,
-
-
-          heroImg3: TourDImg18,
+        heroImg:
+          [TourDImg16, TourDImg17, TourDImg18],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -370,18 +870,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Seoul dan Jeju adalah dua kota di Korea Selatan yang memancarkan pesona berbeda. Jika seoul tampil sebagai kota modern, maka Jeju hadir dengan keindahan alamnya yang masih alami. Ayo, rasakan sensasi liburan di dua kota tersebut selama musim semi di Korea. Anda akan diajak ke Teddy Bear Museum di Pulau Jeju, menikmati matahari terbit di Sunrise Peak, melihat bangunan rumah tradisional di Seongup Folk Village, berfoto dengan latar belakang bunga yang bermekaran di Nami Island dan Gyeongbok Palace, hingga berbelanja di Dongdaemun Market yang terkenal. Reservasi paket ini sekarang untuk keberangkatan hingga 5 April 2023.',
       details: '2 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg16,
-
-
-          heroImg2: TourDImg17,
-
-
-          heroImg3: TourDImg18,
+        heroImg:
+          [TourDImg16, TourDImg17, TourDImg18],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -400,18 +955,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Yuk, habiskan momen liburan akhir tahun dan awal tahun di Turki. Menawarkan pemandangan musim dingin yang indah, Turki cocok menjadi destinasi liburan Anda kali ini. Anda akan kami ajak melihat Hagia Sophia yang megah, mengunjungi Blue Mosque, jalan-jalan ke Hierapolis, eksplore kota Cappadocia yang indah dengan balon udaranya, menikmati pemandangan laut Istanbul yang indah dari atas Bosphorus Cruise, hingga berbelanja oleh-oleh khas Turki di Grand Bazaar. Reservasi sekarang untuk keberangkatan tanggal 26 Desember 2022.',
       details: '2 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg40,
-
-
-          heroImg2: TourDImg41,
-
-
-          heroImg3: TourDImg42,
+        heroImg:
+          [TourDImg40, TourDImg41, TourDImg42],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -430,16 +1040,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Tak jauh dari Indonesia, Vietnam bisa menjadi pilihan destinasi liburan Anda bersama keluarga di tahun ini. Vietnam akan memberikan Anda pengalaman liburan yang tak terlupakan. Anda akan diajak berbelanja di Ben Thanh Market, mengunjungi Cu Chi Tunnels, jalan-jalan di Saigon, hingga bersantai di beberapa pulau, seperti Dagon Island, Unicorn Island, Phoenix Island, dan Turtle Island. Ayo, reservasi paket ini sekarang untuk keberangkatan hingga 22 Desember 2022.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg16,
-
-
-          heroImg2: TourDImg17,
-
-          heroImg3: TourDImg18,
+        heroImg:
+          [TourDImg16, TourDImg17, TourDImg18],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     }
   ];
@@ -459,18 +1126,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Yuk, eksplore Dubai menyaksikan keindahannya yang menakjubkan selama tujuh hari! Anda berkesempatan untuk mengunjungi tempat-tempat penuh sejarah, seperti ke Masjid King Faisal, Ajman Museum, UAQ Fort, Dhayah Fort, dan Al Bidyah Mosque. Anda juga akan mengunjungi ikon-ikon terkenal di Dubai seperti Burj Al Arab, Atlantis the Palm, Dubai Marina, dan Burj Khalifa. Begitu juga ketika di Abu Dhabi, kami akan membawa Anda ke destinasi terkenal, salah satunya Sheikh Zayed Grand Mosque, yang merupakan masjid terbesar di negara Arab. Segera dapatkan paketnya dan bersiaplah berlibur ke negara timur tengah bersama kami.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg46,
-
-
-          heroImg2: TourDImg47,
-
-
-          heroImg3: TourDImg48,
+        heroImg:
+          [TourDImg46, TourDImg47, TourDImg48],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -488,18 +1210,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Liburan ke Jepang selalu menyenangkan. Banyak objek wisata, kuliner, hingga tempat bermain seru di Jepang. Ayo, ambil paket liburan ke Jepang sekarang dan rasakan momen liburan tak terlupakan. Anda akan diajak mengelilingi Nakamise Street, berswafoto di Tokyo Skytree, berbelanja di Ginza, bermain di Disneysea dan Universal Studio Japan, menikmati pemandangan Gunung Fuji yang indah, mengunjungi objek wisata terkenal Fushimi Inari Shrine, hingga mengeksplore Shinsaibashi Area. Reservasi paket liburan ke Jepang untuk keberangkatan tanggal 2 April 2023.',
       details: '4 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg22,
-
-
-          heroImg2: TourDImg23,
-
-
-          heroImg3: TourDImg24,
+        heroImg:
+          [TourDImg22, TourDImg23, TourDImg24],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -518,15 +1295,8 @@ export const TourData = (tourpackages) => {
       details: 'More Details',
       detailsTour: {
         heroImg:
-        {
-          heroImg1: TourDImg1,
-
-
-          heroImg2: TourDImg2,
-
-
-          heroImg3: TourDImg3,
-        },
+          [TourDImg1, TourDImg2, TourDImg3],
+        country: 'Thailand',
         desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
         includ: {
           sightseeing: [
@@ -544,8 +1314,53 @@ export const TourData = (tourpackages) => {
             'Tour and transfers dengan tour guide sesuai program.',
             '1 botol air mineral per orang per hari selama tour.'
           ]
+        },
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: ['IDR 8.800.000'],
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
         }
-
       }
     },
     {
@@ -563,18 +1378,68 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ingin liburan murah ke Melbourne? Kami punya paket wisatanya untuk Anda. Melbourne Open Trip selama 5 hari menawarkan liburan murah buat Anda yang ingin mengeksplore Kota Melbourne. Anda memiliki waktu bebas jalan-jalan di Melbourne dan Gold Coast. Anda juga berkesempatan mengikuti Trip Philip Island dengan mengunjungi Brighton Beach, Moonlit Sanctuary, Nobbies Seal Rock, dan Penguin Parade. Reservasi paket ini sekarang untuk perjalanan hingga Maret 2023.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg4,
-
-
-          heroImg2: TourDImg5,
-
-
-          heroImg3: TourDImg6,
+        heroImg:
+          [TourDImg4, TourDImg5, TourDImg6],
+        country: 'Australia',
+        desc: 'Ingin liburan murah ke Melbourne? Kami punya paket wisatanya untuk Anda. Melbourne Open Trip selama 5 hari menawarkan liburan murah buat Anda yang ingin mengeksplore Kota Melbourne. Anda memiliki waktu bebas jalan-jalan di Melbourne dan Gold Coast. Anda juga berkesempatan mengikuti Trip Philip Island dengan mengunjungi Brighton Beach, Moonlit Sanctuary, Nobbies Seal Rock, dan Penguin Parade. Reservasi paket ini sekarang untuk perjalanan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Keliling Kota Melbourne sampai puas.',
+            'Mengeksplore Kota Gold Coast.',
+            'Trip ke Philip Island dengan mengunjungi Brighton Beach, Moonlit Sanctuary, Nobbies Seal Rock, dan Penguin Parade Standard View.',
+          ],
+          travel: [
+            'Transfer Airport - Hotel - Airport.',
+            'Penginapan 3 malam *4.',
+            'Transportasi bus (SIC) / minimum 10 pax.',
+            'Tiket wisata yang disebutkan.',
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Tiba di Melbourne',
+              image: DetailsImg1,
+              desc: 'Tiba di Melbourne Airport. Anda akan berkumpul untuk diantar menuju hotel'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan di Kota Melbourne',
+              image: DetailsImg2,
+              desc: 'Setelah makan pagi, Anda dapat menuju Regent Theatre di 191 Collins Street untuk bergabung dengan SIC Melbourne city tour yang kami sediakan. (Start 09.00-12.30). Sore hari, Anda bisa kembali ke hotel dengan berjalan santai.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengeksplore Kota Gold Coast',
+              image: DetailsImg3,
+              desc: 'Setelah makan pagi, Anda memiliki acara bebas untuk berkesempatan mengeksplore kota Gold Coast.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Trip ke Philip Island',
+              image: DetailsImg4,
+              desc: 'Setelah makan pagi, Anda akan dijemput untuk mengikuti SIC trip <b>Philip Island (sudah termasuk Brighton Beach, Moonlit Santuary tiket, Nobbies Seal Rock, dan Penguin Parade Standard View. Anda akan di-drop di hotel pada malam hari.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Kota Asal',
+              image: DetailsImg5,
+              desc: 'Setelah makan pagi, Anda akan diantar menuju bandara Melbourne untuk kembali ke kota asal. Sampai jumpa di liburan selanjutnya.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Berdasarkan Twin Share:', 'Harga Minimal 2 orang'],
+            departure: ['8 Dec 2022', '12 dan s7 Jan 2023/ 16 Feb 2023/ 23mar 2023'],
+            hotel: ['Crowne Promanade *4/setaraf'],
+            pax: ['IDR 8.800.000'],
+            HargaPerOrang: ['IDR 5.800.000', 'IDR 6.800.000'],
+            noInclude: ['Pengeluaran pribadi', 'Tips dan porter tips', 'Tiket pesawat', 'PPN 1,1%'],
+          }]
+        }
       }
     },
     {
@@ -592,18 +1457,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Belum tahu mau liburan ke mana tahun depan? Tak usah bingung, kami rekomendasikan Korea Selatan sebagai destinasi liburan kamu selanjutnya. Ada banyak tempat wisata seru, pemandangan indah, hingga kuliner menggiurkan di Seoul. Rasakan pengalaman liburan menyenangkan dengan jalan-jalan di Gwanghwamun Square, berfoto dengan latar daun-daun indah di Nami Island, bermain di Everland, berswafoto dengan baju hanbok di Gyeongbok Palace, hingga mengeksplore Myeongdong yang terkenal. Reservasi paket ini sekarang untuk keberangkatan hingga 21 Juli 2023.',
       details: '6 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg7,
-
-
-          heroImg2: TourDImg8,
-
-
-          heroImg3: TourDImg9,
+        heroImg:
+          [TourDImg7, TourDImg8, TourDImg9],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -621,18 +1541,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Tersedia paket liburan seru ke dua tempat sekaligus, yakni Seoul dan Jeju untuk Anda. Ayo, ajak sahabat, keluarga, atau orang terkasih Anda liburan ke Korea Selatan tahun depan. Kami akan mengajak Anda jalan-jalan di Jeju, menikmati matahari terbit di Sunrise Peak, melihat rumah tradisional di Pulau Jeju, berswafoto dengan latar belakang dedaunan cantik di Nami Island, berlibur ke Everland, hingga melihat pemandangan indah di Gwongsemsong Fortress. Reservasi paket ini sekarang untuk keberangkatan hingga 5 April 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg7,
-
-
-          heroImg2: TourDImg8,
-
-
-          heroImg3: TourDImg9,
+        heroImg:
+          [TourDImg7, TourDImg8, TourDImg9],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -650,18 +1625,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ingin mengeksplore Kota Gold Coast secara bebas? Nah, ini tersedia paketnya buat Anda. Dengan mengambil paket Open Trip, Anda berkesempatan mengeksplore Kota Gold Coast secara bebas. Anda juga berkesempatan diajak bermain di Movie World dan diajak liburan ke Paradise Country Farm. Paket ini pun juga sudah termasuk penginapan dan transportasi. Tunggu apa lagi? Langsung aja reservasi sekarang untuk perjalanan hingga Maret 2023.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg10,
-
-
-          heroImg2: TourDImg11,
-
-
-          heroImg3: TourDImg12,
+        heroImg:
+          [TourDImg10, TourDImg11, TourDImg12],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -679,18 +1709,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Jepang menjadi negara destinasi liburan yang tak pernah salah. Dengan segala pesona yang dimilikinya, ayo ciptakan momen liburan seru ke Tokyo, Kyoto, dan Osaka. Anda akan diajak jalan-jalan di Nakamise Street, bermain di Disneysea Tokyo dan Universal Studio Japan, mengagumi keindahan Gunung Fuji, berswafoto di Fushimi Inari yang terkenal, menelusuri Shinsaibashi Area, mengunjungi Osaka Castle, hingga berbelanja di Rinku Premium Outlet. Reservasi paket liburan ke Jepang untuk keberangkatan tanggal 11 Februari 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg13,
-
-
-          heroImg2: TourDImg14,
-
-
-          heroImg3: TourDImg15,
+        heroImg:
+          [TourDImg13, TourDImg14, TourDImg15],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -708,18 +1793,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Tersedia paket liburan seru ke dua tempat sekaligus, yakni Seoul dan Jeju untuk Anda. Ayo, ajak sahabat, keluarga, atau orang terkasih Anda liburan ke Korea Selatan tahun depan. Kami akan mengajak Anda jalan-jalan di Jeju, menikmati matahari terbit di Sunrise Peak, melihat rumah tradisional di Pulau Jeju, berswafoto dengan latar belakang dedaunan cantik di Nami Island, berlibur ke Everland, hingga melihat pemandangan indah di Gwongsemsong Fortress. Reservasi paket ini sekarang untuk keberangkatan hingga 21 Juli 2023.',
       details: '6 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg7,
-
-
-          heroImg2: TourDImg8,
-
-
-          heroImg3: TourDImg9,
+        heroImg:
+          [TourDImg7, TourDImg8, TourDImg9],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -737,18 +1877,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg25,
-
-
-          heroImg2: TourDImg26,
-
-
-          heroImg3: TourDImg27,
+        heroImg:
+          [TourDImg25, TourDImg26, TourDImg27],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -766,18 +1961,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Dengan segala pesona yang dimiliki Jepang, ayo ciptakan momen liburan seru ke Tokyo dan Osaka. Anda akan diajak jalan-jalan. Anda akan diajak ke Osaka Castle, bermain sampai puas di Universal Studio dan Disneysea, berswafoto dengan latar belakang MT Fuji, menikmati indahnya Lake Kawaguchi dan Hakone Lake, hingga jalan-jalan di Shibuya dan Ginza. Reservasi paket liburan ke Jepang untuk keberangkatan hingga 27 Juli 2023.',
       details: '6 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg13,
-
-
-          heroImg2: TourDImg14,
-
-
-          heroImg3: TourDImg15,
+        heroImg:
+          [TourDImg13, TourDImg14, TourDImg15],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -795,18 +2045,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Mau liburan ke Eropa? Italia, Swiss, Jerman, Belanda, Belgia, hingga Paris sudah menunggu Anda! Ayo, ambil paket ini dan rasakan liburan menyenangkan ke 6 negara dan 10 kota di Eropa. Anda akan diajak mengelilingi kota Roma, melihat bangunan-bangunan bersejarah megah yang terkenal di Eropa, berfoto di Leaning Tower of Pisa, menelusuri kota Venice yang cantik, naik ke MT Titlis, hingga jalan-jalan seharian secara bebas di Frankfurt. Reservasi paket ini sekarang untuk perjalanan tanggal 28 Februari 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg28,
-
-
-          heroImg2: TourDImg29,
-
-
-          heroImg3: TourDImg30,
+        heroImg:
+          [TourDImg28, TourDImg29, TourDImg30],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -824,18 +2129,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ingin mengeksplore Sydney secara bebas? Nah, ini tersedia paket Open Trip buat Anda. Dengan mengambil paket ini, Anda akan diajak trip ke Blue Mountain termasuk Featherdale Wildlife dan Scenic World, lalu mengeksplore Kota Gold Coast, kemudian mengikuti Sydney Lunch Buffet Cruise, dan diakhiri dengan mengunjungi Sydney Aquarium. Tunggu apa lagi? Langsung aja reservasi sekarang untuk perjalanan hingga Maret 2023.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg31,
-
-
-          heroImg2: TourDImg32,
-
-
-          heroImg3: TourDImg33,
+        heroImg:
+          [TourDImg31, TourDImg32, TourDImg33],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -853,18 +2213,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ayo, habiskan liburan awal tahun Anda bersama kami ke West Europe selama tiga belas Hari. Ambil paket ini dan rasakan liburan menyenangkan ke 5 negara dan 9 kota di Eropa. Anda dan keluarga akan diajak mengelilingi kota Roma, melihat bangunan-bangunan bersejarah megah yang terkenal di Eropa, berfoto di Leaning Tower of Pisa, menelusuri kota Venice yang cantik, naik ke MT Titlis, hingga jalan-jalan seharian secara bebas di Paris. Reservasi paket ini sekarang untuk perjalanan tanggal 28 Maret 2022.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg28,
-
-
-          heroImg2: TourDImg29,
-
-
-          heroImg3: TourDImg30,
+        heroImg:
+          [TourDImg28, TourDImg29, TourDImg30],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -882,18 +2297,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ciptakan momen liburan menyenangkan dengan mengunjungi Eropa. Yuk, segera ambil paket ini dan Anda akan kami ajak ke Kota Roma, berswafoto di Leaning Tower of Pisa, berbelanja ke Foxtown Outlet Lugano di Zurich, Melihat indahnya MT Titlis, menelusuri Kota Amsterdam, hingga jalan-jalan di Belgia hingga Paris. Reservasi paket ini sekarang untuk perjalanan tanggal 20 Maret 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg28,
-
-
-          heroImg2: TourDImg29,
-
-
-          heroImg3: TourDImg30,
+        heroImg:
+          [TourDImg28, TourDImg29, TourDImg30],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -911,18 +2381,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Berlibur ke Seoul lebih bahagia dengan harga yang murah meriah. Yuk, ambil paket ini dan ciptakan momen liburan yang tak terlupakan. Selama di Seoul 3 hari, Anda akan diajak berwisata ke Gyeongbok Palace yang terkenal menggunakan Hanbok, mengunjungi National Folklore Musem, berfoto di Bukchon Hanok Village, hingga berbelanja di Dongdaemun serta beberapa store ternama lainnya di Korea. Segera reservasi paket liburan murah ini untuk keberangkatan hingga Juni 2023.',
       details: 'More Details',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg19,
-
-
-          heroImg2: TourDImg20,
-
-
-          heroImg3: TourDImg21,
+        heroImg:
+          [TourDImg19, TourDImg20, TourDImg21],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -940,18 +2465,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Mari, dekatkan diri kepada Tuhan dengan melakukan perjalanan Rohani ke Holyland. Selama melakukan perjalanan rohani, Anda akan mengunjungi tempat-tempat penting bagi umat Katholik maupun Kristen Protestan seperti mendaki ke Gunung Sinai tempat Musa menerima 10 perintah Tuhan, melihat Kolam Bethesda yang merupakan tempat Yesus menyembuhkan orang lumpuh, mengunjungi Gereja ST Peter di Galicantu di mana Petrus menyangkal Yesus 3 kali, pergi ke Bukit Sion untuk mengunjungi Ruang Perjamuan Terakhir dan melihat makam Raja Daud, mengunjungi Gunung Nebo tempat Nabi Musa melihat Tanah Kanaan sebelum wafat, dan ke tempat-tempat rohani lainnya. Ayo, reservasi paket Holyland ini untuk keberangkatan tanggal 12 Maret 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg43,
-
-
-          heroImg2: TourDImg44,
-
-
-          heroImg3: TourDImg45,
+        heroImg:
+          [TourDImg43, TourDImg44, TourDImg45],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -969,18 +2549,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Setelah liburan tertunda selama beberapa waktu, ayo, kali ini rayakan liburan seru ke Turki. Bersama keluarga atau orang terkasih, Anda akan diajak mengelilingi enam kota di Turki selama 10 hari. Anda akan diajak melakukan hal-hal mengasyikan, mulai dari mengunjungi Grand Mosque, melihat keajaiban Ephesus Ancient City, melihat keindahan Cotton Castle, naik balon udara di Cappadocia, masuk ke Hagia Sophia, hingga menyaksikan indahnya Istanbul dari atas Bosphorus Cruise. Ayo, reservasi sekarang untuk keberangkatan hingga 28 Juli 2023.',
       details: '5 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg40,
-
-
-          heroImg2: TourDImg41,
-
-
-          heroImg3: TourDImg42,
+        heroImg:
+          [TourDImg40, TourDImg41, TourDImg42],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -998,18 +2633,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Rencanakan liburan Anda bersama keluarga dengan mengunjungi Melbourne, Gold Coast, dan Sydney. Beragam objek wisata seru dan menyenangkan telah menanti untuk Anda kunjungi. Anda akan diajak melihat Shrine of Remembrance, lalu berswafoto di Melbourne Street Art, menikmati kuliner di Queen Victoria Market, bermain sand toboganing di Tangalooma, berbelanja di Harbour Town Outlet, hingga menikmati anggur di Audrey Wilkinson Winery. Ayo, reservasi paket ini untuk keberangkatan tanggal 17 April 2023.',
       details: '1 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg31,
-
-
-          heroImg2: TourDImg32,
-
-
-          heroImg3: TourDImg33,
+        heroImg:
+          [TourDImg31, TourDImg32, TourDImg33],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -1027,18 +2717,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ayo, ajak orang terkasih Anda berlibur ke Eropa. Austria, Ceko, Polandia, Slovakia, dan Hongaria bakal menjadi destinasi berlibur yang seru di tahun 2023 ini. Jika mengambil paket ini, Anda akan diajak berfoto di ikon Kota Vienna, seperti Hofburg Palace, Schonbrunn Palace, dan Vienna Cathedral. Lalu, jalan-jalan di Prague, mengunjungi Bratislava Castle, hingga ke Mozart House. Ayo, reservasi paket ini sekarang untuk perjalanan hingga 18 Juli 2023.',
       details: '6 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg28,
-
-
-          heroImg2: TourDImg29,
-
-
-          heroImg3: TourDImg30,
+        heroImg:
+          [TourDImg28, TourDImg29, TourDImg30],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
     {
@@ -1056,18 +2801,73 @@ export const TourData = (tourpackages) => {
       descTourHover: 'Ajak keluarga Anda liburan spektakuler ke Maroko, Spanyol, dan Portugal. Anda akan dibawa liburan seru-seruan ke berbagai kota di 3 negara tersebut, mulai dari mengunjungi Hasan II Mosque, jalan-jalan ke Cape Spartel, masuk ke Alhambra Castle, eksplore Kota Madrid, hingga jalan-jalan sampai puas di Barcelona. Ayo, reservasi paket tur ini sekarang untuk keberangkatan hingga 27 Juli 2023.',
       details: '6 Departure Dates',
       detailsTour: {
-        'heroImg':
-        {
-          heroImg1: TourDImg49,
-
-
-          heroImg2: TourDImg50,
-
-
-          heroImg3: TourDImg51,
+        heroImg:
+          [TourDImg49, TourDImg50, TourDImg51],
+        country: 'Thailand',
+        desc: 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.',
+        includ: {
+          sightseeing: [
+            'Mengunjungi Wat Arun, Four Face Buddha, dan MBK Mall.',
+            'Jalan-jalan di Pattaya untuk mengunjungi Honey Bee Farm, Laser Budha, Nongnooch Village, dan Erawadee Herb.',
+            'Berlibur ke Pattaya Floating Market.',
+            'Keliling kota Bangkok dan diajak ke Asiatique The River Front'
+          ],
+          travel: [
+            'Makan sesuai program.',
+            'Tiket pesawat Thai Lion Airlines Jakarta-Bangkok-Jakarta.',
+            'Penginapan hotel sesuai pilihan.',
+            'Transportation by Van for 6 Pax Minimum.',
+            'Makan sesuai acara tour.',
+            'Tour and transfers dengan tour guide sesuai program.',
+            '1 botol air mineral per orang per hari selama tour.'
+          ]
         },
-
-        'desc': 'Jelajahi Perth selama lima hari hari sesuka Anda! Dengan mengikuti paket ini, Anda akan kami ajak trip ke Kota Perth, Kota Frementle yang kota pelabuhan di Australia Barat yang merupakan bagian dari wilayah metropolitan Perth selama satu hari, lalu mengeksplore Kota Gold Coast, hingga mencoba pengalaman menaiki Sand Boarding 4WD. Reservasi paket Open Trip ini untuk menikmati Perth dengan jadwal keberangkatan hingga Maret 2023.'
+        itinerary: {
+          day1: [
+            {
+              title: 'Mengunjungi Force Face Buddha',
+              image: DetailsImg1,
+              desc: 'Anda akan dijemput di Bandara Bangkok untuk diantar langsung menuju tempat wisata Wat Arun melewati Chao Praya. Dilanjutkan perjalanan mengunjungi Four Face Buddh dan berbelanja di MBK Mall. Kemudian, diantar menuju hotel untuk beristirahat.'
+            }
+          ],
+          day2: [
+            {
+              title: 'Jalan-jalan ke Nongnooch village',
+              image: DetailsImg2,
+              desc: 'Setelah sarapan pagi, Anda langsung diantar menuju Honey Bee Farm, Laser Budha, dan Nongnooch Village. Setelah makan makan, Anda diantar ke hotel untuk beristirahat.'
+            }
+          ],
+          day3: [
+            {
+              title: 'Mengunjungi Pattaya Floating Market',
+              image: DetailsImg3,
+              desc: 'Setelah sarapan, kita akan mengantar Anda menuju Erawadee Herb.Lalu, makan siang (biaya sendiri). Setelah itu, Anda akan mengunjungi Pattaya Floating Market. Makan malam di Pattaya City Point dan diantar kembali ke hotel untuk beristirahat.'
+            }
+          ],
+          day4: [
+            {
+              title: 'Jalan-jalan ke Asiatique The River Front',
+              image: DetailsImg4,
+              desc: 'Sarapan di hotel, lalu langsung diajak untuk mengunjungi Art in Paradise Pattaya setelah makan siang, perjalanan dilanjutkan menuju Kota Bangkok. Di tengah perjalanan, Anda akan mengunjungi Dried Food Snack Shop dan Asiatique The River Front. Makan malam (biaya sendiri). Setelah makan malam, diantar kembali menuju hotel.'
+            }
+          ],
+          day5: [
+            {
+              title: 'Pulang ke Indonesia',
+              image: DetailsImg5,
+              desc: 'Sarapan di hotel, langsung menuju Damnuen Saduak Floating Market. Setelah makan siang, Anda memiliki program free di Platinum sampai waktunya diantar ke airport untuk kembali ke kota asal.'
+            }
+          ],
+          termsConditions: [{
+            priceDesc: ['Harga Minimum 6 Pax / Twin Share:'],
+            hotel: ['BKK : Zayn Hotel Bangkok or Similiar', 'PTY : So Boutique Jomtien Beach Pattaya or Similiar'],
+            pax: 'IDR 8.800.000',
+            desc1: '*Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya',
+            desc2: '*Kami belum melakukan pembookingan apapun',
+            noInclude: ['Biaya keperluan pribadi', 'Tips guide & driver USD 5/Pax/Day', 'Optional tour', 'Extra makanan dan minuman'],
+            note: ['Untuk melihat keindahan sunrisetergantung pada cuaca.', 'Valid hanya untuk tamu domestik.', 'Tidak berlaku pada waktuhigh season/peak season/long weekend.', 'Harga dapat berubah sewaktu-waktu mengikuti ketersediaan seat yang ada.', 'Berlkau sampai Maret 2023.'],
+          }]
+        }
       }
     },
   ];

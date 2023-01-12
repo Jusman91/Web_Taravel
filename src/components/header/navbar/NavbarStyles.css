@@ -12,7 +12,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 1.8rem;
-	background-color: rgb(4, 74, 250);
+	background-color: rgb(36, 97, 250);
 	color: #fff;
 	font-size: 0.75rem;
 }
@@ -106,5 +106,233 @@ header {
 	to {
 		transform: rotate(720deg);
 		background-color: red;
+	}
+}
+
+/* styl nav responsive */
+.container-nav-res {
+	display: none;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.nav-items-res {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1rem;
+	background-color: rgb(36, 97, 250);
+	position: relative;
+}
+.nav-items-res .hbg-icon {
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+}
+.nav-items-res .support {
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+}
+.nav-items-res .helps-icon {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(67, 114, 233);
+	width: 50px;
+	gap: 1.5rem;
+	padding: 1rem 0;
+	top: 100%;
+	right: 0;
+}
+.nav-items-res .nav-logo {
+	position: relative;
+	cursor: pointer;
+}
+
+.nav-items-res .nav-logo h1 {
+	color: #fff;
+	font-weight: 400 bold;
+	font-size: 1.6rem;
+}
+.nav-items-res .nav-logo p {
+	font-size: 0.55rem;
+	color: #fff;
+	text-align: end;
+	margin-top: -0.5rem;
+}
+.nav-items-res .nav-logo span {
+	color: #fff;
+}
+.nav-items-res .nav-logo img {
+	width: 25%;
+	position: absolute;
+	right: -30%;
+	top: -10%;
+	transform: rotate(30deg);
+}
+
+.container-nav-res .container-nav-menu {
+	position: absolute;
+	display: grid;
+	grid-template-columns: 50px auto;
+	background-color: rgb(67, 114, 233);
+	height: 91vh;
+	top: 100%;
+	left: -100%;
+	z-index: 999;
+	transition: all 0.3s ease-in-out;
+}
+.container-nav-res .container-nav-menu.active {
+	left: 0;
+}
+.container-nav-res .container-nav-menu .bar-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+	color: rgb(174, 174, 174);
+	border-right: 1px solid rgb(174, 174, 174);
+}
+.container-nav-menu .bar-left .top {
+	cursor: pointer;
+	text-decoration: none;
+	color: rgb(174, 174, 174);
+}
+.container-nav-menu .bar-left .bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	cursor: pointer;
+}
+.container-nav-menu .bar-right {
+	width: 400px;
+	display: flex;
+	padding-left: 0;
+	background-color: rgb(63, 117, 253);
+	position: sticky;
+	top: 0;
+	right: 0;
+}
+.container-nav-menu .bar-right .wrapper-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(174, 174, 174);
+	list-style: none;
+	gap: 0.3rem;
+	width: 100%;
+	border-bottom: 1px solid rgb(174, 174, 174);
+	padding: 1rem 0;
+
+	cursor: pointer;
+}
+.container-nav-menu .bar-right .wrapper-list.active {
+	background-color: rgb(67, 114, 233);
+	border-bottom: none;
+}
+.container-bar-list-item {
+	overflow-y: auto;
+}
+.container-bar-list-item .menu-item {
+	display: flex;
+	flex-direction: column;
+}
+.container-bar-list-item .menu-item a {
+	padding: 1rem;
+	color: #fff;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+	text-decoration: none;
+	font-size: 0.9rem;
+	color: #fff;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(174, 174, 174);
+	cursor: pointer;
+	padding-left: 1rem;
+	width: 100%;
+}
+.container-bar-list-item .account-item {
+	padding-left: 0;
+}
+/* LoginModal */
+.login-modal .text-login h6 {
+	color: #fff;
+}
+.login-modal .text-login span,
+.login-modal .text-login .forgetpassword h6 {
+	color: rgb(238, 83, 27);
+	cursor: pointer;
+}
+
+/* end LoginModal styl */
+.container-bar-list-item .account-item li {
+	color: #fff;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+	list-style: none;
+	font-size: 0.9rem;
+	color: #fff;
+	padding: 1rem;
+	border-bottom: 1px solid rgb(174, 174, 174);
+	cursor: pointer;
+	width: 100%;
+}
+
+.container-nav-menu .wrapper-list-item {
+	padding-left: 0;
+	padding-bottom: 1rem;
+	width: 100%;
+}
+
+.container-nav-menu .menu-item a:hover,
+.container-bar-list-item .account-item li:hover {
+	background-color: rgb(85, 131, 248);
+}
+.container-nav-menu .wrapper-list-item .active {
+	background-color: orangered;
+	padding: 1rem;
+	color: #fff;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(174, 174, 174);
+	cursor: pointer;
+	padding-left: 1rem;
+	width: 100%;
+}
+.container-nav-menu .wrapper-list-item .active a {
+	text-decoration: none;
+	font-size: 0.9rem;
+	color: #fff;
+}
+.container-nav-menu .wrapper-list-item .btn-booking {
+	background-color: rgb(54, 145, 242);
+	color: #fff;
+	width: 80%;
+	padding: 1rem 1.5rem;
+	margin-top: 2rem;
+	margin-left: 10%;
+	border: none;
+}
+.container-nav-menu .wrapper-list-item .btn-booking:hover {
+	animation: booking 0.5s ease-in-out;
+}
+@media screen and (max-width: 1150px) {
+	header {
+		display: none;
+	}
+	.container-nav-res {
+		display: block;
+	}
+}
+@keyframes booking {
+	from {
+	}
+
+	to {
+		font-size: 1.1rem;
 	}
 }

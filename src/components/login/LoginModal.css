@@ -1,0 +1,8 @@
+.login-modal .text-login h6 {
+	color: #fff;
+}
+.login-modal .text-login span,
+.login-modal .text-login .forgetpassword h6 {
+	color: rgb(238, 83, 27);
+	cursor: pointer;
+}

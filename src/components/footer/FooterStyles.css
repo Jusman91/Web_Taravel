@@ -1,5 +1,5 @@
 .container-footer {
-	padding: 1.5rem 6rem;
+	padding: 1.5rem 3rem 0 3rem;
 }
 .wrapper-logo {
 	width: 35px;
@@ -35,7 +35,7 @@
 	justify-content: space-between;
 }
 .list {
-	padding: 1rem 0;
+	padding-top: 1rem;
 }
 .list div {
 	font-size: 0.8rem;
@@ -43,4 +43,26 @@
 }
 .container-footer p {
 	font-size: 0.8rem;
+}
+.copyright {
+	padding: 0 3rem;
+}
+.copyright img {
+	width: 75px;
+}
+.copyright p {
+	font-size: 0.9rem;
+}
+
+@media screen and (max-width: 999px) {
+	.container-footer {
+		display: none;
+	}
+	.copyright {
+		text-align: center;
+		padding-top: 1rem;
+	}
+	.copyright img {
+		display: none;
+	}
 }
