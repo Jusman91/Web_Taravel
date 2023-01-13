@@ -1,4 +1,4 @@
-import './SearchingDataStyles.css';
+import '../container/SearchingDataStyles.css';
 import { FiMapPin } from 'react-icons/fi';
 
 export const SearchData = (props) => {

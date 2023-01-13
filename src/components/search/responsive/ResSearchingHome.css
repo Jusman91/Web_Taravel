@@ -1,0 +1,30 @@
+.container-ResSearchHome {
+	display: none;
+}
+
+@media screen and (max-width: 1150px) {
+	.container-ResSearchHome {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: flex-start;
+		text-align: center;
+		background-color: rgb(67, 114, 233);
+	}
+	.container-ResSearchHome .container-search-list {
+		width: 33.33%;
+		padding: 1rem;
+		border: 1px solid rgb(174, 174, 174);
+		border-left: none;
+		border-top: none;
+		cursor: pointer;
+	}
+	.container-search-list .wrapper-search-list .icons {
+		font-size: 2.5rem;
+		color: rgb(174, 174, 174);
+	}
+	.container-search-list .wrapper-search-list .label {
+		color: #fff;
+		font-size: 0.9rem;
+	}
+}

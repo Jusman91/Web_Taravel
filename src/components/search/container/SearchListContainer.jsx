@@ -1,4 +1,4 @@
-import '../search/SearchListData.css';
+import '../container/SearchListContainer.css';
 
 function SearchListData(props) {
 	return (

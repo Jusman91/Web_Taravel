@@ -1,10 +1,10 @@
-import '../search/SearchListData.css';
+import '../container/SearchListContainer.css';
 import { useState } from 'react';
-import SearchingFlights from './SearchingFlights';
-import SearchingHotels from './SearchingHotels';
-import SearchingPackages from './SearchingPackages';
-import SearchingXperiences from './SearchingXperiences';
-import SearchingAttractions from './SearchingAttractions';
+import SearchingFlights from '../flights/SearchingFlights';
+import SearchingHotels from '../hotels/SearchingHotels';
+import SearchingPackages from '../tour/SearchingPackages';
+import SearchingXperiences from '../xperiences/SearchingXperiences';
+import SearchingAttractions from '../attractions/SearchingAttractions';
 import { BsShieldCheck } from 'react-icons/bs';
 import { FaPassport } from 'react-icons/fa';
 import { MdOutlineAttractions } from 'react-icons/md';
@@ -12,8 +12,8 @@ import { GiBackpack } from 'react-icons/gi';
 import { RiSuitcase3Line } from 'react-icons/ri';
 import { FaHotel } from 'react-icons/fa';
 import { IoMdPaperPlane } from 'react-icons/io';
-import SearchListData from './SearchListData';
-import SearchingInsurance from './SearchingInsurance';
+import SearchListData from '../container/SearchListContainer';
+import SearchingInsurance from '../insurance/SearchingInsurance';
 
 function SearchingHome() {
 	const [componentSearch, setComponentSearch] =

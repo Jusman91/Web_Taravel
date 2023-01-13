@@ -1,7 +1,7 @@
 import '../navbar/NavbarStyles.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../../asset/logo/p1.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
 	IoIosArrowDown,
 	IoIosArrowUp,
@@ -22,6 +22,33 @@ export const Navbar = (props) => {
 	};
 	// ====>
 
+	// <===== hidden & show navbar wirh scrolling
+	const [show, setShow] = useState(true);
+	const [lastScrollY, setLastScrollY] = useState(0);
+
+	const controlNavbar = () => {
+		if (window.scrollY > lastScrollY) {
+			// if scroll down hide the navbar
+			setShow(false);
+		} else {
+			// if scroll up show the navbar
+			setShow(true);
+		}
+
+		// remember current page location to use in the next move
+		setLastScrollY(window.scrollY);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', controlNavbar);
+
+		// cleanup function
+		return () => {
+			window.removeEventListener('scroll', controlNavbar);
+		};
+	}, [lastScrollY]);
+	// =====>
+
 	const [activeLink, setActiveLink] = useState('/');
 
 	const onUpdateActiveLink = (value) => {
@@ -29,7 +56,8 @@ export const Navbar = (props) => {
 	};
 	return (
 		<>
-			<header>
+			<header
+				className={`hiddenNav ${show && 'activeNav'}`}>
 				<div className='top-header'>
 					<ul className=''>
 						<li>Corparate Trapel</li>

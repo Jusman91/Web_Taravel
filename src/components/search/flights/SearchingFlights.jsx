@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './SearchingFlights.css';
+import '../flights/SearchingFlights.css';
 import { FiMapPin } from 'react-icons/fi';
 import { CgCalendarDates } from 'react-icons/cg';
 import { BsArrowRight } from 'react-icons/bs';
@@ -8,7 +8,7 @@ import { TbArmchair } from 'react-icons/tb';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { addDays } from 'date-fns/esm';
-import RangeDate from './RangeDate';
+import RangeDate from '../date/RangeDate';
 
 function SearchingFlights() {
 	const [startDate, setStartDate] = useState(new Date());

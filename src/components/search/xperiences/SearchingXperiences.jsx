@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import './SearchingDataStyles.css';
+import '../container/SearchingDataStyles.css';
 import { CgCalendarDates } from 'react-icons/cg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { BsArrowRight } from 'react-icons/bs';
 import { addDays } from 'date-fns/esm';
-import RangeDate from './RangeDate';
+import RangeDate from '../date/RangeDate';
 import 'react-datepicker/dist/react-datepicker.css';
-import SearchData from './SearchData';
+import SearchData from '../container/SearchData';
 
 export const SearchingXperiences = () => {
 	const [startDate, setStartDate] = useState(new Date());

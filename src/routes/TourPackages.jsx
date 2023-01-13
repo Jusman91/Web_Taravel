@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchingPackages from '../components/search/SearchingPackages';
+import SearchingPackages from '../components/search/tour/SearchingPackages';
 import HeroTours from '../components/hero/tour/HeroTours';
 import AllDestinations from '../components/main/tour_packages/all_destination/AllDestinations';
 import '../components/main/tour_packages/all_destination/AllDestinations.css';

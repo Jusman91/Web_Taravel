@@ -1,4 +1,4 @@
-import SearchData from './SearchData';
+import SearchData from '../container/SearchData';
 
 export const SearchingAttractions = () => {
 	return (

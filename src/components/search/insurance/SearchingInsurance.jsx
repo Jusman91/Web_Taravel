@@ -1,6 +1,6 @@
 import './SearchingInsurance.css';
-import LogoInsurance1 from '../../asset/logo/l3.jpg';
-import LogoInsurance2 from '../../asset/logo/l4.jpg';
+import LogoInsurance1 from '../../../asset/logo/l3.jpg';
+import LogoInsurance2 from '../../../asset/logo/l4.jpg';
 function SearchingInsurance() {
 	return (
 		<>

@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroAttractions from '../components/hero/attraction/HeroAttractions';
 import BannerSlide from '../components/banners/BannerSlide';
-import SearchingAttractions from '../components/search/SearchingAttractions';
+import SearchingAttractions from '../components/search/attractions/SearchingAttractions';
 
 
 

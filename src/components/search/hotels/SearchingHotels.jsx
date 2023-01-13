@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './SearchingFlights.css';
+import '../flights/SearchingFlights.css';
 import { CgCalendarDates } from 'react-icons/cg';
 import { BsArrowRight } from 'react-icons/bs';
 import { BsPerson } from 'react-icons/bs';
@@ -7,8 +7,8 @@ import { MdCheckroom } from 'react-icons/md';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { addDays } from 'date-fns/esm';
-import RangeDate from './RangeDate';
-import SearchData from './SearchData';
+import RangeDate from '../date/RangeDate';
+import SearchData from '../container/SearchData';
 
 export const SearchingHotels = () => {
 	const [startDate, setStartDate] = useState(new Date());

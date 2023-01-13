@@ -1,9 +1,12 @@
-header {
+.activeNav {
 	width: 100%;
 	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 999;
+}
+.hiddenNav {
+	top: 0;
 }
 
 .top-header {
@@ -321,7 +324,7 @@ header {
 	animation: booking 0.5s ease-in-out;
 }
 @media screen and (max-width: 1150px) {
-	header {
+	.activeNav {
 		display: none;
 	}
 	.container-nav-res {

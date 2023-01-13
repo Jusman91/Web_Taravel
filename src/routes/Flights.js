@@ -3,7 +3,7 @@ import '../components/main/data/ContentDataStyles.css';
 import FlightsOffers from '../components/main/flights/FlightsOffers';
 import BannerSlide from '../components/banners/BannerSlide';
 import HeroFlights from '../components/hero/flight/HeroFlights';
-import SearchingFlights from '../components/search/SearchingFlights';
+import SearchingFlights from '../components/search/flights/SearchingFlights';
 
 
 function Flights() {
