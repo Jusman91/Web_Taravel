@@ -54,6 +54,7 @@
 	color: rgb(202, 198, 198);
 	-webkit-appearance: none;
 	padding-left: 0.5rem;
+	cursor: pointer;
 }
 .input-departure select option,
 .input-destination select option {
@@ -95,6 +96,7 @@
 	color: #fff;
 	position: relative;
 	padding-right: 1rem;
+	cursor: pointer;
 }
 .booking-room {
 	display: flex;
@@ -104,6 +106,7 @@
 	color: #fff;
 	position: relative;
 	gap: 2rem;
+	cursor: pointer;
 }
 .booking-room .icon {
 	margin-right: 0.6rem;
@@ -126,7 +129,6 @@
 }
 .child .icon {
 	font-size: 1rem;
-	/* margin-right: 0.6rem; */
 }
 .form-category {
 	position: absolute;
@@ -199,13 +201,104 @@
 }
 .btn-src {
 	background-color: rgb(238, 83, 27);
+	position: absolute;
 	border: none;
 	outline: none;
+	padding: 1rem;
 	font-size: 1rem;
+	border-radius: 20px;
+	width: 200px;
 	color: #fff;
-	transition: 1s;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -50%);
+	transition: 0.7s;
 }
 .btn-src:hover {
 	background-color: #fff;
 	color: orangered;
+}
+
+@media screen and (max-width: 1150px) {
+	.container-search {
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(67, 114, 233);
+		width: 100%;
+		height: fit-content;
+		position: initial;
+		left: initial;
+		top: initial;
+		padding: 1.5rem;
+		padding-bottom: 0;
+		margin-top: -0.1rem;
+		gap: 1rem;
+	}
+	.track {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: initial;
+		position: initial;
+		padding-left: 0.7rem;
+		gap: 2rem;
+		color: rgb(202, 198, 198);
+	}
+	.track input {
+		width: 1.3rem;
+		height: 1.3rem;
+		position: initial;
+		margin-bottom: 0;
+		margin-right: 1rem;
+	}
+	.input-departure,
+	.input-destination {
+		border-left: none;
+	}
+	.date {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		border-left: none;
+	}
+	.icon-to {
+		font-size: 1.3rem;
+		color: rgb(202, 198, 198);
+		margin-left: -2rem;
+		margin-right: 4rem;
+	}
+	.age-category {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		border-left: none;
+	}
+	.flight-class {
+		border-left: none;
+	}
+	.btn-src {
+		position: initial;
+		width: 110%;
+		border-radius: initial;
+		transform: translate(-5%, 0%);
+	}
+	.btn-src:hover {
+		background-color: rgb(250, 110, 59);
+		color: #fff;
+	}
+	.form-category {
+		width: 30%;
+		height: 200px;
+		right: 35%;
+		top: 0;
+	}
+	.form-category .adult,
+	.child,
+	.infant {
+		justify-content: space-evenly;
+	}
+	.booking-room {
+		justify-content: flex-start;
+		border-left: none;
+	}
 }

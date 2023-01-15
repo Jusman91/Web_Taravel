@@ -54,3 +54,12 @@
 .right-hero:hover {
 	color: rgb(238, 83, 27);
 }
+
+@media screen and (max-width: 1150px) {
+	.container-heros {
+		display: none;
+	}
+	.icon-arrow {
+		display: none;
+	}
+}

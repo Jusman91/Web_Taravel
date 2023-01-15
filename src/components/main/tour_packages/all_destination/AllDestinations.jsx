@@ -3,6 +3,7 @@ import ContentData from '../../data/ContentData';
 import TourData from '../TourData';
 import FilterPackages from '../../tour_packages/filter_packages/FilterPackages';
 import { useState } from 'react';
+import ResFilter from '../filter_packages/ResFilter';
 
 function AllDestinations({ tourpackages }) {
 	const [activeCategory, setActiveCategory] = useState('');
@@ -36,11 +37,20 @@ function AllDestinations({ tourpackages }) {
 			setActiveCategory('highest');
 		}
 	};
-	console.log('data', data);
+
+	const [showFilter, setShowFilter] = useState('false');
+	const handleShow = () => {
+		setShowFilter(!showFilter);
+	};
+
 	return (
 		<>
 			<div className='container-all-destinations'>
-				<div className='filter-packages'>
+				<ResFilter setShowFilter={handleShow} />
+				<div
+					className={
+						showFilter ? 'showFilter' : 'filter-packages'
+					}>
 					<FilterPackages
 						handleFilter={filterResult}
 						activeCategory={activeCategory}

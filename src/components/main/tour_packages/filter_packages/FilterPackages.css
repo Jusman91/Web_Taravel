@@ -1,5 +1,12 @@
 .container-filter {
 	padding-left: 1rem;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.filter-item {
+	height: 70vh;
+	overflow-y: scroll;
 }
 .container-filter .result-filter {
 	display: flex;
@@ -27,6 +34,7 @@
 	padding-bottom: 3rem;
 	border-bottom: 3px solid #ccc;
 	margin-bottom: 2rem;
+	cursor: pointer;
 }
 
 .container-filter .filter-price .price-list {
@@ -132,5 +140,28 @@
 	100% {
 		transform: rotate(360deg);
 		color: rgb(237, 68, 21);
+	}
+}
+
+/* styl resfilter */
+
+.res-component-filter {
+	width: 10%;
+	position: fixed;
+	right: 0;
+	display: none;
+	z-index: 100;
+}
+.res-component-filter button {
+	width: 100%;
+	background-color: rgb(67, 114, 233);
+	color: #fff;
+	padding: 1rem 0;
+	border: none;
+}
+
+@media screen and (max-width: 765px) {
+	.res-component-filter {
+		display: block;
 	}
 }

@@ -3,6 +3,7 @@ import HerosContainer from '../container/HerosContainer';
 import Slider from 'react-slick';
 import PrevArrow from '../arrow/PrevArrow';
 import NextArrow from '../arrow/NextArrow';
+import '../container/HerosContainer.css';
 
 function HeroFlights() {
 	const data = HeroFlightData();

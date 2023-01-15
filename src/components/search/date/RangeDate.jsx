@@ -1,4 +1,4 @@
-import '../container/SearchingDataStyles.css';
+// import '../container/SearchingDataStyles.css';
 
 function RangeDate(props) {
 	return (
